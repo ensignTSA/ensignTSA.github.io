@@ -1,7 +1,9 @@
 import cv2
 import numpy as np
 import math
-cap = cv2.VideoCapture('asl.mp4')
+#https://github.com/vipul-sharma20/gesture-opencv
+#https://github.com/simena86/handDetectionCV
+cap = cv2.VideoCapture(0)
 while(cap.isOpened()):
     ret, img = cap.read()
     cv2.rectangle(img,(300,300),(100,100),(0,255,0),0)
