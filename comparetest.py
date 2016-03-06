@@ -13,7 +13,7 @@ from PIL import Image
 
 
 cap = cv2.VideoCapture(0)
-t_end = time.time() + 4
+t_end = time.time() + 5
 while time.time() < t_end:
     ret, img = cap.read()
     cv2.rectangle(img,(300,300),(100,100),(0,255,0),0)
