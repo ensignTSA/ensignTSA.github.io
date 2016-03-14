@@ -2,32 +2,40 @@
 
 	<head>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  		<link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection" />
+    		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css' />
+    		<link rel="icon" href="http://www.stonybrook.edu/commcms/llrc/images/languages_flags/connect-sign-language-hi.png" type="image/png" />
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  	<script type="text/javascript" src="materialize/js/materialize.js"></script>
+  		<script type="text/javascript" src="materialize/js/materialize.js"></script>
 		<title>ensign</title>
 
-    <style>
-      html, body {
-        font-family: 'Raleway', sans-serif;
-        text-align: center;
-        height: 100%;
-        cursor: default;
-      }
-      .content {
-        height: calc(100% - 264px);
-      }
-      .top-nav {
-        height: 100px;
-      }
-      .title {
-        font-size: 50px;
-        line-height: 100px;
-      }
-    </style>
+    		<style>
+      			html, body {
+        			font-family: 'Raleway', sans-serif;
+        			text-align: center;
+        			height: 100%;
+        			width: 100%;
+        			cursor: default;
+      			}
+      			.content {
+        			height: calc(100% - 264px);
+      			}
+      			.top-nav {
+        			height: 100px;
+      			}
+      			.title {
+        			font-size: 50px;
+        			line-height: 100px;
+      			}
+		</style>
+		
+		<script>
+      			$(document).ready(function(){
+        			$('.slider').slider({full_width: true});
+      			});
+    		</script>
 
 	</head>
 	
@@ -36,32 +44,67 @@
     		<div class="nav-wrapper">
       			<a class="title center">ensign</a>
     		</div>
-  	</nav>
-    <div class="row">
-      <div class="col s12 pink accent-3">
-        <ul class="tabs">
-          <li class="tab col s3"><a class="active" href="#home">HOME</a></li>
-          <li class="tab col s3"><a href="#learn">LEARN</a></li>
-          <li class="tab col s3"><a href="#practice">PRACTICE</a></li>
-          <li class="tab col s3"><a href="#translate">TRANSLATE</a></li>
-        </ul>
-      </div>
-      <div class="content">
-        <div id="home" class="col s12"><br><br><br><br><br>welcome to this awful website</div>
-        <div id="learn" class="col s12"><br><br><br><br><br>much learn</div>
-        <div id="practice" class="col s12"><br><br><br><br><br>such practice</div>
-        <div id="translate" class="col s12"><br><br><br><br><br>wow much fail yay</div>
-      </div>
-    </div>
-  	<footer class="page-footer red accent-3">
-      <p>
-        made with <a class="white-text" href="http://materializecss.com/" target="_blank">Materialize v0.97.2</a></li> and 
-        <a class="white-text" href="http://jquery.com/" target="_blank">jQuery</a></li>
-        <br>
-        body font: <a class="white-text" href="https://www.google.com/fonts/specimen/Raleway" target="_blank">Raleway</a></li>
-      </p>
-      <div class="footer-copyright">
-        <div>2084096, 2084097, 2084098, 2084099, 2084100, 2084101</div>
-        </div>
-    </footer>
+  		</nav>
+    		<div class="row">
+      			<div class="col s12 pink accent-3">
+        			<ul class="tabs">
+          				<li class="tab col s3"><a class="active" href="#home">HOME</a></li>
+          				<li class="tab col s3"><a href="#learn">LEARN</a></li>
+          				<li class="tab col s3"><a href="#practice">PRACTICE</a></li>
+          				<li class="tab col s3"><a href="#translate">TRANSLATE</a></li>
+        			</ul>
+      			</div>
+      			<div class="content">
+        			<div id="home" class="col s12"><br><br><br><br><br>
+        				<div class="slider">
+            					<ul class="slides">
+              						<li>
+                						<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
+                						<div class="caption left-align"><br><br><br>
+                  							<h3>ensign</h3>
+                  							<h5 class="light grey-text text-lighten-3">a new tool for american sign language</h5>
+                						</div>
+              						</li>
+              						<li>
+                						<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
+                						<div class="caption right-align"><br><br><br>
+                							<h3>learn</h3>
+                							<h5 class="light grey-text text-lighten-3">using open source computer vision technology</h5>
+                						</div>
+              						</li>
+              						<li>
+                						<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
+                						<div class="caption left-align"><br><br><br>
+                  							<h3>practice</h3>
+                  							<h5 class="light grey-text text-lighten-3">actually signing letters and numbers</h5>
+                						</div>
+              						</li>
+              						<li>
+                						<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
+                						<div class="caption right-align"><br><br><br>
+                  							<h3>translate</h3>
+                  							<h5 class="light grey-text text-lighten-3">english to asl and vice versa</h5>
+                						</div>
+              						</li>
+            					</ul>
+          				</div>
+        			</div>
+        			<div id="learn" class="col s12"><br><br><br><br><br>much learn</div>
+        			<div id="practice" class="col s12"><br><br><br><br><br>such practice</div>
+        			<div id="translate" class="col s12"><br><br><br><br><br>wow much fail yay</div>
+      			</div>
+    		</div>
+  		<footer class="page-footer pink lighten-3">
+        		<p>
+        			made with <a class="grey-text text-lighten-4" href="http://materializecss.com/" target="_blank">
+        			Materialize v0.97.2</a></li> and <a class="grey-text text-lighten-4" href="http://jquery.com/" target="_blank">
+        			jQuery</a></li>
+        			<br>
+       				body font: <a class="grey-text text-lighten-4" href="https://www.google.com/fonts/specimen/Raleway" target="_blank">
+       				Raleway</a></li>
+       			</p>
+      			<div class="footer-copyright">
+        			<div>2084096, 2084097, 2084098, 2084099, 2084100, 2084101</div>
+        		</div>
+    		</footer>
 	</body>
