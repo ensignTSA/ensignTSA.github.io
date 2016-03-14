@@ -1,3 +1,4 @@
+
 from bottle import static_file,route,run,request
 import json
 import os
@@ -7,6 +8,9 @@ def loadIndex():
 @route('/<filename:re:.*\..*>')#matches files
 def sendWebFile(filename):
     return static_file(filename, root='./')
+@route('/runScript',method = "POST")
+def script():
+    execfile('comparetest.py')
 @route('/postBooks',method='POST') #gets input from fancyform, sends book data to JSON
 def postBooks():
     
@@ -26,5 +30,5 @@ def postBooks():
         g.write(data)
         #prints data into json
         g.write('{"bookName":"'+bookName+'","author":"'+author+'","subject":"'+subject+'","condition":"'+condition+'","name":"'+name+'","phoneNumber":"'+phoneNumber+'","email":"'+email+'"}]}')
-        return "Thank you very much!" #server interaction is complete
+        return "Thank you very much!" #server interaction is complete'''
 run(host='localhost',port=8080,debug=True)

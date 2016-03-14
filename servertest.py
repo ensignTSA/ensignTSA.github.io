@@ -1,0 +1,1 @@
+execfile('comparetest.py')
