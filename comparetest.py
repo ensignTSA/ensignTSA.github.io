@@ -50,6 +50,18 @@ im.save("user.jpeg")
     
     
 def mse(imageA, imageB):
+<<<<<<< HEAD
+	# the 'Mean Squared Error' between the two images is the
+	# sum of the squared difference between the two images;
+	# NOTE: the two images must have the same dimension
+	err = np.sum((imageA.astype("float") - imageB.astype("float")) ** 2)
+	err /= float(imageA.shape[0] * imageA.shape[1])
+	
+	# return the MSE, the lower the error, the more "similar"
+	# the two images are
+	return err
+	
+=======
         # the 'Mean Squared Error' between the two images is the
         # sum of the squared difference between the two images;
         # NOTE: the two images must have the same dimension
@@ -60,6 +72,7 @@ def mse(imageA, imageB):
         # the two images are
         return err
         
+>>>>>>> refs/remotes/ensignTSA/master
 user = cv2.imread("user.jpeg")
 user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
 rootdir = 'test'
@@ -67,6 +80,31 @@ rootdir = 'test'
 
         
 def compare_images(imageA, imageB, title):
+<<<<<<< HEAD
+	# compute the mean squared error and structural similarity
+	# index for the images
+	m = mse(imageA, imageB)
+	s = ssim(imageA, imageB)
+
+	print "The image is"+ file_name
+	# setup the figure
+   	fig = plt.figure()
+	plt.suptitle("MSE: %.2f, SSIM: %.2f" % (m, s))
+    
+	   # show first image
+	ax = fig.add_subplot(1, 2, 1)
+   	plt.imshow(imageA, cmap = plt.cm.gray)
+   	plt.axis("off")
+    
+	   # show the second image
+	ax = fig.add_subplot(1, 2, 2)
+	plt.imshow(imageB, cmap = plt.cm.gray)
+   	plt.axis("off")
+    
+	   # show the images
+	plt.show()
+	
+=======
         # compute the mean squared error and structural similarity
         # index for the images
         m = mse(imageA, imageB)
@@ -90,6 +128,7 @@ def compare_images(imageA, imageB, title):
            # show the images
         plt.show()
         
+>>>>>>> refs/remotes/ensignTSA/master
 least_MSE=20000000
 for subdir, dirs, files in os.walk(rootdir):
     for file in files:
@@ -99,11 +138,19 @@ for subdir, dirs, files in os.walk(rootdir):
         if mse(user, imageB)<least_MSE:
             least_MSE=mse(user, imageB)
             similar_file_name=file_name
+<<<<<<< HEAD
+            print similar_file_name
+            
+#imageB = cv2.imread(similar_file_name)
+#imageB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
+#compare_images(user,imageB , similar_file_name)
+=======
             
 print similar_file_name[5]
 imageB = cv2.imread(similar_file_name)
 imageB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
 compare_images(user,imageB , similar_file_name)
+>>>>>>> refs/remotes/ensignTSA/master
 # load the images -- the original, the original + contrast,
 # and the original + photoshop
 
@@ -133,4 +180,8 @@ compare_images(user,imageB , similar_file_name)
 # compare the images
 #compare_images(original, original, "Original vs. Original")
 #compare_images(original, contrast, "Original vs. Contrast")
+<<<<<<< HEAD
 #compare_images(original, shopped, "Original vs. Photoshopped")
+=======
+#compare_images(original, shopped, "Original vs. Photoshopped")
+>>>>>>> refs/remotes/ensignTSA/master
