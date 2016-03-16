@@ -2,217 +2,196 @@
 
   <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css' />
-    <link rel="icon" href="http://www.stonybrook.edu/commcms/llrc/images/languages_flags/connect-sign-language-hi.png" type="image/png" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script type="text/javascript" src="materialize/js/materialize.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> <!-- resize content based on screen size -->
+    <link href="materialize/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /> <!-- Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> <!-- Materialize -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" /> <!-- font -->
+    <link href="additional.css" rel="stylesheet" type="text/css" /> <!-- additional styling hard-coded by team -->
+    <link href="http://www.stonybrook.edu/commcms/llrc/images/languages_flags/connect-sign-language-hi.png" rel="icon" type="image/png" /> <!-- favicon -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script> <!-- jQuery -->
+    <script src="materialize/js/materialize.min.js" type="text/javascript"></script> <!-- Materialize -->
+    <script src="main.js" type="text/javascript"></script> <!-- additional JS hard-coded by team -->
     <title>ensign</title>
-
-    <style>
-      html, body {
-        font-family: 'Raleway', sans-serif;
-        text-align: center;
-        height: 100%;
-        width: 100%;
-        cursor: default;
-      }
-      .content {
-        height: calc(100% - 264px);
-      }
-      .top-nav {
-        height: 100px;
-      }
-      .title {
-        font-size: 50px;
-        line-height: 100px;
-      }
-      a.btn {
-        width: 76px;
-      }
-      #textarea1:focus {
-        border-bottom: 1px solid #f50057;
-        -webkit-box-shadow: 0 1px 0 0 #f50057;
-        -moz-box-shadow: 0 1px 0 0 #f50057;
-        box-shadow: 0 1px 0 0 #f50057;
-      }
-      #textarea1:focus + label {
-        color: #f50057;
-      }
-      .input-field .prefix.active {
-        color: #f50057;
-      }
-      footer { 
-        position: absolute; 
-        width: 100%;
-        bottom: 0;
-      }
-    </style>
-    
-    <script>
-      $(document).ready(function(){
-        $('.slider').slider({full_width: true});
-        var image = document.getElementById('image');
-        $('a').click(function(event){
-          if ($(event.target).attr('class') === "waves-effect waves-light btn pink accent-3" || $(event.target).attr('class') === "waves-effect waves-light btn indigo"){
-            image.innerHTML = "<img src='jpgs edited/" + event.target.id + ".PNG' id='tutorial'>";
-          }
-          /*if (event.target.id === 'A') {
-            image.innerHTML = "<img src='jpgs edited/A.PNG' id='tutorial'>";
-          } else if (event.target.id === 'B') {
-            image.innerHTML = "<img src='jpgs edited/B.PNG' id='tutorial'>";
-          } else if (event.target.id === 'C') {
-            image.innerHTML = "<img src='jpgs edited/C.PNG' id='tutorial'>";
-          } else if (event.target.id === 'D') {
-            image.innerHTML = "<img src='jpgs edited/D.PNG' id='tutorial'>";
-          }*/
-        });
-        
-      });
-    </script>
 
   </head>
   
   <body>
-    <nav class="top-nav indigo">
+
+    <nav class="top-nav indigo"> <!-- header; appears on every page -->
       <div class="nav-wrapper">
         <a class="title center">ensign</a>
       </div>
     </nav>
-      <div class="row">
-        <div class="col s12 pink accent-3">
-          <ul class="tabs">
-            <li class="tab col s3"><a class="active" href="#home">HOME</a></li>
-            <li class="tab col s3"><a href="#learn">LEARN</a></li>
-            <li class="tab col s3"><a href="#practice">PRACTICE</a></li>
-            <li class="tab col s3"><a href="#translate">TRANSLATE</a></li>
-          </ul>
-        </div>
-        <div class="content">
-          <div id="home" class="col s12"><br><br><br><br><br>
-            <div class="slider">
-              <ul class="slides">
-                <li>
-                  <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
-                  <div class="caption left-align"><br><br><br>
-                    <h3>ensign</h3>
-                    <h5 class="light grey-text text-lighten-3">a new tool for american sign language</h5>
-                  </div>
-                </li>
-                <li>
-                  <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
-                  <div class="caption right-align"><br><br><br>
-                    <h3>learn</h3>
-                    <h5 class="light grey-text text-lighten-3">using open source computer vision technology</h5>
-                  </div>
-                </li>
-                <li>
-                  <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
-                  <div class="caption left-align"><br><br><br>
-                    <h3>practice</h3>
-                    <h5 class="light grey-text text-lighten-3">actually signing letters and numbers</h5>
-                  </div>
-                </li>
-                <li>
-                  <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
-                  <div class="caption right-align"><br><br><br>
-                    <h3>translate</h3>
-                    <h5 class="light grey-text text-lighten-3">english to asl</h5>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div id="learn" class="col s12"><br><br>
-            <div class="row">
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="A">A</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="B">B</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="C">C</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="D">D</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="E">E</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="F">F</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="G">G</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="H">H</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="I">I</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="J">J</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="K">K</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="L">L</a></div>
-            </div>
-            <div class="row">
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="M">M</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="N">N</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="O">O</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="P">P</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="Q">Q</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="R">R</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="S">S</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="T">T</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="U">U</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="V">V</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="W">W</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="X">X</a></div>
-            </div>
-            <div class="row">
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="Y">Y</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="Z">Z</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn indigo" id="0">0</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn indigo" id="1">1</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn indigo" id="2">2</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn indigo" id="3">3</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn indigo" id="4">4</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn indigo" id="5">5</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn indigo" id="6">6</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn indigo" id="7">7</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn indigo" id="8">8</a></div>
-              <div class="col s1"><a class="waves-effect waves-light btn indigo" id="9">9</a></div>
-            </div>
-            <div class="row" id="image">
-              <img src="jpgs edited/A.PNG" id="tutorial">
-            </div>
-          <form method="POST" action="/runScript">
-            <input name="submit" type="submit" value="Practice!">
-          </form>
-          </div>
-          <div id="practice" class="col s12"><br><br><br><br><br>
-          such practice
-          <form method="POST" action="/runScript">
-          <input name="submit" type="submit" value="Practice!">
-          </form>
-          </div>
-          <div id="translate" class="col s12"><br><br>
-            <div class="row">
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s6 push-s3">
-                    <i class="material-icons prefix">mode_edit</i>
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Message</label>
-                  </div>
+
+    <div class="row">
+
+      <div class="col s12 pink accent-3 navbar"> <!-- tabs; appear on every page -->
+        <ul class="tabs">
+          <li class="tab col s3"><a class="active" href="#home">HOME</a></li>
+          <li class="tab col s3"><a href="#learn">LEARN</a></li>
+          <li class="tab col s3"><a href="#practice">PRACTICE</a></li>
+          <li class="tab col s3"><a href="#translate">TRANSLATE</a></li>
+        </ul>
+      </div>
+
+      <div class="content"> <!-- content on page changes based on tab clicked -->
+
+        <div id="home" class="col s12"> <!-- 'Home' tab -->
+          <br><br><br><br><br> <!-- top spacing -->
+          <div class="slider"> <!-- slider with four slides -->
+            <ul class="slides">
+              <li> <!-- first slide -->
+                <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF"> <!-- background for slides -->
+                <div class="caption left-align">
+                  <br><br><br>
+                  <h3>ensign</h3>
+                  <h5 class="light grey-text text-lighten-3">a new tool for american sign language</h5>
                 </div>
-              </form>
+              </li>
+              <li> <!-- second slide -->
+                <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
+                <div class="caption right-align">
+                  <br><br><br>
+                  <h3>learn</h3>
+                  <h5 class="light grey-text text-lighten-3">using open source computer vision technology</h5>
+                </div>
+              </li>
+              <li> <!-- third slide -->
+                <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
+                <div class="caption left-align">
+                  <br><br><br>
+                  <h3>practice</h3>
+                  <h5 class="light grey-text text-lighten-3">signing letters and numbers</h5>
+                </div>
+              </li>
+              <li> <!-- fourth slide -->
+                <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
+                <div class="caption right-align">
+                  <br><br><br>
+                  <h3>translate</h3>
+                  <h5 class="light grey-text text-lighten-3">english to asl</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="row"> <!-- bottom spacing -->
+          </div>
+        </div>
+
+        <div id="learn" class="col s12"> <!-- 'Learn' tabl -->
+          <br><br> <!-- top spacing -->
+          <div class="row"> <!-- first row of buttons -->
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="A">A</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="B">B</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="C">C</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="D">D</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="E">E</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="F">F</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="G">G</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="H">H</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="I">I</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="J">J</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="K">K</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="L">L</a></div>
+          </div>
+          <div class="row"> <!-- second row of buttons -->
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="M">M</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="N">N</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="O">O</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="P">P</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="Q">Q</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="R">R</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="S">S</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="T">T</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="U">U</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="V">V</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="W">W</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="X">X</a></div>
+          </div>
+          <div class="row"> <!-- third row of buttons -->
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="Y">Y</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="Z">Z</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn indigo" id="0">0</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn indigo" id="1">1</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn indigo" id="2">2</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn indigo" id="3">3</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn indigo" id="4">4</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn indigo" id="5">5</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn indigo" id="6">6</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn indigo" id="7">7</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn indigo" id="8">8</a></div>
+            <div class="col s1"><a class="waves-effect waves-light btn indigo" id="9">9</a></div>
+          </div>
+          <br><br> <!-- spacing between buttons and picture / camera box -->
+          <div class="row">
+            <div class="col s6" id="image">
+              <img src="pngs edited/A.PNG" width="450px" height="450px">
             </div>
-            <div class="row">
-              <button class="btn waves-effect waves-light indigo" type="submit" name="action">Translate
+          </div>
+          <div class="row"> <!-- bottom spacing -->
+          </div>
+        </div>
+
+        <div id="practice" class="col s12"> <!-- 'Practice' tab -->
+          <br><br><br><br><br> <!-- top spacing -->
+          such practice
+          <div class="row"> <!-- bottom spacing -->
+          </div>
+        </div>
+
+        <div id="translate" class="col s12"> <!-- 'Translate' tab -->
+          <br><br> <!-- top spacing -->
+          <div class="row">
+            <form class="col s12"> <!-- input box -->
+              <div class="row">
+                <div class="input-field col s6 push-s3">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="translatebox" class="materialize-textarea"></textarea>
+                  <label for="translatebox">Message</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col s3 push-s3"> <!-- 'Translate' button -->
+              <button class="btn waves-effect waves-light indigo">Translate
                 <i class="material-icons right">send</i>
               </button>
+            </div>
+            <div class="col s3 push-s3"> <!-- 'Clear Message' button -->
+              <a class="waves-effect waves-indigo btn-flat">Clear Message</a>
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+            <div id="translateimg"> <!-- where pictures appear following translation -->
+            </div>
+          </div>
+          <div class="row"> <!-- bottom spacing -->
           </div>
         </div>
+
       </div>
-      <footer class="page-footer pink lighten-3">
-        <p>
-          made with <a class="grey-text text-lighten-4" href="http://materializecss.com/" target="_blank">
-          Materialize v0.97.2</a></li> and <a class="grey-text text-lighten-4" href="http://jquery.com/" target="_blank">
-          jQuery</a></li>
-          <br>
-          body font: <a class="grey-text text-lighten-4" href="https://www.google.com/fonts/specimen/Raleway" target="_blank">
-          Raleway</a></li>
-        </p>
-        <div class="footer-copyright">
-          <div>2084096, 2084097, 2084098, 2084099, 2084100, 2084101</div>
-        </div>
-      </footer>
+
+    </div>
+
+    <footer class="page-footer pink lighten-3"> <!-- footer; appears on every page -->
+
+      <p>
+        made with <a class="grey-text text-lighten-4" href="http://materializecss.com/" target="_blank">
+        Materialize v0.97.2</a></li> and <a class="grey-text text-lighten-4" href="http://jquery.com/" target="_blank">
+        jQuery</a></li>
+        <br>
+        body font: <a class="grey-text text-lighten-4" href="https://www.google.com/fonts/specimen/Raleway" target="_blank">
+        Raleway</a></li>
+      </p>
+
+      <div class="footer-copyright">
+        <div>2084096, 2084097, 2084098, 2084099, 2084100, 2084101</div>
+      </div>
+
+    </footer>
+
   </body>
 
 </html>
