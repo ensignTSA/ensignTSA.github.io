@@ -1,4 +1,4 @@
-# USAGE
+# USAGE 
 # python compare.py
 
 # import the necessary packages
