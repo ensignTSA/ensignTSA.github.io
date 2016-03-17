@@ -12,12 +12,18 @@ from bottle import static_file,route,run,request
 @route('/')
 def loadIndex():
     return static_file('index.html', root='./') #sets up web page
+    
 @route('/<filename:re:.*\..*>')#matches files
 def sendWebFile(filename):
     return static_file(filename, root='./')
+    
 @route('/runScript',method = "POST")
 def script():
     execfile('comparetest.py')
+
+@route('/<fn:path>')
+def index(fn='index.html'):
+    return bottle.static_file(fn, root='./static')
 
 
 def application(environ, start_response):
