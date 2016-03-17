@@ -1,7 +1,17 @@
 # Detailed explanation at http://hitesh.in/2011/running-a-bottle-py-app-on-dreamhost/
 
 #1. Add current directory to path, if isn't already 
-import os, sys, cv2, bottle, time
+from skimage.measure import structural_similarity as ssim
+import matplotlib.pyplot as plt
+import numpy as np
+import cv2
+import os
+import math
+import time
+import random
+import os, sys
+import bottle
+from PIL import Image
 cmd_folder = os.path.dirname(os.path.abspath(__file__))
 if cmd_folder not in sys.path:
     sys.path.insert(0, cmd_folder)
