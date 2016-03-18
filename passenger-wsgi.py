@@ -34,7 +34,7 @@ def script():
     comparetest.practice()
 
 
-@route('/learnScript/<letter>',method="POST")
+@route('/learnScript/<letter>')
 def scropt(letter):
     import comparetest
     comparetest.learn(letter)
