@@ -1,14 +1,7 @@
 # Detailed explanation at http://hitesh.in/2011/running-a-bottle-py-app-on-dreamhost/
 
 #1. Add current directory to path, if isn't already 
-from skimage.measure import structural_similarity as ssim
-import matplotlib.pyplot as plt
-import numpy as np
-import cv2
-import os
-import math
-import time
-import random
+
 import os, sys
 import bottle
 
