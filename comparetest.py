@@ -1,8 +1,8 @@
-# USAGE 
+# USAGE
 # python compare.py
 
 # import the necessary packages
-from skimage.measure import structural_similarity as ssim
+#from skimage.measure import structural_similarity as ssim
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2
@@ -12,21 +12,12 @@ import time
 from PIL import Image
 import random
 
-def Aneesh():
+def read_letter():
     cap = cv2.VideoCapture(0)
     t_end = time.time() + 3
     while time.time() < t_end:
         ret, img = cap.read()
         cv2.rectangle(img,(300,300),(100,100),(0,255,0),0)
-        crop_img = img[100:300, 100:300]
-        grey = cv2.cvtColor(crop_img, cv2.COLOR_BGR2GRAY)
-        value = (35, 35)
-        blurred = cv2.GaussianBlur(grey, value, 0)
-        _, thresh1 = cv2.threshold(blurred, 127, 255,
-                                cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
-        cv2.imshow('Thresholded', thresh1)
-    
-
         cv2.imshow('Gesture', img)
         k = cv2.waitKey(10)
         if k == 27:
@@ -40,9 +31,7 @@ def Aneesh():
     blurred = cv2.GaussianBlur(grey, value, 0)
     _, thresh1 = cv2.threshold(blurred, 127, 255,
                         cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
-    cv2.imshow('Thresholded', thresh1)
     cv2.imshow('Gesture', img)
-    
     im = Image.fromarray(thresh1)
     im.save("user.jpeg")
     
@@ -90,26 +79,29 @@ def compare(input_letter):
     
     if match==True:
         cap = cv2.VideoCapture(0)
-        t_end = time.time() + 2
+        t_end = time.time() + 1
         while time.time() < t_end:
             ret, img = cap.read()
             cv2.rectangle(img,(300,300),(100,100),(0,255,0),0)
-            cv2.putText(img,"Correct!!", (50,50), cv2.FONT_HERSHEY_SIMPLEX, 2, 2)
+            cv2.putText(img,"Correct!!", (100,75), cv2.FONT_HERSHEY_SIMPLEX, 2, (0,255,0),2)
             cv2.imshow('Gesture', img)
             k = cv2.waitKey(10)
             if k == 27:
                 break
     else:
         cap = cv2.VideoCapture(0)
-        t_end = time.time() + 2
+        t_end = time.time() + 1
         while time.time() < t_end:
             ret, img = cap.read()
             cv2.rectangle(img,(300,300),(100,100),(0,255,0),0)
-            cv2.putText(img,"Wrong!!", (50,50), cv2.FONT_HERSHEY_SIMPLEX, 2, 2)
+            cv2.putText(img,"Wrong, Try Again ", (100,75), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 255),2)
             cv2.imshow('Gesture', img)
             k = cv2.waitKey(10)
             if k == 27:
                 break
+        read_letter()
+        compare(input_letter.upper())
+        
                 
 def give_letter(input_letter):
     cap = cv2.VideoCapture(0)
@@ -117,24 +109,33 @@ def give_letter(input_letter):
     while time.time() < t_end:
         ret, img = cap.read()
         cv2.rectangle(img,(300,300),(100,100),(0,255,0),0)
-        out_statement = str("Please make "+input_letter)
-        cv2.putText(img,out_statement, (100,75), cv2.FONT_HERSHEY_SIMPLEX, 2, 6,2)
+        out_statement = str("Please make the letter "+input_letter)
+        cv2.putText(img,out_statement, (25,75), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255),2)
         cv2.imshow('Gesture', img)
         k = cv2.waitKey(10)
         if k == 27:
             break
-
-letters=[]
-rootdir = 'test'
-for subdir, dirs, files in os.walk(rootdir):
-        for file in files:
-            file_name = os.path.join(subdir, file)
-            letters.append(file_name)
-
-
-for i in range(5):
-    input_letter = random.choice(letters)
-    input_letter = str(input_letter[5])
+            
+def practice():
+    letters=[]
+    rootdir = 'test'
+    for subdir, dirs, files in os.walk(rootdir):
+            for file in files:
+                file_name = os.path.join(subdir, file)
+                letters.append(file_name)
+    
+    
+    for i in range(5):
+        input_letter = random.choice(letters)
+        input_letter = str(input_letter[5])
+        give_letter(input_letter)
+        read_letter()
+        compare(input_letter.upper())
+        
+def learn(input_letter):
     give_letter(input_letter)
-    Aneesh()
+    read_letter()
     compare(input_letter.upper())
+    
+
+learn("K")
