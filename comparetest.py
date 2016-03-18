@@ -137,5 +137,3 @@ def learn(input_letter):
     read_letter()
     compare(input_letter.upper())
     
-
-learn("K")

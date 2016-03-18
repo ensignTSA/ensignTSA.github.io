@@ -11,6 +11,7 @@ import time
 import random
 import os, sys
 import bottle
+
 from PIL import Image
 cmd_folder = os.path.dirname(os.path.abspath(__file__))
 if cmd_folder not in sys.path:
@@ -29,8 +30,15 @@ def sendWebFile(filename):
     
 @route('/runScript',method = "POST")
 def script():
-    execfile('comparetest.py')
+    import comparetest
+    comparetest.practice()
 
+
+@route('/learnScript/<letter>',method='POST')
+def scropt(letter):
+    import comparetest
+    comparetest.learn(letter)
+    
 @route('/<fn:path>')
 def index(fn='index.html'):
     return bottle.static_file(fn, root='./static')
