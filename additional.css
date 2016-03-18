@@ -21,6 +21,12 @@ html, body {
 a.btn {
   width: 76px; /* fixed width of 76 px (Materialize changes button width based on content length) */
 }
+.learn { /* for the 2 boxes on the 'Learn' and 'Practice' pages */
+  width: 550px;
+  height: 450px;
+  border: 1px dashed #f50057;
+  margin: 0 auto; /* forced centered hoirzontal alignment */
+}
 #translatebox:focus {
   border-bottom: 1px solid #f50057; /* setting border */
   -webkit-box-shadow: 0 1px 0 0 #f50057; /* for Safari browser */
