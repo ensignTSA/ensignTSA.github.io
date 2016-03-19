@@ -23,15 +23,21 @@ def sendWebFile(filename):
     
 @route('/runScript',method = "POST")
 def script():
-    import comparetest
-    comparetest.practice()
+    try:
+        import comparetest
+        comparetest.practice()
+    except:
+        return "You don't appear to have a webcamera. Click <a href = \"/#practice\">here</a> to go back"
 
 
 @route('/learnScript/<letter>')
 def scropt(letter):
-    import comparetest
-    comparetest.learn(letter)
-    
+    try:
+        import comparetest
+        comparetest.learn(letter)
+    except:
+        return "You don't appear to have a webcamera. Click <a href = \"/#learn\">here</a> to go back"
+
 @route('/<fn:path>')
 def index(fn='index.html'):
     return bottle.static_file(fn, root='./static')
