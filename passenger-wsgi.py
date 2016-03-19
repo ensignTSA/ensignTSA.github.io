@@ -27,7 +27,7 @@ def script():
         import comparetest
         comparetest.practice()
     except:
-        return "You don't appear to have a webcamera. Click <a href = \"/#practice\">here</a> to go back"
+        return "You don't appear to have a webcamera. Click <a href = \"/#practice\">here</a> to go back."
 
 
 @route('/learnScript/<letter>')
@@ -36,7 +36,7 @@ def scropt(letter):
         import comparetest
         comparetest.learn(letter)
     except:
-        return "You don't appear to have a webcamera. Click <a href = \"/#learn\">here</a> to go back"
+        return "You don't appear to have a webcamera. Click <a href = \"/#learn\">here</a> to go back."
 
 @route('/<fn:path>')
 def index(fn='index.html'):
