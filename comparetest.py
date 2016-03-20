@@ -9,6 +9,7 @@ import math
 import time
 from PIL import Image
 import random
+import sys
 import string
 
 #open camera window and detect sign made
@@ -28,6 +29,8 @@ def read_letter(input_letter):
        #Necessary wait key for image to appear
        k = cv2.waitKey(10)
        if k == 27:
+           cv2.destroyAllWindows()
+           sys.exit()
            break
    #After user has had time to make sign, read final camera image
    ret, img = cap.read()
@@ -107,6 +110,8 @@ def compare(input_letter):
            #Add necessary wait key for image to appear
            k = cv2.waitKey(10)
            if k == 27:
+               cv2.destroyAllWindows()
+               sys.exit()
                break
    else:
        cap = cv2.VideoCapture(0)
@@ -121,6 +126,8 @@ def compare(input_letter):
            #Add necessary wait key
            k = cv2.waitKey(10)
            if k == 27:
+               cv2.destroyAllWindows()
+               sys.exit()
                break
        #Rerun read and compare functions on same input letter
        #until the user gets sign correct
@@ -147,5 +154,4 @@ def learn(input_letter):
     while 1==1:
         read_letter(input_letter)
         compare(input_letter.upper())
-   
-learn("H")
+
