@@ -79,7 +79,7 @@ def compare(input_letter):
     
    #Find range of MSE values and lowest 20% of MSE values
    MSE_range = max(MSE.values()) - min(MSE.values())
-   lowest_percent = MSE_range/5
+   lowest_percent = MSE_range/4
    #MSE value at 20th percentile
    lowest_percent_limit = min(MSE.values()) + (lowest_percent)
    
@@ -116,7 +116,7 @@ def compare(input_letter):
            ret, img = cap.read()
            cv2.rectangle(img,(300,300),(100,100),(255,255,255),0)
            #Display incorrect text in red letters
-           cv2.putText(img,"Wrong; try again.", (100,75), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255),2)
+           cv2.putText(img,"Wrong; Try Again.", (100,75), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255),2)
            cv2.imshow('Sign', img)
            #Add necessary wait key
            k = cv2.waitKey(10)
@@ -131,9 +131,9 @@ def compare(input_letter):
 #practice tab   
 def practice():
     #All possible signs for user to make
-    alphanumerical=["0","1","2","3","4","5","6","7","8","9",'A',
-    'B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S',
-    'T','U','V','W','X','Y','Z']
+    alphanumerical=["1","2","4","5","6","7","8","9",'A',
+    'B','C','D','E','F','G','I','K','P','R','S',
+    'T','U','V','W','Y','Z']
     #call necessary functions 36 times
     for i in range(36):
        input_letter = random.choice(alphanumerical)
@@ -141,9 +141,11 @@ def practice():
        alphanumerical.remove(input_letter)
        read_letter(input_letter)
        compare(input_letter.upper())
+       
 #run functions with input letter from learn tab
 def learn(input_letter):
-   read_letter(input_letter)
-   compare(input_letter.upper())
+    while 1==1:
+        read_letter(input_letter)
+        compare(input_letter.upper())
    
-practice()
+learn("H")
