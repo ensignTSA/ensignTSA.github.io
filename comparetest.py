@@ -116,7 +116,7 @@ def compare(input_letter):
            ret, img = cap.read()
            cv2.rectangle(img,(300,300),(100,100),(255,255,255),0)
            #Display incorrect text in red letters
-           cv2.putText(img,"Wrong; Try Again.", (100,75), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255),2)
+           cv2.putText(img,"Wrong; try again.", (100,75), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255),2)
            cv2.imshow('Sign', img)
            #Add necessary wait key
            k = cv2.waitKey(10)
