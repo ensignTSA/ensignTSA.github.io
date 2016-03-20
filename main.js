@@ -20,7 +20,7 @@ $(document).ready(function(){ // on page load
 
   $('button').click(function(event){ // if a button defined with <button></button> tags is clicked
 
-    if ($(event.target).attr('class') === "btn waves-effect waves-light indigo") { // double checking that it is the 'Translate' button on the 'Translate' page
+    if ($(event.target).attr('id') === "translate") { // double checking that it is the 'Translate' button on the 'Translate' page
       translateimg.innerHTML = ""; // clear displayed images first
       var chars = translatebox.value.toUpperCase().replace(/\s+/g, ''); // take input from input box, convert all letters to uppercase, remove all whitespace
       if (chars.match(/^[a-zA-Z0-9]+$/i)) { // if input string consists only of alphanumeric characters
