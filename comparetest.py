@@ -37,7 +37,7 @@ def read_letter():
     
     
         
-def compare(input_letter):
+def compare(input_letter, mode):
     def mse(imageA, imageB):
             # the 'Mean Squared Error' between the two images is the
             # sum of the squared difference between the two images;
@@ -88,6 +88,9 @@ def compare(input_letter):
             k = cv2.waitKey(10)
             if k == 27:
                 break
+        if mode == "learn":
+            read_letter()
+            compare(input_letter.upper(), "learn")
     else:
         cap = cv2.VideoCapture(0)
         t_end = time.time() + 1
@@ -100,7 +103,10 @@ def compare(input_letter):
             if k == 27:
                 break
         read_letter()
-        compare(input_letter.upper())
+        if mode == "learn":
+            compare(input_letter.upper(), "learn")
+        else:
+            compare(input_letter.upper(), "practice")
         
                 
 def give_letter(input_letter):
@@ -125,15 +131,16 @@ def practice():
                 letters.append(file_name)
     
     
-    for i in range(5):
+    while True:
         input_letter = random.choice(letters)
         input_letter = str(input_letter[5])
         give_letter(input_letter)
         read_letter()
-        compare(input_letter.upper())
+        compare(input_letter.upper(), "practice")
         
 def learn(input_letter):
     give_letter(input_letter)
     read_letter()
-    compare(input_letter.upper())
+    compare(input_letter.upper(), "learn")
     
+practice()
