@@ -157,5 +157,3 @@ def learn(input_letter):
     while 1==1:
         read_letter(input_letter)
         compare(input_letter.upper())
-        
-practice()
