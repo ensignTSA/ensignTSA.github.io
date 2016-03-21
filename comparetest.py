@@ -11,6 +11,8 @@ from PIL import Image
 import random
 import sys
 import string
+import win32api
+
 
 #open camera window and detect sign made
 def read_letter(input_letter):
@@ -25,8 +27,12 @@ def read_letter(input_letter):
        out_statement = str("Please make the sign "+input_letter+".")
        cv2.putText(img,out_statement, (25,75), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (255, 255, 255),2)
        #Display camera window
-       cv2.imshow('Sign', img)
-       #Necessary wait key for image to appear
+       try:
+           cv2.imshow('Sign', img)
+       except:
+           win32api.MessageBox(0,"","You don't appear to have a webcamera.")
+           sys.exit()
+        #Necessary wait key for image to appear
        k = cv2.waitKey(10)
        if k == 27:
            cv2.destroyAllWindows()
@@ -46,7 +52,11 @@ def read_letter(input_letter):
    #to detect important structures and disregard background
    _, thresh1 = cv2.threshold(blurred, 127, 255,
                        cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
-   cv2.imshow('Sign', img)
+   try:
+       cv2.imshow('Sign', img)
+   except:
+       win32api.MessageBox(0,"","You don't appear to have a webcamera.")
+       sys.exit()
    #save cropped image in root folder
    im = Image.fromarray(thresh1)
    im.save("user.jpeg")
@@ -106,7 +116,11 @@ def compare(input_letter):
            cv2.rectangle(img,(300,300),(100,100),(255,255,255),0)
            #Add "Correct" in green text
            cv2.putText(img,"Correct.", (100,75), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0,255,0),2)
-           cv2.imshow('Sign', img)
+           try:
+              cv2.imshow('Sign', img)
+           except:
+              win32api.MessageBox(0,"","You don't appear to have a webcamera.")
+              sys.exit()
            #Add necessary wait key for image to appear
            k = cv2.waitKey(10)
            if k == 27:
@@ -122,7 +136,11 @@ def compare(input_letter):
            cv2.rectangle(img,(300,300),(100,100),(255,255,255),0)
            #Display incorrect text in red letters
            cv2.putText(img,"Wrong; Try Again.", (100,75), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255),2)
-           cv2.imshow('Sign', img)
+           try:
+               cv2.imshow('Sign', img)
+           except:
+               win32api.MessageBox(0,"","You don't appear to have a webcamera.")
+               sys.exit()
            #Add necessary wait key
            k = cv2.waitKey(10)
            if k == 27:

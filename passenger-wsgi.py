@@ -1,7 +1,7 @@
 # Detailed explanation at http://hitesh.in/2011/running-a-bottle-py-app-on-dreamhost/
 
 #1. Add current directory to path, if isn't already 
-
+from urllib2 import HTTPError
 import os, sys
 import bottle
 
@@ -10,7 +10,7 @@ cmd_folder = os.path.dirname(os.path.abspath(__file__))
 if cmd_folder not in sys.path:
     sys.path.insert(0, cmd_folder)
 
-from bottle import static_file,route,run,request
+from bottle import static_file,route,run,request,redirect
 
 #2. Define needed routes here	
 @route('/')
@@ -27,7 +27,8 @@ def script():
         import comparetest
         comparetest.practice()
     except:
-        return "You don't appear to have a webcamera. Click <a href = \"/#practice\">here</a> to go back."
+        print "hi"
+        redirect('http://localhost:8080/#practice')
 
 
 @route('/learnScript/<letter>')
@@ -36,7 +37,8 @@ def scropt(letter):
         import comparetest
         comparetest.learn(letter)
     except:
-        return "You don't appear to have a webcamera. Click <a href = \"/#learn\">here</a> to go back."
+        
+        redirect('http://localhost:8080/#learn')
 
 @route('/<fn:path>')
 def index(fn='index.html'):
