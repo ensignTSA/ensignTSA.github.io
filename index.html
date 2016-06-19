@@ -14,7 +14,7 @@
     <title>ensign</title>
 
 	<script>
-	function loading()
+function loading()
 {
  var video = document.querySelector('#forVid');
  navigator.getUserMedia = navigator.getUserMedia ||navigator.webkitGetUserMedia || navigator.mozGetUserMedia ||navigator.msGetUserMedia || navigator.oGetUserMedia;//sets up getUserMedia
@@ -132,9 +132,10 @@ function submitImage()
           <div class="row"> <!-- bottom spacing -->
           </div>
         </div>
-
+		
         <div id="learn" class="col s12"> <!-- 'Learn' tab -->
           <br><br> <!-- top spacing -->
+		  <form method="POST" action="/runScript">
           <div class="row"> <!-- first row of buttons -->
             <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="A" href = "/learnScript/A">A</a></div>
             <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="B" href = "/learnScript/B">B</a></div>
@@ -184,7 +185,7 @@ function submitImage()
               <img src="pngs edited/A.PNG" width="450px" height="450px">
             </div>
             <div class="col s6">
-              <form method="POST" action="/runScript" class="learn">
+              
                 <br><br><br><br> <!-- forcing middle vertical alignment manually -->
                  <!--<div>You will need a webcam feed in order for the computer to</div> 
                 <div>recognize your gestures so that you can begin learning ASL.</div>
@@ -208,12 +209,15 @@ function submitImage()
 				</div>
 				
 				<canvas id="canvas" />
-              </form>
+              
             </div>
           </div>
+		  </form>
           <div class="row"> <!-- bottom spacing -->
           </div>
+		  
         </div>
+		
 
         <div id="practice" class="col s12"> <!-- 'Practice' tab -->
           <br><br> <!-- top spacing -->
