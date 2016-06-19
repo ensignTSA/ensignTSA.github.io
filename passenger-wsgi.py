@@ -45,6 +45,18 @@ def index(fn='index.html'):
     return bottle.static_file(fn, root='./static')
 
 
+@route('/process_file',method = "POST") #processes images, sending them to temp directory
+def process_file():
+    f = open("temp.png",'wb')#opens temp for editing
+
+    body=request.body.read();
+    body=body.replace('imgData=data:image/jpeg;base64,','');#replaces temp with the image captured by JavaScript
+
+    body=body.decode('base64')
+    f.write(body);
+    f.close();#saves temp
+    return "Thanks" #sets up web page
+    
 def application(environ, start_response):
     return bottle.default_app().wsgi(environ,start_response)
 

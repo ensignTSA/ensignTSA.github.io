@@ -135,9 +135,9 @@ function submitImage()
 		
         <div id="learn" class="col s12"> <!-- 'Learn' tab -->
           <br><br> <!-- top spacing -->
-		  <form method="POST" action="/runScript">
+		  <form method="POST" onsubmit = "submitImage();">
           <div class="row"> <!-- first row of buttons -->
-			<div name="A" id="A" class="col s1" onclick="javascript:document.forms[0].submit();"><a class = "waves-effect waves-light btn pink accent-3">A</a></div>
+			<div name="A" id="A" class="col s1" onclick="submitImage();"><a class = "waves-effect waves-light btn pink accent-3">A</a></div>
             
             <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="B" href = "/learnScript/B">B</a></div>
             <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="C" href = "/learnScript/C">C</a></div>
