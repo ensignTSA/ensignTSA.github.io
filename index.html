@@ -13,9 +13,62 @@
     <script src="main.js" type="text/javascript"></script> <!-- additional JS hard-coded by team -->
     <title>ensign</title>
 
+	<script>
+	function loading()
+{
+ var video = document.querySelector('#forVid');
+ navigator.getUserMedia = navigator.getUserMedia ||navigator.webkitGetUserMedia || navigator.mozGetUserMedia ||navigator.msGetUserMedia || navigator.oGetUserMedia;//sets up getUserMedia
+
+
+   if (navigator.getUserMedia)
+   {
+     var thevid = {video: true, audio: false};
+     navigator.getUserMedia(thevid, handleVideo, forError)//sets up video input
+   }
+
+
+function handleVideo(localmediastream)
+   {
+     video.src = window.URL.createObjectURL(localmediastream);//gets video from webcam
+   }
+
+function forError(e)
+    {
+        // mandatory error handler
+    }
+
+}
+function submitImage()
+{
+	canvas = document.getElementById('canvas');//gets canvas
+	video= document.getElementById('forVid');//gets video
+	canvas.style.display="none";
+	canvas.width=video.width;//determines canvas width
+	canvas.height=video.height;//determines canvas height
+	var context = canvas.getContext('2d');//gets context from canvas
+	context.clearRect(0, 0, canvas.width, canvas.height); //handles dimensions
+
+	context.fillStyle = "#FFFFFF";//default image is white square
+ 	context.fillRect(0,0,canvas.width,canvas.height); //handles canvas dimensions
+
+	context.drawImage(video, 0, 0, canvas.width,canvas.height );//gets picture from canvas
+
+	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
+
+	var ajax = new XMLHttpRequest();
+	ajax.open("POST",'http://localhost:8080/process_file',false);//opens POST request with server
+	ajax.onreadystatechange = function() {
+        console.log(ajax.responseText);
+    }
+    ajax.setRequestHeader('Content-Type', 'application/upload');//sets up POST request
+    ajax.send("imgData="+data);//sends data to server
+   console.log(data.length);//logs length of data to console, used for debugging
+	
+}
+	</script>
   </head>
   
-  <body>
+  <body onload = "loading();">
 
     <nav class="top-nav indigo"> <!-- header; appears on every page -->
       <div class="nav-wrapper">
@@ -123,7 +176,7 @@
             <div class="col s1"><a class="waves-effect waves-light btn indigo" id="7" href = "/learnScript/7">7</a></div>
             <div class="col s1"><a class="waves-effect waves-light btn indigo" id="8" href = "/learnScript/8">8</a></div>
             <div class="col s1"><a class="waves-effect waves-light btn indigo" id="9" href = "/learnScript/9">9</a></div>
-
+		
           </div>
           <br><br> <!-- spacing between buttons and picture / camera box -->
           <div class="row">
@@ -133,7 +186,7 @@
             <div class="col s6">
               <form method="POST" action="/runScript" class="learn">
                 <br><br><br><br> <!-- forcing middle vertical alignment manually -->
-                <div>You will need a webcam feed in order for the computer to</div> <!-- instructions to user -->
+                 <!--<div>You will need a webcam feed in order for the computer to</div> 
                 <div>recognize your gestures so that you can begin learning ASL.</div>
                 <br>
                 <div>Please click the button below to open the webcam feed.</div>
@@ -146,9 +199,15 @@
                 <div></div>
                 <br><br>
                 <!-- 'Learn' button triggers the Python program that lets the user learn the various signs -->
-                <button class="btn waves-effect waves-light indigo" type="submit" name="submit">Learn
+                <!--<button class="btn waves-effect waves-light indigo" type="submit" name="submit">Learn
                   <i class="material-icons right">send</i>
-                </button>
+                </button>-->
+				
+				<div class="camera"><!--getUsermedia frame goes here-->
+				<video id = "forVid"  autoplay="true" height="300" width="300"></video>
+				</div>
+				
+				<canvas id="canvas" />
               </form>
             </div>
           </div>
