@@ -40,6 +40,7 @@ function forError(e)
 }
 function submitImage()
 {
+	
 	canvas = document.getElementById('canvas');//gets canvas
 	video= document.getElementById('forVid');//gets video
 	canvas.style.display="none";
@@ -54,7 +55,7 @@ function submitImage()
 	context.drawImage(video, 0, 0, canvas.width,canvas.height );//gets picture from canvas
 
 	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
-
+	setTimeout(function(){
 	var ajax = new XMLHttpRequest();
 	ajax.open("POST",'http://localhost:8080/process_file',false);//opens POST request with server
 	ajax.onreadystatechange = function() {
@@ -63,6 +64,7 @@ function submitImage()
     ajax.setRequestHeader('Content-Type', 'application/upload');//sets up POST request
     ajax.send("imgData="+data);//sends data to server
    console.log(data.length);//logs length of data to console, used for debugging
+   },5000);
 	
 }
 	</script>
