@@ -40,6 +40,17 @@ function forError(e)
 }
 function submitImage(letter)
 {
+	function readBody(xhr) {
+    var data;
+    if (!xhr.responseType || xhr.responseType === "text") {
+        data = xhr.responseText;
+    } else if (xhr.responseType === "document") {
+        data = xhr.responseXML;
+    } else {
+        data = xhr.response;
+    }
+    return data;
+	}
 	
 	canvas = document.getElementById('canvas');//gets canvas
 	video= document.getElementById('forVid');//gets video
@@ -59,15 +70,17 @@ function submitImage(letter)
 	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
 	setTimeout(function(){
 	var ajax = new XMLHttpRequest();
-	ajax.open("POST",'http://localhost:8080/process_file',false);//opens POST request with server
+	ajax.open("POST",'http://localhost:8080/process_file',false);//opens POST request with server; false means it is SYNCHRONOUS!!!!!!!!
 	ajax.onreadystatechange = function() {
         console.log(ajax.responseText);
     }
     ajax.setRequestHeader('Content-Type', 'application/upload');//sets up POST request
     ajax.send(letter+"imgData="+data);//sends data to server
    console.log(data.length);//logs length of data to console, used for debugging
+   console.log(readBody(ajax));
    },5000);
-	
+   
+
 }
 	</script>
   </head>

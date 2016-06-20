@@ -59,9 +59,9 @@ def process_file():
     f.write(body);
     f.close();#saves temp
     if(comparetest.compare(letter)):
-        return "Thanks, true" #sets up web page
+        return "Correct!" #sets up web page
     else:
-        return "Thanks, false"
+        return "Incorrect!"
     
 def application(environ, start_response):
     return bottle.default_app().wsgi(environ,start_response)
