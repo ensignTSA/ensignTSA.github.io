@@ -4,6 +4,7 @@
 from urllib2 import HTTPError
 import os, sys
 import bottle
+import comparetest
 
 from PIL import Image
 cmd_folder = os.path.dirname(os.path.abspath(__file__))
@@ -57,7 +58,10 @@ def process_file():
     body=body.decode('base64')
     f.write(body);
     f.close();#saves temp
-    return "Thanks" #sets up web page
+    if(comparetest.compare(letter)):
+        return "Thanks, true" #sets up web page
+    else:
+        return "Thanks, false"
     
 def application(environ, start_response):
     return bottle.default_app().wsgi(environ,start_response)
