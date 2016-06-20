@@ -43,6 +43,8 @@ function submitImage(letter)
 	
 	canvas = document.getElementById('canvas');//gets canvas
 	video= document.getElementById('forVid');//gets video
+	console.log(video.width);
+	console.log(video.height);
 	canvas.style.display="none";
 	canvas.width=video.width;//determines canvas width
 	canvas.height=video.height;//determines canvas height
@@ -207,7 +209,7 @@ function submitImage(letter)
                 </button>-->
 				
 				<div class="camera"><!--getUsermedia frame goes here-->
-				<video id = "forVid"  autoplay="true" height="300" width="300"></video>
+				<video id = "forVid"  autoplay="true" height="300px" width="300px"></video>
 				</div>
 				
 				<canvas id="canvas" />
