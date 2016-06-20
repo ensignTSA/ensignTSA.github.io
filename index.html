@@ -38,7 +38,7 @@ function forError(e)
     }
 
 }
-function submitImage()
+function submitImage(letter)
 {
 	
 	canvas = document.getElementById('canvas');//gets canvas
@@ -57,7 +57,7 @@ function submitImage()
 	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
 	setTimeout(function(){
 	var ajax = new XMLHttpRequest();
-	ajax.open("POST",'http://localhost:8080/process_file',false);//opens POST request with server
+	ajax.open("POST",'http://localhost:8080/process_file/'+letter,false);//opens POST request with server
 	ajax.onreadystatechange = function() {
         console.log(ajax.responseText);
     }
@@ -139,7 +139,7 @@ function submitImage()
           <br><br> <!-- top spacing -->
 		  <form method="POST" onsubmit = "submitImage();">
           <div class="row"> <!-- first row of buttons -->
-			<div name="A" id="A" class="col s1" onclick="submitImage();"><a class = "waves-effect waves-light btn pink accent-3">A</a></div>
+			<div name="A" id="A" class="col s1" onclick="submitImage('A');"><a class = "waves-effect waves-light btn pink accent-3">A</a></div>
             
             <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="B" href = "/learnScript/B">B</a></div>
             <div class="col s1"><a class="waves-effect waves-light btn pink accent-3" id="C" href = "/learnScript/C">C</a></div>

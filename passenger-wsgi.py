@@ -45,7 +45,7 @@ def index(fn='index.html'):
     return bottle.static_file(fn, root='./static')
 
 
-@route('/process_file',method = "POST") #processes images, sending them to temp directory
+@route('/process_file/A',method = "POST") #processes images, sending them to temp directory
 def process_file():
     f = open("temp.png",'wb')#opens temp for editing
 
