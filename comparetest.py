@@ -27,7 +27,7 @@ def compare(input_letter):
            return err
            
    #load saved uer image
-   user = cv2.imread("user.png",1)
+   user = cv2.imread("temp.png",1)
    user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
    rootdir = 'test'
             
