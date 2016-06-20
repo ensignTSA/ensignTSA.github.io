@@ -51,7 +51,7 @@ function submitImage(letter)
     }
     return data;
 	}
-	
+	responseDiv = document.getElementById('response');
 	canvas = document.getElementById('canvas');//gets canvas
 	video= document.getElementById('forVid');//gets video
 	console.log(video.width);
@@ -77,7 +77,7 @@ function submitImage(letter)
     ajax.setRequestHeader('Content-Type', 'application/upload');//sets up POST request
     ajax.send(letter+"imgData="+data);//sends data to server
    console.log(data.length);//logs length of data to console, used for debugging
-   console.log(readBody(ajax));
+   responseDiv.innerHTML=readBody(ajax);
    },5000);
    
 
@@ -202,7 +202,7 @@ function submitImage(letter)
               <img src="pngs edited/A.PNG" width="450px" height="450px">
             </div>
             <div class="col s6">
-              
+              <div id = "response"></div>
                 <br><br><br><br> <!-- forcing middle vertical alignment manually -->
                  <!--<div>You will need a webcam feed in order for the computer to</div> 
                 <div>recognize your gestures so that you can begin learning ASL.</div>
