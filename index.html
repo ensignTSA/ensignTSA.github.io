@@ -288,9 +288,27 @@ function submitImage(letter)
 				
 				<br/>
 				
-              <button class="btn waves-effect waves-light indigo" onclick="submitImage('Practice');">Practice
+              <button class="btn waves-effect waves-light indigo" onclick="startCount();">Practice
                 <i class="material-icons right">send</i>
               </button>
+			  <br/>
+			  <br/>
+			  <button class="btn waves-effect waves-light indigo" onclick="stopCount();">End Practice
+                <i class="material-icons right">send</i>
+              </button>
+			  <script>
+			  var IntervalID;
+			  function startCount(){
+			  submitImage('Practice');IntervalID = setInterval(submitImage,7000,'Practice');
+			  }
+			  function stopCount(){
+			  clearInterval(IntervalID);
+			  //letterdiv = document.getElementById('letterdiv');
+			  //letterdiv.innerHTML = '';
+			  //response2 = document.getElementById('response2');
+			  //response2.innerHTML = '';
+			  }
+			  </script>
             
           </div>
           <div class="row"> <!-- bottom spacing -->
