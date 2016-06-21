@@ -107,7 +107,12 @@ function submitImage(letter)
         console.log(ajax.responseText);
     }
     ajax.setRequestHeader('Content-Type', 'application/upload');//sets up POST request
+	if(letter=="Practice"){
+	ajax.send(rand+"imgData="+data);
+	}
+	else{
     ajax.send(letter+"imgData="+data);//sends data to server
+	}
    console.log(data.length);//logs length of data to console, used for debugging
    responseDiv.innerHTML=readBody(ajax);
    },5000);
