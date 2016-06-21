@@ -11,7 +11,6 @@ from PIL import Image
 import random
 import sys
 import string
-import win32api
 
 
 #compare user image and saves test images
