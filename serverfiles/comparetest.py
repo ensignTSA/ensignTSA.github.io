@@ -34,7 +34,7 @@ def compare(input_letter):
    #For each test file, add to the MSE dictionary
    #Key: file name
    #Value:MSE between test image and user image
-   for subdir, dirs, files in os.walk(rootdir):
+   for subdir, dirs, files in os.walk('public/test'):
        for file in files:
            file_name = os.path.join(subdir, file)
            imageB = cv2.imread(file_name)
