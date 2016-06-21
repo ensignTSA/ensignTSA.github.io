@@ -14,9 +14,9 @@
     <title>ensign</title>
 
 	<script>
-function loading()
+function loading(querySelector)
 {
- var video = document.querySelector('#forVid');
+ var video = document.querySelector(querySelector);
  navigator.getUserMedia = navigator.getUserMedia ||navigator.webkitGetUserMedia || navigator.mozGetUserMedia ||navigator.msGetUserMedia || navigator.oGetUserMedia;//sets up getUserMedia
 
 
@@ -40,6 +40,9 @@ function forError(e)
 }
 function submitImage(letter)
 {
+	var alphaNumericArray = ["0","1","2","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']
+	var rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
+	
 	function readBody(xhr) {
     var data;
     if (!xhr.responseType || xhr.responseType === "text") {
@@ -51,7 +54,15 @@ function submitImage(letter)
     }
     return data;
 	}
-	responseDiv = document.getElementById('response');
+	if(letter=="Practice")
+	{
+		responseDiv = document.getElementById('response2');
+		letterdiv=document.getElementById('letterdiv');
+	}
+	else
+	{
+		responseDiv = document.getElementById('response');
+	}
 	canvas = document.getElementById('canvas');//gets canvas
 	video= document.getElementById('forVid');//gets video
 	console.log(video.width);
@@ -69,7 +80,10 @@ function submitImage(letter)
 
 	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
 	responseDiv.innerHTML = '1';
-	
+	if(letter=="Practice")
+	{
+		letterdiv.innerHTML=('Please make the character ' + rand);
+	}
 	setTimeout(function(){
 	responseDiv.innerHTML = '2';
 	},1000);
@@ -93,7 +107,12 @@ function submitImage(letter)
         console.log(ajax.responseText);
     }
     ajax.setRequestHeader('Content-Type', 'application/upload');//sets up POST request
+	if(letter=="Practice"){
+	ajax.send(rand+"imgData="+data);
+	}
+	else{
     ajax.send(letter+"imgData="+data);//sends data to server
+	}
    console.log(data.length);//logs length of data to console, used for debugging
    responseDiv.innerHTML=readBody(ajax);
    },5000);
@@ -103,7 +122,7 @@ function submitImage(letter)
 	</script>
   </head>
   
-  <body onload = "loading();">
+  <body onload = "loading('#forVid');loading('#forVid2');">
 
     <nav class="top-nav indigo"> <!-- header; appears on every page -->
       <div class="nav-wrapper">
@@ -219,6 +238,7 @@ function submitImage(letter)
               <img src="pngs edited/A.PNG" width="450px" height="450px">
             </div>
             <div class="col s6">
+				
               <div id = "response"></div>
                 <br><br><br><br> <!-- forcing middle vertical alignment manually -->
                  <!--<div>You will need a webcam feed in order for the computer to</div> 
@@ -242,7 +262,7 @@ function submitImage(letter)
 				<video id = "forVid"  autoplay="true" height="200px" width="200px"></video>
 				</div>
 				
-				<canvas id="canvas" />
+				<canvas id="canvas"></canvas>
               
             </div>
           </div>
@@ -256,24 +276,22 @@ function submitImage(letter)
         <div id="practice" class="col s12"> <!-- 'Practice' tab -->
           <br><br> <!-- top spacing -->
           <div class="row">
-            <form method="POST" action="/runScript" class="learn"> <!-- virtually the same the same as the box on the 'Learn' page -->
-              <br><br><br><br> <!-- forcing middle vertical alignment manually -->
-              <div>You will need a webcam feed in order for the computer to</div> <!-- instructions to user -->
-              <div>recognize your gestures so that you can begin learning ASL.</div>
-              <br>
-              <div>Please click the button below to open the webcam feed.</div>
-              <br>
-              <div>It is recommended that you resize the feed</div>
-              <div>window to fit within the contours of this box.</div>
-              <br>
-              <div>It is also recommended that your hand take up as much</div>
-              <div>of the white outlined box in the webcam feed as possible.</div>
-              <br><br>
-              <!-- 'Practice' button triggers the Python program for quizzing the user -->
-              <button class="btn waves-effect waves-light indigo" type="submit" name="submit">Practice
+             <!-- virtually the same the same as the box on the 'Learn' page -->
+              <!-- forcing middle vertical alignment manually -->
+				<div id = "letterdiv"></div>
+				<div id = "response2"></div>
+			  	<div class="camera"><!--getUsermedia frame goes here-->
+				<video id = "forVid2"  autoplay="true" height="200px" width="200px"></video>
+				</div>
+				
+				<canvas id="canvas"></canvas>
+				
+				<br/>
+				
+              <button class="btn waves-effect waves-light indigo" onclick="submitImage('Practice');">Practice
                 <i class="material-icons right">send</i>
               </button>
-            </form>
+            
           </div>
           <div class="row"> <!-- bottom spacing -->
           </div>
