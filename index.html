@@ -40,6 +40,9 @@ function forError(e)
 }
 function submitImage(letter)
 {
+	var alphaNumericArray = ["0","1","2","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']
+	var rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
+	
 	function readBody(xhr) {
     var data;
     if (!xhr.responseType || xhr.responseType === "text") {
@@ -54,6 +57,7 @@ function submitImage(letter)
 	if(letter=="Practice")
 	{
 		responseDiv = document.getElementById('response2');
+		letterdiv=document.getElementById('letterdiv');
 	}
 	else
 	{
@@ -76,7 +80,10 @@ function submitImage(letter)
 
 	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
 	responseDiv.innerHTML = '1';
-	
+	if(letter=="Practice")
+	{
+		letterdiv.innerHTML=('Please make the character ' + rand);
+	}
 	setTimeout(function(){
 	responseDiv.innerHTML = '2';
 	},1000);
@@ -226,6 +233,7 @@ function submitImage(letter)
               <img src="pngs edited/A.PNG" width="450px" height="450px">
             </div>
             <div class="col s6">
+				
               <div id = "response"></div>
                 <br><br><br><br> <!-- forcing middle vertical alignment manually -->
                  <!--<div>You will need a webcam feed in order for the computer to</div> 
@@ -265,6 +273,7 @@ function submitImage(letter)
           <div class="row">
              <!-- virtually the same the same as the box on the 'Learn' page -->
               <!-- forcing middle vertical alignment manually -->
+				<div id = "letterdiv"></div>
 				<div id = "response2"></div>
 			  	<div class="camera"><!--getUsermedia frame goes here-->
 				<video id = "forVid2"  autoplay="true" height="200px" width="200px"></video>
