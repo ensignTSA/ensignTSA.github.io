@@ -1,0 +1,41 @@
+html, body {
+  font-family: 'Raleway', sans-serif; /* use Raleway font */
+  text-align: center; /* center text */
+  height: 100%; /* content takes up entire page, at minimum */
+  width: 100%;
+  cursor: default; /* prevents the cursor from changing when hovering over text */
+}
+.content {
+  height: calc(100% - 264px); /* push content down because of header and navbar */
+}
+.top-nav {
+  height: 100px;
+}
+.title {
+  font-size: 50px;
+  line-height: 100px; /* forcing middle vertical alignment */
+}
+.navbar, .tabs, .tab {
+  overflow: hidden; /* force footer to bottom of page; prevent horizontal scrolling in the navbar (problem discovered on Macs) */
+}
+a.btn {
+  width: 76px; /* fixed width of 76 px (Materialize changes button width based on content length) */
+}
+.learn { /* for the 2 boxes on the 'Learn' and 'Practice' pages */
+  width: 550px;
+  height: 450px;
+  border: 1px dashed #f50057;
+  margin: 0 auto; /* forced centered hoirzontal alignment */
+}
+#translatebox:focus {
+  border-bottom: 1px solid #f50057; /* setting border */
+  -webkit-box-shadow: 0 1px 0 0 #f50057; /* for Safari browser */
+  -moz-box-shadow: 0 1px 0 0 #f50057; /* for Mozilla Firefox browser */
+  box-shadow: 0 1px 0 0 #f50057; /* changing default Materialize colors */
+}
+#translatebox:focus + label {
+  color: #f50057; /* changing default Materialize colors */
+}
+.input-field .prefix.active {
+  color: #f50057; /* changing default Materialize colors */
+}
