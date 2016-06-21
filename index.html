@@ -51,7 +51,14 @@ function submitImage(letter)
     }
     return data;
 	}
-	responseDiv = document.getElementById('response');
+	if(letter=="Practice")
+	{
+		responseDiv = document.getElementById('response2');
+	}
+	else
+	{
+		responseDiv = document.getElementById('response');
+	}
 	canvas = document.getElementById('canvas');//gets canvas
 	video= document.getElementById('forVid');//gets video
 	console.log(video.width);
@@ -239,7 +246,7 @@ function submitImage(letter)
                 </button>-->
 				
 				<div class="camera"><!--getUsermedia frame goes here-->
-				<video id = "forVid2"  autoplay="true" height="200px" width="200px"></video>
+				<video id = "forVid"  autoplay="true" height="200px" width="200px"></video>
 				</div>
 				
 				<canvas id="canvas"></canvas>
@@ -256,21 +263,21 @@ function submitImage(letter)
         <div id="practice" class="col s12"> <!-- 'Practice' tab -->
           <br><br> <!-- top spacing -->
           <div class="row">
-            <form class="learn"> <!-- virtually the same the same as the box on the 'Learn' page -->
+             <!-- virtually the same the same as the box on the 'Learn' page -->
               <!-- forcing middle vertical alignment manually -->
-              
+				<div id = "response2"></div>
 			  	<div class="camera"><!--getUsermedia frame goes here-->
-				<video id = "forVid"  autoplay="true" height="200px" width="200px"></video>
+				<video id = "forVid2"  autoplay="true" height="200px" width="200px"></video>
 				</div>
 				
 				<canvas id="canvas"></canvas>
 				
 				<br/>
 				
-              <button class="btn waves-effect waves-light indigo" type="submit" name="submit">Practice
+              <button class="btn waves-effect waves-light indigo" onclick="submitImage('Practice');">Practice
                 <i class="material-icons right">send</i>
               </button>
-            </form>
+            
           </div>
           <div class="row"> <!-- bottom spacing -->
           </div>
