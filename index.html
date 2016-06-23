@@ -19,12 +19,23 @@ function loading(querySelector)
  var video = document.querySelector(querySelector);
  navigator.getUserMedia = navigator.getUserMedia ||navigator.webkitGetUserMedia || navigator.mozGetUserMedia ||navigator.msGetUserMedia || navigator.oGetUserMedia;//sets up getUserMedia
 
+navigator.getUserMedia({video: true}, function() {
+//webcam available 
 
+}, function() {
+responseDiv1 = document.getElementById('response');
+responseDiv2 = document.getElementById('response2');
+responseDiv1.innerHTML = 'You need a webcam to use this feature. Please plug a webcam into your computer and refresh the page.';
+responseDiv2.innerHTML = 'You need a webcam to use this feature. Please plug a webcam into your computer and refresh the page.';
+
+//webcam not available
+});
    if (navigator.getUserMedia)
    {
      var thevid = {video: true, audio: false};
      navigator.getUserMedia(thevid, handleVideo, forError)//sets up video input
    }
+
 
 
 function handleVideo(localmediastream)
