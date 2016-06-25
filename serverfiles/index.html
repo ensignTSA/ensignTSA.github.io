@@ -82,15 +82,7 @@ function submitImage(letter)
 	canvas.style.display="none";
 	canvas.width=video.width;//determines canvas width
 	canvas.height=video.height;//determines canvas height
-	var context = canvas.getContext('2d');//gets context from canvas
-	context.clearRect(0, 0, canvas.width, canvas.height); //handles dimensions
 
-	context.fillStyle = "#FFFFFF";//default image is white square
- 	context.fillRect(0,0,canvas.width,canvas.height); //handles canvas dimensions
-
-	context.drawImage(video, 0, 0, canvas.width,canvas.height );//gets picture from canvas
-
-	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
 	responseDiv.innerHTML = '1';
 	if(letter=="Practice")
 	{
@@ -113,6 +105,15 @@ function submitImage(letter)
 	},4000);
 	
 	setTimeout(function(){
+	var context = canvas.getContext('2d');//gets context from canvas
+	context.clearRect(0, 0, canvas.width, canvas.height); //handles dimensions
+
+	context.fillStyle = "#FFFFFF";//default image is white square
+ 	context.fillRect(0,0,canvas.width,canvas.height); //handles canvas dimensions
+
+	context.drawImage(video, 0, 0, canvas.width,canvas.height );//gets picture from canvas
+
+	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
 	var ajax = new XMLHttpRequest();
 	ajax.open("POST",'https://ensign.hthswd.org:8085/process_file',false);//opens POST request with server; false means it is SYNCHRONOUS!!!!!!!!
 	ajax.onreadystatechange = function() {
