@@ -31,7 +31,7 @@ def compare(input_letter):
    user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
    
    user = cv2.GaussianBlur(user,(35,35),0)
-   #_, user = cv2.threshold(user,127,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
+   _, user = cv2.threshold(user,127,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
 
    rootdir = 'test'
    MSE={}
@@ -59,7 +59,7 @@ def compare(input_letter):
            #if that test image corresponds with desired letter
            if file_name[5]==input_letter:
                match=True
-   
+   print MSE
    return match
        #Rerun read and compare functions on same input letter
        #until the user gets sign correct
