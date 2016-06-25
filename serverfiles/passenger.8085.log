@@ -1,0 +1,1759 @@
+[ 2016-06-20 19:55:11.9593 8675/2b383f5d6380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 19:55:11.9635 8679/2b80eb5eb380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 19:55:11.9636 8679/2b80eb5eb380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 19:55:11.9680 8679/2b80eb5eb380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 8679
+[ 2016-06-20 19:55:11.9739 8687/2b2785746380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 19:55:11.9743 8687/2b2785746380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 8687
+
+
+[ 2016-06-20 19:55:14.4867 8687/2b2785f6b700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 19:55:14.4867 8679/2b80fb838700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 19:55:14.4867 8687/2b2785746380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 19:55:14.4867 8687/2b2785f6b700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 19:55:14.4867 8679/2b80eb5eb380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 19:55:14.4868 8687/2b2794200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 19:55:14.4868 8687/2b2794200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 19:55:14.4888 8679/2b81c0200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 19:55:14.4888 8679/2b81c0200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 19:55:14.4887 8687/2b2785746380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 19:55:14.4905 8679/2b8120200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4905 8679/2b8120200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 19:55:14.4913 8679/2b8148200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4913 8679/2b816c200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4913 8679/2b8190200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4914 8679/2b816c200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 19:55:14.4914 8679/2b8148200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 19:55:14.4914 8679/2b8178200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4914 8679/2b8190200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 19:55:14.4914 8679/2b8178200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 19:55:14.4914 8679/2b813c200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4914 8679/2b813c200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 19:55:14.4918 8679/2b8104281700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4919 8679/2b8104281700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 19:55:14.4919 8679/2b8154200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4919 8679/2b8154200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 19:55:14.4920 8679/2b8184200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4920 8679/2b812c200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4920 8679/2b8184200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 19:55:14.4920 8679/2b812c200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 19:55:14.4920 8679/2b819c200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4920 8679/2b80fb838700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4920 8679/2b819c200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 19:55:14.4920 8679/2b8160200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4920 8679/2b81a8200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4920 8679/2b80fb838700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 19:55:14.4920 8679/2b81a8200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 19:55:14.4920 8679/2b8160200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 19:55:14.4921 8679/2b81b4200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4921 8679/2b81b4200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 19:55:14.4921 8679/2b8114200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 19:55:14.4921 8679/2b8114200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 19:55:14.4949 8679/2b80eb5eb380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 19:55:23.2888 8972/2afe38f47380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 19:55:23.2928 8975/2b6f9e720380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 19:55:23.2929 8975/2b6f9e720380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 19:55:23.2970 8975/2b6f9e720380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 8975
+[ 2016-06-20 19:55:23.3019 8982/2b1b84147380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 19:55:23.3022 8982/2b1b84147380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 8982
+2016/06/20 19:55:25 [error] 9031#0: *5 open() "/home/ensignadmin/ensign.hthswd.org/public/public/roadtohell/ll" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /roadtohell/ll HTTP/1.1", host: "localhost:8085"
+
+
+[ 2016-06-20 19:55:40.5438 8982/2b1b8496c700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 19:55:40.5438 8975/2b6f9efc4700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 19:55:40.5438 8982/2b1b84147380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 19:55:40.5439 8982/2b1b8496c700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 19:55:40.5439 8975/2b6f9e720380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 19:55:40.5439 8982/2b1b94200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 19:55:40.5439 8982/2b1b94200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 19:55:40.5446 8982/2b1b84147380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 19:55:40.5447 8975/2b7074200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 19:55:40.5448 8975/2b7074200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 19:55:40.5472 8975/2b6fc4200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5473 8975/2b6fc4200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 19:55:40.5483 8975/2b7068200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5483 8975/2b7034200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5483 8975/2b7068200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 19:55:40.5483 8975/2b7034200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 19:55:40.5483 8975/2b701c200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5483 8975/2b701c200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 19:55:40.5485 8975/2b6fb8200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5485 8975/2b6fb8200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 19:55:40.5488 8975/2b6fec200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5489 8975/2b6fec200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 19:55:40.5489 8975/2b6ff8200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5489 8975/2b6ff8200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 19:55:40.5490 8975/2b7004200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5490 8975/2b7004200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 19:55:40.5490 8975/2b7040200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5491 8975/2b7040200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 19:55:40.5491 8975/2b6fd0200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5492 8975/2b6fd0200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 19:55:40.5492 8975/2b6f9efc4700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5492 8975/2b6f9efc4700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 19:55:40.5493 8975/2b7028200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5493 8975/2b7050200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5493 8975/2b7028200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 19:55:40.5493 8975/2b705c200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5493 8975/2b7050200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 19:55:40.5493 8975/2b6fdc200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5493 8975/2b705c200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 19:55:40.5493 8975/2b7010200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 19:55:40.5493 8975/2b6fdc200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 19:55:40.5493 8975/2b7010200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 19:55:40.5515 8975/2b6f9e720380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 20:13:42.4688 17722/2b353e014380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 20:13:42.4732 17725/2acb59fed380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 20:13:42.4733 17725/2acb59fed380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 20:13:42.4779 17725/2acb59fed380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 17725
+[ 2016-06-20 20:13:42.4834 17732/2b5764dd2380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 20:13:42.4838 17732/2b5764dd2380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 17732
+App 17865 stdout: 
+App 17865 stderr: Traceback (most recent call last):
+App 17865 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger/passenger-5.0.26/src/helper-scripts/wsgi-loader.py", line 325, in <module>
+App 17865 stderr:     app_module = load_app()
+App 17865 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger/passenger-5.0.26/src/helper-scripts/wsgi-loader.py", line 62, in load_app
+App 17865 stderr:     return imp.load_source('passenger_wsgi', startup_file)
+App 17865 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 7, in <module>
+App 17865 stderr:     import comparetest
+App 17865 stderr: ImportError: No module named comparetest
+[ 2016-06-20 20:13:45.5789 17725/2acc40241700 age/Cor/App/Implementation.cpp:304 ]: Could not spawn process for application /home/ensignadmin/ensign.hthswd.org/public: An error occurred while starting the web application. It exited before signalling successful startup back to Phusion Passenger.
+  Error ID: 8bcd0684
+  Error details saved to: /tmp/passenger-error-N1aKEy.html
+  Message from application: An error occurred while starting the web application. It exited before signalling successful startup back to Phusion Passenger. Please read <a href="https://github.com/phusion/passenger/wiki/Debugging-application-startup-problems">this article</a> for more information about this problem.<br>
+<h2>Raw process output:</h2>
+<pre>
+Traceback (most recent call last):
+  File &quot;/home/ensignadmin/ensign.hthswd.org/public/passenger/passenger-5.0.26/src/helper-scripts/wsgi-loader.py&quot;, line 325, in &lt;module&gt;
+    app_module = load_app()
+  File &quot;/home/ensignadmin/ensign.hthswd.org/public/passenger/passenger-5.0.26/src/helper-scripts/wsgi-loader.py&quot;, line 62, in load_app
+    return imp.load_source(&apos;passenger_wsgi&apos;, startup_file)
+  File &quot;/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py&quot;, line 7, in &lt;module&gt;
+    import comparetest
+ImportError: No module named comparetest
+</pre>
+
+[ 2016-06-20 20:13:45.5879 17725/2acb6c200700 age/Cor/Con/CheckoutSession.cpp:285 ]: [Client 1-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 8bcd0684. Please see earlier logs for details about the error.
+
+
+[ 2016-06-20 20:13:58.5422 17732/2b57655f7700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:13:58.5422 17725/2acb6c200700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:13:58.5422 17725/2acb59fed380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:13:58.5422 17732/2b5764dd2380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:13:58.5423 17732/2b5774200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:13:58.5423 17732/2b5774200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 20:13:58.5424 17732/2b57655f7700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 20:13:58.5430 17725/2acc34200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:13:58.5430 17725/2acc34200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 20:13:58.5435 17732/2b5764dd2380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 20:13:58.5455 17725/2acb6c200700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5455 17725/2acb6c200700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 20:13:58.5459 17725/2acb9c200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5460 17725/2acb9c200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 20:13:58.5467 17725/2acc28200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5467 17725/2acc28200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 20:13:58.5471 17725/2acbf8200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5471 17725/2acbf8200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 20:13:58.5472 17725/2acb90200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5473 17725/2acb90200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 20:13:58.5474 17725/2acc10200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5474 17725/2acc10200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 20:13:58.5474 17725/2acbd0200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5474 17725/2acbd0200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 20:13:58.5475 17725/2acba8200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5475 17725/2acba8200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 20:13:58.5476 17725/2acbec200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5476 17725/2acbec200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 20:13:58.5476 17725/2acb84200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5476 17725/2acb84200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 20:13:58.5477 17725/2acbe0200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5477 17725/2acbb8200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5477 17725/2acbe0200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 20:13:58.5477 17725/2acbc4200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5477 17725/2acbb8200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 20:13:58.5478 17725/2acbc4200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 20:13:58.5478 17725/2acc04200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5478 17725/2acc04200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 20:13:58.5478 17725/2acb78200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5478 17725/2acb78200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 20:13:58.5487 17725/2acc1c200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 20:13:58.5487 17725/2acc1c200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 20:13:58.5516 17725/2acb59fed380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 20:14:28.7357 19130/2b71d3851380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 20:14:28.7397 19133/2ad02b3ac380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 20:14:28.7398 19133/2ad02b3ac380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 20:14:28.7441 19133/2ad02b3ac380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 19133
+[ 2016-06-20 20:14:28.7492 19140/2b2b08271380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 20:14:28.7496 19140/2b2b08271380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 19140
+App 19259 stdout: 
+App 19259 stderr: Traceback (most recent call last):
+App 19259 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/installed/Python-2.7.11/lib/python2.7/site-packages/bottle.py", line 862, in _handle
+App 19259 stderr:     return route.call(**args)
+App 19259 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/installed/Python-2.7.11/lib/python2.7/site-packages/bottle.py", line 1732, in wrapper
+App 19259 stderr:     rv = callback(*a, **ka)
+App 19259 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 24, in label2
+App 19259 stderr:     return template('public/index2.html')
+App 19259 stderr: NameError: global name 'template' is not defined
+
+
+[ 2016-06-20 20:14:54.9022 19133/2ad0348a1700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:14:54.9022 19140/2b2b08a96700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:14:54.9022 19133/2ad02b3ac380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:14:54.9022 19140/2b2b08271380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:14:54.9022 19133/2ad02b3ac380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 19259, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:14:54.9023 19140/2b2b08a96700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 20:14:54.9023 19140/2b2b18200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:14:54.9024 19140/2b2b18200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 20:14:54.9029 19133/2ad104200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:14:54.9029 19133/2ad104200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 20:14:54.9030 19140/2b2b08271380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 20:14:54.9073 19133/2ad0e0200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9073 19133/2ad0e0200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 20:14:54.9075 19133/2ad05c200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9075 19133/2ad05c200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 20:14:54.9077 19133/2ad078200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9077 19133/2ad078200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 20:14:54.9077 19133/2ad0ec200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9078 19133/2ad0ec200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 20:14:54.9078 19133/2ad050200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9079 19133/2ad050200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 20:14:54.9080 19133/2ad044200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9080 19133/2ad0a0200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9080 19133/2ad044200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 20:14:54.9080 19133/2ad0a0200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 20:14:54.9081 19133/2ad094200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9081 19133/2ad094200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 20:14:54.9081 19133/2ad0b0200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9081 19133/2ad0b0200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 20:14:54.9082 19133/2ad068200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9082 19133/2ad0f8200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9082 19133/2ad0c8200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9082 19133/2ad068200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 20:14:54.9082 19133/2ad0348a1700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9082 19133/2ad0f8200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 20:14:54.9082 19133/2ad0c8200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 20:14:54.9082 19133/2ad0c8482700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9082 19133/2ad088200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9082 19133/2ad0bc200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 20:14:54.9082 19133/2ad0348a1700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 20:14:54.9082 19133/2ad0c8482700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 20:14:54.9082 19133/2ad088200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 20:14:54.9082 19133/2ad0bc200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 20:14:54.9085 19133/2ad02b3ac380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 19259, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:14:55.0199 19133/2ad02b3ac380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 20:15:07.9736 21357/2b4cc3cea380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 20:15:07.9786 21360/2b9836ea0380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 20:15:07.9788 21360/2b9836ea0380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 20:15:07.9840 21360/2b9836ea0380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 21360
+[ 2016-06-20 20:15:07.9892 21369/2aefcf1cc380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 20:15:07.9895 21369/2aefcf1cc380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 21369
+App 21474 stdout: 
+App 21474 stderr: Traceback (most recent call last):
+App 21474 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 764, in _handle
+App 21474 stderr:     return route.call(**args)
+App 21474 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 1575, in wrapper
+App 21474 stderr:     rv = callback(*a, **ka)
+App 21474 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 24, in label2
+App 21474 stderr:     return template('public/index2.html')
+App 21474 stderr: NameError: global name 'template' is not defined
+
+
+[ 2016-06-20 20:15:33.4860 21369/2aefcf9f1700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:15:33.4860 21360/2b9848200700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:15:33.4860 21369/2aefcf1cc380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:15:33.4861 21360/2b9836ea0380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:15:33.4861 21369/2aefcf9f1700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 20:15:33.4861 21360/2b9836ea0380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 21474, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:15:33.4861 21369/2aefdc200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:15:33.4862 21369/2aefdc200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 20:15:33.4865 21369/2aefcf1cc380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 20:15:33.4868 21360/2b9910200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:15:33.4868 21360/2b9910200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 20:15:33.4898 21360/2b9854200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4899 21360/2b9854200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 20:15:33.4904 21360/2b9848200700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4905 21360/2b9848200700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 20:15:33.4909 21360/2b9878200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4910 21360/2b9878200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 20:15:33.4912 21360/2b98a4200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4912 21360/2b98a4200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 20:15:33.4913 21360/2b986c200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4913 21360/2b986c200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 20:15:33.4913 21360/2b9860200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4914 21360/2b98f8200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4914 21360/2b9860200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 20:15:33.4914 21360/2b98c8200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4914 21360/2b98f8200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 20:15:33.4914 21360/2b98c8200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 20:15:33.4915 21360/2b98bc200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4915 21360/2b98bc200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 20:15:33.4915 21360/2b98d4200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4915 21360/2b98d4200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 20:15:33.4916 21360/2b9888200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4916 21360/2b9888200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 20:15:33.4916 21360/2b98ec200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4916 21360/2b98ec200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 20:15:33.4917 21360/2b98e0200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4917 21360/2b98e0200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 20:15:33.4917 21360/2b9904200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4917 21360/2b9904200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 20:15:33.4918 21360/2b98b0200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4918 21360/2b98b0200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 20:15:33.4918 21360/2b9898200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 20:15:33.4918 21360/2b9898200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 20:15:33.4921 21360/2b9836ea0380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 21474, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:15:33.5990 21360/2b9836ea0380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 20:19:28.6978 28960/2aaeba1c1380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 20:19:28.7020 28963/2b007b11c380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 20:19:28.7021 28963/2b007b11c380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 20:19:28.7066 28963/2b007b11c380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 28963
+[ 2016-06-20 20:19:28.7118 28970/2b75e2aef380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 20:19:28.7121 28970/2b75e2aef380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 28970
+App 29120 stdout: 
+
+
+[ 2016-06-20 20:19:52.1336 28970/2b75e3314700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:19:52.1336 28963/2b00808a1700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:19:52.1336 28963/2b007b11c380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:19:52.1336 28970/2b75e2aef380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:19:52.1336 28963/2b007b11c380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 29120, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:19:52.1337 28970/2b75e3314700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 20:19:52.1337 28970/2b75f0200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:19:52.1337 28970/2b75f0200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 20:19:52.1343 28963/2b0158200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:19:52.1344 28963/2b0158200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 20:19:52.1373 28970/2b75e2aef380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 20:19:52.1375 28963/2b00f0200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1376 28963/2b00f0200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 20:19:52.1376 28963/2b0118200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1376 28963/2b0118200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 20:19:52.1383 28963/2b00e4200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1383 28963/2b00e4200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 20:19:52.1385 28963/2b00b0200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1385 28963/2b00b0200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 20:19:52.1385 28963/2b00bc200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1386 28963/2b00a4200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1386 28963/2b00bc200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 20:19:52.1386 28963/2b00a4200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 20:19:52.1387 28963/2b00808a1700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1387 28963/2b00808a1700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 20:19:52.1389 28963/2b008c200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1389 28963/2b008c200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 20:19:52.1389 28963/2b00d8200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1389 28963/2b00d8200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 20:19:52.1390 28963/2b0124200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1390 28963/2b0124200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 20:19:52.1389 28963/2b00cc200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1390 28963/2b00cc200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 20:19:52.1391 28963/2b0134200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1391 28963/2b014c200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1391 28963/2b0134200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 20:19:52.1391 28963/2b014c200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 20:19:52.1391 28963/2b0140200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1391 28963/2b0100200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1391 28963/2b010c200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 20:19:52.1391 28963/2b0140200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 20:19:52.1392 28963/2b010c200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 20:19:52.1392 28963/2b0100200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 20:19:52.1394 28963/2b007b11c380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 29120, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:19:52.2441 28963/2b007b11c380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 20:20:38.1832 1034/2af7c9277380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 20:20:38.1880 1039/2ae66c5f8380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 20:20:38.1882 1039/2ae66c5f8380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 20:20:38.1930 1039/2ae66c5f8380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 1039
+[ 2016-06-20 20:20:38.1987 1047/2b5723a68380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 20:20:38.1991 1047/2b5723a68380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 1047
+App 1367 stdout: 
+App 1367 stderr: OpenCV Error: Assertion failed (scn == 3 || scn == 4) in cvtColor, file /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp, line 3737
+App 1367 stderr: Traceback (most recent call last):
+App 1367 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 764, in _handle
+App 1367 stderr:     return route.call(**args)
+App 1367 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 1575, in wrapper
+App 1367 stderr:     rv = callback(*a, **ka)
+App 1367 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 33, in process_file
+App 1367 stderr:     if(comparetest.compare(letter)):
+App 1367 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/comparetest.py", line 30, in compare
+App 1367 stderr:     user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
+App 1367 stderr: error: /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp:3737: error: (-215) scn == 3 || scn == 4 in function cvtColor
+App 1367 stderr: 
+
+[ 2016-06-20 20:21:20.6225 1039/2ae6748a1700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+
+[ 2016-06-20 20:21:20.6225 1039/2ae66c5f8380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:21:20.6225 1039/2ae66c5f8380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 1367, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:21:20.6225 1047/2b572428d700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:21:20.6226 1047/2b5723a68380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:21:20.6227 1047/2b572428d700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 20:21:20.6227 1047/2b5734200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:21:20.6227 1047/2b5734200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 20:21:20.6236 1039/2ae74c200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:21:20.6237 1039/2ae74c200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 20:21:20.6238 1047/2b5723a68380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 20:21:20.6268 1039/2ae698200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6269 1039/2ae698200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 20:21:20.6273 1039/2ae6b0200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6274 1039/2ae6b0200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 20:21:20.6277 1039/2ae700200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6278 1039/2ae700200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 20:21:20.6278 1039/2ae6bc200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6278 1039/2ae6bc200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 20:21:20.6278 1039/2ae6cc200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6278 1039/2ae6a4200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6279 1039/2ae6cc200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 20:21:20.6279 1039/2ae6a4200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 20:21:20.6279 1039/2ae734200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6279 1039/2ae734200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 20:21:20.6279 1039/2ae68c200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6279 1039/2ae68c200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 20:21:20.6281 1039/2ae718200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6281 1039/2ae718200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 20:21:20.6281 1039/2ae740200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6281 1039/2ae740200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 20:21:20.6281 1039/2ae70c200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6282 1039/2ae70c200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 20:21:20.6282 1039/2ae6748a1700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6282 1039/2ae728200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6282 1039/2ae6748a1700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 20:21:20.6282 1039/2ae6f4200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6282 1039/2ae728200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 20:21:20.6283 1039/2ae6f4200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 20:21:20.6283 1039/2ae6d8200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6283 1039/2ae6d8200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 20:21:20.6283 1039/2ae6e4200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 20:21:20.6283 1039/2ae6e4200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 20:21:20.6286 1039/2ae66c5f8380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 1367, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:21:20.7362 1039/2ae66c5f8380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 20:23:02.0553 5696/2ac21faa2380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 20:23:02.0604 5699/2b9477a56380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 20:23:02.0605 5699/2b9477a56380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 20:23:02.0659 5699/2b9477a56380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 5699
+[ 2016-06-20 20:23:02.0718 5707/2b9655367380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 20:23:02.0723 5707/2b9655367380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 5707
+App 18993 stdout: 
+App 18993 stderr: OpenCV Error: Assertion failed (scn == 3 || scn == 4) in cvtColor, file /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp, line 3737
+App 18993 stderr: Traceback (most recent call last):
+App 18993 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 764, in _handle
+App 18993 stderr:     return route.call(**args)
+App 18993 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 1575, in wrapper
+App 18993 stderr:     rv = callback(*a, **ka)
+App 18993 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 33, in process_file
+App 18993 stderr:     if(comparetest.compare(letter)):
+App 18993 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/comparetest.py", line 30, in compare
+App 18993 stderr:     user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
+App 18993 stderr: error: /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp:3737: error: (-215) scn == 3 || scn == 4 in function cvtColor
+App 18993 stderr: 
+
+[ 2016-06-20 20:33:48.8503 5699/2b947c401700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+
+[ 2016-06-20 20:33:48.8503 5707/2b9655b8c700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:33:48.8503 5699/2b9477a56380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:33:48.8504 5699/2b9477a56380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 18993, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:33:48.8504 5707/2b9655367380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:33:48.8504 5707/2b9655b8c700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 20:33:48.8504 5707/2b9664200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:33:48.8505 5707/2b9664200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 20:33:48.8511 5699/2b954c200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:33:48.8511 5699/2b954c200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 20:33:48.8516 5707/2b9655367380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 20:33:48.8545 5699/2b947c401700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8545 5699/2b947c401700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 20:33:48.8549 5699/2b951c200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8549 5699/2b951c200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 20:33:48.8553 5699/2b9540200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8553 5699/2b9540200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 20:33:48.8556 5699/2b94b0200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8556 5699/2b94b0200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 20:33:48.8556 5699/2b94f8200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8557 5699/2b94f8200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 20:33:48.8557 5699/2b9504200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8557 5699/2b9504200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 20:33:48.8557 5699/2b9510200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8557 5699/2b9510200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 20:33:48.8558 5699/2b94e0200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8559 5699/2b94e0200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 20:33:48.8559 5699/2b94bc200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8560 5699/2b9494200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8560 5699/2b94bc200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 20:33:48.8560 5699/2b9494200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 20:33:48.8560 5699/2b9528200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8560 5699/2b9528200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 20:33:48.8560 5699/2b94a0200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8561 5699/2b94a0200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 20:33:48.8561 5699/2b9528482700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8561 5699/2b9528482700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 20:33:48.8561 5699/2b94c8200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8561 5699/2b94d4200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8561 5699/2b94c8200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 20:33:48.8561 5699/2b94d4200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 20:33:48.8561 5699/2b94ec200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 20:33:48.8561 5699/2b94ec200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 20:33:48.8564 5699/2b9477a56380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 18993, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:33:48.9679 5699/2b9477a56380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 20:35:34.2846 32676/2b9c8e52d380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 20:35:34.2887 32681/2b8ce4238380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 20:35:34.2888 32681/2b8ce4238380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 20:35:34.2933 32681/2b8ce4238380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 32681
+[ 2016-06-20 20:35:34.2987 32688/2adb147a1380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 20:35:34.2990 32688/2adb147a1380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 32688
+App 730 stdout: 
+App 730 stderr: OpenCV Error: Assertion failed (scn == 3 || scn == 4) in cvtColor, file /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp, line 3737
+App 730 stderr: Traceback (most recent call last):
+App 730 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 764, in _handle
+App 730 stderr:     return route.call(**args)
+App 730 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 1575, in wrapper
+App 730 stderr:     rv = callback(*a, **ka)
+App 730 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 33, in process_file
+App 730 stderr:     if(comparetest.compare(letter)):
+App 730 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/comparetest.py", line 30, in compare
+App 730 stderr:     user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
+App 730 stderr: error: /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp:3737: error: (-215) scn == 3 || scn == 4 in function cvtColor
+App 730 stderr: 
+App 730 stderr: OpenCV Error: Assertion failed (scn == 3 || scn == 4) in cvtColor, file /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp, line 3737
+App 730 stderr: Traceback (most recent call last):
+App 730 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 764, in _handle
+App 730 stderr:     return route.call(**args)
+App 730 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 1575, in wrapper
+App 730 stderr:     rv = callback(*a, **ka)
+App 730 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 33, in process_file
+App 730 stderr:     if(comparetest.compare(letter)):
+App 730 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/comparetest.py", line 30, in compare
+App 730 stderr:     user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
+App 730 stderr: error: /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp:3737: error: (-215) scn == 3 || scn == 4 in function cvtColor
+App 730 stderr: 
+
+[ 2016-06-20 20:38:38.2678 32688/2adb14fc6700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:38:38.2679 32688/2adb147a1380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+
+[ 2016-06-20 20:38:38.2679 32688/2adb14fc6700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 20:38:38.2679 32681/2b8ce4a92700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 20:38:38.2679 32688/2adb20200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:38:38.2679 32681/2b8ce4238380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 20:38:38.2679 32688/2adb20200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 20:38:38.2679 32681/2b8ce4238380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 730, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:38:38.2687 32688/2adb147a1380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 20:38:38.2688 32681/2b8db8200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 20:38:38.2689 32681/2b8db8200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 20:38:38.2723 32681/2b8d7c200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2724 32681/2b8d7c200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 20:38:38.2724 32681/2b8da0200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2724 32681/2b8d28482700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2724 32681/2b8da0200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 20:38:38.2724 32681/2b8d28482700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 20:38:38.2725 32681/2b8d94200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2725 32681/2b8d94200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 20:38:38.2727 32681/2b8d00200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2728 32681/2b8d00200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 20:38:38.2730 32681/2b8dac200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2730 32681/2b8dac200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 20:38:38.2731 32681/2b8d58200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2732 32681/2b8d58200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 20:38:38.2732 32681/2b8d88200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2732 32681/2b8d88200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 20:38:38.2732 32681/2b8d64200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2733 32681/2b8d64200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 20:38:38.2734 32681/2b8d40200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2734 32681/2b8d40200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 20:38:38.2734 32681/2b8d70200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2734 32681/2b8d70200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 20:38:38.2734 32681/2b8d1c200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2734 32681/2b8d28200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2734 32681/2b8d0c200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2735 32681/2b8d28200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 20:38:38.2735 32681/2b8d1c200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 20:38:38.2735 32681/2b8ce4a92700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2735 32681/2b8d0c200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 20:38:38.2735 32681/2b8ce4a92700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 20:38:38.2735 32681/2b8d4c200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 20:38:38.2735 32681/2b8d4c200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 20:38:38.2738 32681/2b8ce4238380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 730, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 20:38:38.3860 32681/2b8ce4238380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 20:38:41.0389 6263/2ac0b4a42380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 20:38:41.0432 6266/2b5beea69380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 20:38:41.0433 6266/2b5beea69380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 20:38:41.0479 6266/2b5beea69380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 6266
+[ 2016-06-20 20:38:41.0533 6273/2b044f90b380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 20:38:41.0537 6273/2b044f90b380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 6273
+App 6729 stdout: 
+App 6729 stderr: OpenCV Error: Assertion failed (scn == 3 || scn == 4) in cvtColor, file /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp, line 3737
+App 6729 stderr: Traceback (most recent call last):
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 764, in _handle
+App 6729 stderr:     return route.call(**args)
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 1575, in wrapper
+App 6729 stderr:     rv = callback(*a, **ka)
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 33, in process_file
+App 6729 stderr:     if(comparetest.compare(letter)):
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/comparetest.py", line 30, in compare
+App 6729 stderr:     user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
+App 6729 stderr: error: /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp:3737: error: (-215) scn == 3 || scn == 4 in function cvtColor
+App 6729 stderr: 
+App 6729 stderr: OpenCV Error: Assertion failed (scn == 3 || scn == 4) in cvtColor, file /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp, line 3737
+App 6729 stderr: Traceback (most recent call last):
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 764, in _handle
+App 6729 stderr:     return route.call(**args)
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 1575, in wrapper
+App 6729 stderr:     rv = callback(*a, **ka)
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 33, in process_file
+App 6729 stderr:     if(comparetest.compare(letter)):
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/comparetest.py", line 30, in compare
+App 6729 stderr:     user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
+App 6729 stderr: error: /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp:3737: error: (-215) scn == 3 || scn == 4 in function cvtColor
+App 6729 stderr: 
+App 6729 stderr: OpenCV Error: Assertion failed (scn == 3 || scn == 4) in cvtColor, file /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp, line 3737
+App 6729 stderr: Traceback (most recent call last):
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 764, in _handle
+App 6729 stderr:     return route.call(**args)
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 1575, in wrapper
+App 6729 stderr:     rv = callback(*a, **ka)
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 33, in process_file
+App 6729 stderr:     if(comparetest.compare(letter)):
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/comparetest.py", line 30, in compare
+App 6729 stderr:     user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
+App 6729 stderr: error: /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp:3737: error: (-215) scn == 3 || scn == 4 in function cvtColor
+App 6729 stderr: 
+App 6729 stderr: OpenCV Error: Assertion failed (scn == 3 || scn == 4) in cvtColor, file /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp, line 3737
+App 6729 stderr: Traceback (most recent call last):
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 764, in _handle
+App 6729 stderr:     return route.call(**args)
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 1575, in wrapper
+App 6729 stderr:     rv = callback(*a, **ka)
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 33, in process_file
+App 6729 stderr:     if(comparetest.compare(letter)):
+App 6729 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/comparetest.py", line 30, in compare
+App 6729 stderr:     user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
+App 6729 stderr: error: /home/ensignadmin/ensign.hthswd.org/public/opencv/opencv-2.4.9/modules/imgproc/src/color.cpp:3737: error: (-215) scn == 3 || scn == 4 in function cvtColor
+App 6729 stderr: 
+
+[ 2016-06-20 21:34:19.4038 6266/2b5bf48a1700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+
+[ 2016-06-20 21:34:19.4038 6266/2b5beea69380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 21:34:19.4039 6273/2b0450130700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 21:34:19.4039 6266/2b5beea69380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 6729, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 21:34:19.4039 6273/2b044f90b380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 21:34:19.4040 6273/2b0450130700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 21:34:19.4040 6273/2b0460200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 21:34:19.4040 6273/2b0460200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 21:34:19.4045 6266/2b5ccc200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 21:34:19.4045 6266/2b5ccc200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 21:34:19.4046 6273/2b044f90b380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+2016/06/20 21:34:22 [emerg] 21409#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:22 [emerg] 21409#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:22 [emerg] 21409#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:22 [emerg] 21409#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:22 [emerg] 21409#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:22 [emerg] 21409#0: still could not bind()
+2016/06/20 21:34:34 [emerg] 21775#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:34 [emerg] 21775#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:34 [emerg] 21775#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:34 [emerg] 21775#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:34 [emerg] 21775#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:34 [emerg] 21775#0: still could not bind()
+2016/06/20 21:34:43 [emerg] 21975#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:43 [emerg] 21975#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:43 [emerg] 21975#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:43 [emerg] 21975#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:43 [emerg] 21975#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 21:34:43 [emerg] 21975#0: still could not bind()
+[ 2016-06-20 21:35:03.6450 23957/2baa74ce4380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 21:35:03.6495 23961/2b2ea324c380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 21:35:03.6496 23961/2b2ea324c380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 21:35:03.6546 23961/2b2ea324c380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 23961
+[ 2016-06-20 21:35:03.6599 23971/2b291c210380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 21:35:03.6603 23971/2b291c210380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 23971
+App 25061 stdout: 
+App 25061 stderr: Traceback (most recent call last):
+App 25061 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 764, in _handle
+App 25061 stderr:     return route.call(**args)
+App 25061 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 1575, in wrapper
+App 25061 stderr:     rv = callback(*a, **ka)
+App 25061 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 33, in process_file
+App 25061 stderr:     if(comparetest.compare(letter)):
+App 25061 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/comparetest.py", line 45, in compare
+App 25061 stderr:     MSE_range = max(MSE.values()) - min(MSE.values())
+App 25061 stderr: ValueError: max() arg is an empty sequence
+
+
+[ 2016-06-20 21:37:56.2805 23961/2b2eb4200700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 21:37:56.2805 23971/2b291ca35700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 21:37:56.2806 23961/2b2ea324c380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 21:37:56.2806 23971/2b291c210380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 21:37:56.2806 23961/2b2ea324c380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 25061, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 21:37:56.2807 23971/2b2928200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 21:37:56.2807 23971/2b2928200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 21:37:56.2807 23971/2b291ca35700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 21:37:56.2814 23971/2b291c210380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 21:37:56.2814 23961/2b2f7c200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 21:37:56.2814 23961/2b2f7c200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 21:37:56.2838 23961/2b2ec0200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2839 23961/2b2ec0200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 21:37:56.2847 23961/2b2f28200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2848 23961/2b2f28200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 21:37:56.2854 23961/2b2f04200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2855 23961/2b2f04200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 21:37:56.2855 23961/2b2ecc200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2855 23961/2b2ecc200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 21:37:56.2856 23961/2b2f58200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2857 23961/2b2f58200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 21:37:56.2857 23961/2b2f64200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2857 23961/2b2f64200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 21:37:56.2858 23961/2b2ef8200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2858 23961/2b2ef8200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 21:37:56.2864 23961/2b2f34200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2864 23961/2b2f1c200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2864 23961/2b2f34200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 21:37:56.2865 23961/2b2f1c200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 21:37:56.2866 23961/2b2edc200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2866 23961/2b2edc200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 21:37:56.2866 23961/2b2ee8200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2866 23961/2b2ee8200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 21:37:56.2866 23961/2b2f4c200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2866 23961/2b2f70200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2866 23961/2b2f4c200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 21:37:56.2866 23961/2b2f70200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 21:37:56.2866 23961/2b2f40200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2867 23961/2b2f40200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 21:37:56.2867 23961/2b2f10200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2867 23961/2b2eb4200700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 21:37:56.2867 23961/2b2f10200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 21:37:56.2867 23961/2b2eb4200700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 21:37:56.2870 23961/2b2ea324c380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 25061, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 21:37:56.3946 23961/2b2ea324c380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 21:38:39.2158 31087/2b79de5bc380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 21:38:39.2201 31090/2ba623615380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 21:38:39.2203 31090/2ba623615380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 21:38:39.2248 31090/2ba623615380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 31090
+[ 2016-06-20 21:38:39.2298 31097/2b0f36ee0380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 21:38:39.2302 31097/2b0f36ee0380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 31097
+App 31348 stdout: 
+App 31348 stderr: Traceback (most recent call last):
+App 31348 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 764, in _handle
+App 31348 stderr:     return route.call(**args)
+App 31348 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/bottle.py", line 1575, in wrapper
+App 31348 stderr:     rv = callback(*a, **ka)
+App 31348 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/passenger_wsgi.py", line 33, in process_file
+App 31348 stderr:     if(comparetest.compare(letter)):
+App 31348 stderr:   File "/home/ensignadmin/ensign.hthswd.org/public/comparetest.py", line 45, in compare
+App 31348 stderr:     MSE_range = max(MSE.values()) - min(MSE.values())
+App 31348 stderr: ValueError: max() arg is an empty sequence
+
+
+[ 2016-06-20 21:39:24.9963 31090/2ba623eb9700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 21:39:24.9963 31097/2b0f37705700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 21:39:24.9964 31090/2ba623615380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 21:39:24.9964 31097/2b0f36ee0380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 21:39:24.9964 31090/2ba623615380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 31348, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 21:39:24.9965 31097/2b0f37705700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 21:39:24.9965 31097/2b0f44200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 21:39:24.9965 31097/2b0f44200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 21:39:24.9970 31090/2ba6fc200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 21:39:24.9970 31090/2ba6fc200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 21:39:24.9971 31097/2b0f36ee0380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 21:39:25.0005 31090/2ba623eb9700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0005 31090/2ba6f0200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0006 31090/2ba6f0200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 21:39:25.0006 31090/2ba623eb9700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 21:39:25.0008 31090/2ba680200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0008 31090/2ba680200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 21:39:25.0008 31090/2ba698200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0008 31090/2ba698200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 21:39:25.0010 31090/2ba6d8200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0010 31090/2ba6d8200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 21:39:25.0010 31090/2ba6b4482700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0011 31090/2ba6b4482700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 21:39:25.0016 31090/2ba648200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0016 31090/2ba648200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 21:39:25.0016 31090/2ba63c200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0017 31090/2ba63c200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 21:39:25.0018 31090/2ba660200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0018 31090/2ba6b4200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0018 31090/2ba660200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 21:39:25.0018 31090/2ba6b4200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 21:39:25.0019 31090/2ba670200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0019 31090/2ba654200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0019 31090/2ba670200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 21:39:25.0019 31090/2ba654200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 21:39:25.0019 31090/2ba68c200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0019 31090/2ba6e4200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0020 31090/2ba68c200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 21:39:25.0020 31090/2ba6e4200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 21:39:25.0020 31090/2ba6a8200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0020 31090/2ba6a8200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 21:39:25.0020 31090/2ba6cc200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 21:39:25.0021 31090/2ba6cc200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 21:39:25.0025 31090/2ba623615380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 31348, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 21:39:25.1110 31090/2ba623615380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 21:40:04.0695 4138/2b5f1260b380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 21:40:04.0746 4141/2ae4dc872380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 21:40:04.0747 4141/2ae4dc872380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 21:40:04.0794 4141/2ae4dc872380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 4141
+[ 2016-06-20 21:40:04.0845 4148/2b5c72837380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 21:40:04.0848 4148/2b5c72837380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 4148
+App 4656 stdout: 
+
+
+[ 2016-06-20 21:41:41.8159 4141/2ae4f0200700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 21:41:41.8160 4148/2b5c7305c700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 21:41:41.8160 4148/2b5c72837380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 21:41:41.8160 4141/2ae4dc872380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 21:41:41.8161 4148/2b5c7305c700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 21:41:41.8161 4141/2ae4dc872380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 4656, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 21:41:41.8161 4148/2b5c80200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 21:41:41.8161 4148/2b5c80200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 21:41:41.8166 4141/2ae5b4200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 21:41:41.8166 4141/2ae5b4200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 21:41:41.8169 4148/2b5c72837380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 21:41:41.8207 4141/2ae4f0200700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8208 4141/2ae4f0200700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 21:41:41.8208 4141/2ae548200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8208 4141/2ae548200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 21:41:41.8212 4141/2ae554200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8212 4141/2ae554200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 21:41:41.8213 4141/2ae560200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8213 4141/2ae560200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 21:41:41.8215 4141/2ae53c200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8215 4141/2ae53c200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 21:41:41.8216 4141/2ae578200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8216 4141/2ae578200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 21:41:41.8216 4141/2ae59c200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8217 4141/2ae59c200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 21:41:41.8217 4141/2ae590200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8217 4141/2ae590200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 21:41:41.8217 4141/2ae518200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8218 4141/2ae518200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 21:41:41.8218 4141/2ae584200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8218 4141/2ae584200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 21:41:41.8218 4141/2ae530200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8218 4141/2ae530200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 21:41:41.8219 4141/2ae56c200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8219 4141/2ae56c200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 21:41:41.8219 4141/2ae500200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8220 4141/2ae500200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 21:41:41.8220 4141/2ae5a8200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8220 4141/2ae5a8200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 21:41:41.8220 4141/2ae50c200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8220 4141/2ae50c200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 21:41:41.8220 4141/2ae524200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 21:41:41.8220 4141/2ae524200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 21:41:41.8223 4141/2ae4dc872380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 4656, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 21:41:41.9299 4141/2ae4dc872380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 21:58:26.1505 16523/2ab661506380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 21:58:26.1546 16526/2aea144c3380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 21:58:26.1547 16526/2aea144c3380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 21:58:26.1588 16526/2aea144c3380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 16526
+[ 2016-06-20 21:58:26.1639 16534/2b8a58a1f380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 21:58:26.1643 16534/2b8a58a1f380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 16534
+App 16971 stdout: 
+
+[ 2016-06-20 22:00:53.0305 16534/2b8a59244700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+
+[ 2016-06-20 22:00:53.0305 16534/2b8a58a1f380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 22:00:53.0305 16526/2aea14d67700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 22:00:53.0306 16534/2b8a59244700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 22:00:53.0306 16526/2aea144c3380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 22:00:53.0307 16526/2aea144c3380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 16971, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 22:00:53.0308 16534/2b8a68200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 22:00:53.0308 16534/2b8a68200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 22:00:53.0316 16534/2b8a58a1f380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 22:00:53.0317 16526/2aeae4200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 22:00:53.0317 16526/2aeae4200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 22:00:53.0353 16526/2aea48200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0353 16526/2aea48200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 22:00:53.0353 16526/2aea6c200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0354 16526/2aea6c200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 22:00:53.0356 16526/2aea78200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0357 16526/2aea78200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 22:00:53.0358 16526/2aea28200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0359 16526/2aea28200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 22:00:53.0360 16526/2aea50200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0361 16526/2aea50200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 22:00:53.0362 16526/2aea3c200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0362 16526/2aea60281700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0362 16526/2aea3c200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 22:00:53.0362 16526/2aea60281700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 22:00:53.0362 16526/2aead8200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0362 16526/2aead8200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 22:00:53.0364 16526/2aea9c200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0365 16526/2aea9c200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 22:00:53.0366 16526/2aea90200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0366 16526/2aea90200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 22:00:53.0366 16526/2aeac0200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0366 16526/2aeacc200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0366 16526/2aeac0200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 22:00:53.0366 16526/2aeab0200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0366 16526/2aeacc200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 22:00:53.0366 16526/2aeab0200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 22:00:53.0367 16526/2aea14d67700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0367 16526/2aeaa4200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0367 16526/2aea84200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 22:00:53.0367 16526/2aeaa4200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 22:00:53.0367 16526/2aea84200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 22:00:53.0367 16526/2aea14d67700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 22:00:53.0369 16526/2aea144c3380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 16971, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 22:00:53.1442 16526/2aea144c3380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 22:10:23.6408 17189/2b83c26a2380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 22:10:23.6448 17192/2b0b8c97d380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 22:10:23.6449 17192/2b0b8c97d380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 22:10:23.6492 17192/2b0b8c97d380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 17192
+[ 2016-06-20 22:10:23.6544 17199/2b023b82a380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 22:10:23.6548 17199/2b023b82a380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 17199
+App 17908 stdout: 
+
+
+[ 2016-06-20 22:10:40.8559 17199/2b023c04f700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 22:10:40.8559 17192/2b0b8d221700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 22:10:40.8559 17199/2b023b82a380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 22:10:40.8559 17192/2b0b8c97d380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 22:10:40.8560 17192/2b0b8c97d380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 17908, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 22:10:40.8560 17199/2b023c04f700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 22:10:40.8560 17199/2b024c200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 22:10:40.8561 17199/2b024c200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 22:10:40.8567 17192/2b0c5c482700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 22:10:40.8567 17192/2b0c5c482700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 22:10:40.8579 17199/2b023b82a380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 22:10:40.8607 17192/2b0c50200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8607 17192/2b0c50200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 22:10:40.8607 17192/2b0c00200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8607 17192/2b0bc0200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8608 17192/2b0c00200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 22:10:40.8608 17192/2b0bc0200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 22:10:40.8611 17192/2b0bb4200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8611 17192/2b0bf4200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8611 17192/2b0bb4200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 22:10:40.8611 17192/2b0bf4200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 22:10:40.8612 17192/2b0b8d221700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8613 17192/2b0b8d221700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 22:10:40.8613 17192/2b0ba8200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8613 17192/2b0ba8200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 22:10:40.8614 17192/2b0c1c200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8614 17192/2b0c1c200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 22:10:40.8614 17192/2b0bdc200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8614 17192/2b0bdc200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 22:10:40.8614 17192/2b0c28200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8615 17192/2b0c28200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 22:10:40.8615 17192/2b0c44200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8615 17192/2b0c44200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 22:10:40.8616 17192/2b0c5c200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8616 17192/2b0c5c200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 22:10:40.8616 17192/2b0c34200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8616 17192/2b0c34200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 22:10:40.8616 17192/2b0bcc200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8617 17192/2b0bcc200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 22:10:40.8617 17192/2b0be8200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8617 17192/2b0be8200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 22:10:40.8617 17192/2b0c10200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 22:10:40.8617 17192/2b0c10200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 22:10:40.8620 17192/2b0b8c97d380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 17908, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 22:10:40.9707 17192/2b0b8c97d380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 22:37:38.5487 24313/2af494be9380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 22:37:38.5529 24320/2b950cf62380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 22:37:38.5530 24320/2b950cf62380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 22:37:38.5572 24320/2b950cf62380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 24320
+[ 2016-06-20 22:37:38.5623 24327/2b75e2a57380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 22:37:38.5626 24327/2b75e2a57380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 24327
+App 24849 stdout: 
+
+[ 2016-06-20 23:50:23.5470 24320/2b950d806700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+
+[ 2016-06-20 23:50:23.5471 24320/2b950cf62380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 23:50:23.5471 24327/2b75e327c700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 23:50:23.5471 24320/2b950cf62380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 24849, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 23:50:23.5471 24327/2b75e2a57380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 23:50:23.5472 24327/2b75e327c700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 23:50:23.5472 24327/2b75ec200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 23:50:23.5472 24327/2b75ec200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 23:50:23.5477 24320/2b95e8200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 23:50:23.5477 24320/2b95e8200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 23:50:23.5497 24327/2b75e2a57380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+2016/06/20 23:50:26 [emerg] 15850#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 23:50:26 [emerg] 15850#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 23:50:26 [emerg] 15850#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 23:50:26 [emerg] 15850#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 23:50:26 [emerg] 15850#0: bind() to 0.0.0.0:8085 failed (98: Address already in use)
+2016/06/20 23:50:26 [emerg] 15850#0: still could not bind()
+[ 2016-06-20 23:50:46.2308 16405/2b94accfc380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 23:50:46.2348 16408/2ab9e9df4380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 23:50:46.2349 16408/2ab9e9df4380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 23:50:46.2393 16408/2ab9e9df4380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 16408
+[ 2016-06-20 23:50:46.2448 16417/2b900f105380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 23:50:46.2452 16417/2b900f105380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 16417
+
+[ 2016-06-20 23:50:49.5651 16417/2b900f92a700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+
+[ 2016-06-20 23:50:49.5651 16408/2ab9fc200700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 23:50:49.5651 16417/2b900f105380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 23:50:49.5651 16408/2ab9e9df4380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 23:50:49.5652 16417/2b900f92a700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 23:50:49.5652 16417/2b901c200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 23:50:49.5652 16417/2b901c200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 23:50:49.5655 16417/2b900f105380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 23:50:49.5674 16408/2ab9fc200700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5674 16408/2ab9fc200700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 23:50:49.5679 16408/2aba08200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5679 16408/2aba08200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 23:50:49.5680 16408/2abac8200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 23:50:49.5680 16408/2abac8200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 23:50:49.5696 16408/2aba14200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5697 16408/2aba14200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 23:50:49.5697 16408/2aba2c200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5697 16408/2aba2c200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 23:50:49.5701 16408/2aba58200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5701 16408/2aba58200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 23:50:49.5701 16408/2aba64200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5701 16408/2aba64200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 23:50:49.5702 16408/2abaa4200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5702 16408/2aba80200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5702 16408/2abaa4200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 23:50:49.5702 16408/2aba80200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 23:50:49.5702 16408/2aba3c200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5702 16408/2aba3c200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 23:50:49.5702 16408/2ababc200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5703 16408/2ababc200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 23:50:49.5703 16408/2aba8c200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5703 16408/2aba8c200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 23:50:49.5703 16408/2aba4c200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5703 16408/2aba4c200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 23:50:49.5704 16408/2abab0200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5704 16408/2aba98200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5704 16408/2aba20200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5704 16408/2abab0200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 23:50:49.5704 16408/2aba98200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 23:50:49.5704 16408/2aba74200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 23:50:49.5704 16408/2aba20200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 23:50:49.5704 16408/2aba74200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 23:50:49.5728 16408/2ab9e9df4380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 23:54:10.7125 22219/2b17aa178380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 23:54:10.7174 22224/2ab05c8cf380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 23:54:10.7175 22224/2ab05c8cf380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 23:54:10.7229 22224/2ab05c8cf380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 22224
+[ 2016-06-20 23:54:10.7290 22231/2b2254222380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 23:54:10.7295 22231/2b2254222380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 22231
+App 22559 stdout: 
+
+
+[ 2016-06-20 23:57:05.0114 22231/2b2254a47700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 23:57:05.0114 22224/2ab05d173700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-20 23:57:05.0115 22224/2ab05c8cf380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 23:57:05.0115 22231/2b2254222380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-20 23:57:05.0115 22224/2ab05c8cf380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 22559, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 23:57:05.0116 22231/2b2264200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-20 23:57:05.0116 22231/2b2264200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-20 23:57:05.0116 22231/2b2254a47700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-20 23:57:05.0121 22224/2ab13c200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-20 23:57:05.0122 22224/2ab13c200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-20 23:57:05.0128 22231/2b2254222380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-20 23:57:05.0155 22224/2ab0d4200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0155 22224/2ab0d4200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-20 23:57:05.0160 22224/2ab0bc200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0161 22224/2ab0bc200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-20 23:57:05.0161 22224/2ab05d173700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0162 22224/2ab05d173700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-20 23:57:05.0162 22224/2ab0fc200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0162 22224/2ab0fc200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-20 23:57:05.0165 22224/2ab124200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0165 22224/2ab124200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-20 23:57:05.0165 22224/2ab0f0200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0165 22224/2ab0f0200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-20 23:57:05.0168 22224/2ab088200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0168 22224/2ab088200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-20 23:57:05.0170 22224/2ab0c8200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0170 22224/2ab0a0200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0170 22224/2ab0c8200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-20 23:57:05.0170 22224/2ab0a0200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-20 23:57:05.0171 22224/2ab07c200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0171 22224/2ab118200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0171 22224/2ab0e4200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0172 22224/2ab118200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-20 23:57:05.0172 22224/2ab07c200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-20 23:57:05.0172 22224/2ab0e4200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-20 23:57:05.0172 22224/2ab130200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0172 22224/2ab0ac200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0172 22224/2ab130200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-20 23:57:05.0172 22224/2ab108200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0172 22224/2ab0ac200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-20 23:57:05.0172 22224/2ab094200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-20 23:57:05.0172 22224/2ab108200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-20 23:57:05.0172 22224/2ab094200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-20 23:57:05.0175 22224/2ab05c8cf380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 22559, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-20 23:57:05.1219 22224/2ab05c8cf380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-20 23:58:37.6570 31341/2b4e5b444380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-20 23:58:37.6614 31344/2acd86f9e380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-20 23:58:37.6615 31344/2acd86f9e380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-20 23:58:37.6659 31344/2acd86f9e380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 31344
+[ 2016-06-20 23:58:37.6708 31351/2ad41eace380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-20 23:58:37.6711 31351/2ad41eace380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 31351
+App 5266 stdout: 
+
+
+[ 2016-06-21 00:02:25.6066 31351/2ad41f2f3700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-21 00:02:25.6067 31344/2acd908a1700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-21 00:02:25.6067 31351/2ad41eace380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-21 00:02:25.6067 31344/2acd86f9e380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-21 00:02:25.6068 31351/2ad41f2f3700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-21 00:02:25.6068 31344/2acd86f9e380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 5266, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-21 00:02:25.6068 31351/2ad430200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-21 00:02:25.6068 31351/2ad430200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-21 00:02:25.6076 31344/2ace5c200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-21 00:02:25.6077 31344/2ace5c200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-21 00:02:25.6082 31351/2ad41eace380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-21 00:02:25.6122 31344/2acda0200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6122 31344/2acda0200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-21 00:02:25.6122 31344/2ace20200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6123 31344/2ace20200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-21 00:02:25.6125 31344/2ace2c200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6125 31344/2ace2c200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-21 00:02:25.6126 31344/2ace44200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6127 31344/2ace44200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-21 00:02:25.6129 31344/2acd908a1700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6129 31344/2acd908a1700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-21 00:02:25.6131 31344/2acdac200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6131 31344/2acdac200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-21 00:02:25.6131 31344/2acde4200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6131 31344/2acde4200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-21 00:02:25.6131 31344/2ace08200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6131 31344/2ace08200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-21 00:02:25.6132 31344/2ace14200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6132 31344/2ace14200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-21 00:02:25.6132 31344/2acdf0200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6133 31344/2acdf0200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-21 00:02:25.6134 31344/2acdd4200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6134 31344/2acdd4200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-21 00:02:25.6134 31344/2ace50200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6134 31344/2ace50200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-21 00:02:25.6134 31344/2acdb8200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6134 31344/2acdfc200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6135 31344/2acdfc200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-21 00:02:25.6135 31344/2acdb8200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-21 00:02:25.6135 31344/2acdc4200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6135 31344/2acdc4200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-21 00:02:25.6135 31344/2ace38200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-21 00:02:25.6135 31344/2ace38200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-21 00:02:25.6138 31344/2acd86f9e380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 5266, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-21 00:02:25.7190 31344/2acd86f9e380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-21 00:21:02.5996 30842/2af1a884d380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-21 00:21:02.6040 30845/2b72c8e58380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-21 00:21:02.6041 30845/2b72c8e58380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-21 00:21:02.6085 30845/2b72c8e58380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 30845
+[ 2016-06-21 00:21:02.6134 30855/2ba4be841380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-21 00:21:02.6137 30855/2ba4be841380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 30855
+App 31287 stdout: 
+
+[ 2016-06-21 00:43:13.0216 30855/2ba4bf066700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-21 00:43:13.0216 30855/2ba4be841380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+
+[ 2016-06-21 00:43:13.0217 30855/2ba4bf066700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-21 00:43:13.0217 30845/2b72d48a1700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-21 00:43:13.0217 30855/2ba4cc200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-21 00:43:13.0217 30845/2b72c8e58380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-21 00:43:13.0217 30855/2ba4cc200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-21 00:43:13.0217 30845/2b72c8e58380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 31287, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-21 00:43:13.0224 30845/2b7398200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-21 00:43:13.0225 30845/2b7398200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-21 00:43:13.0227 30855/2ba4be841380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-21 00:43:13.0270 30845/2b72e4200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0270 30845/2b732c200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0271 30845/2b72e4200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-21 00:43:13.0271 30845/2b732c200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-21 00:43:13.0272 30845/2b7374200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0272 30845/2b7374200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-21 00:43:13.0274 30845/2b7350200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0274 30845/2b7350200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-21 00:43:13.0275 30845/2b7338200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0275 30845/2b7338200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-21 00:43:13.0277 30845/2b7320200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0277 30845/2b7320200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-21 00:43:13.0277 30845/2b7380200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0277 30845/2b7380200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-21 00:43:13.0277 30845/2b72f0200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0278 30845/2b72f0200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-21 00:43:13.0278 30845/2b7368200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0278 30845/2b7368200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-21 00:43:13.0278 30845/2b735c200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0278 30845/2b72fc200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0278 30845/2b738c200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0278 30845/2b735c200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-21 00:43:13.0279 30845/2b738c200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-21 00:43:13.0278 30845/2b72fc200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-21 00:43:13.0279 30845/2b7314200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0278 30845/2b7308200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0279 30845/2b7314200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-21 00:43:13.0279 30845/2b7308200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-21 00:43:13.0279 30845/2b72d48a1700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0279 30845/2b7344200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-21 00:43:13.0279 30845/2b7344200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-21 00:43:13.0279 30845/2b72d48a1700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-21 00:43:13.0282 30845/2b72c8e58380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 31287, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-21 00:43:13.1371 30845/2b72c8e58380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-21 00:43:15.2389 24252/2b06f8f6e380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-21 00:43:15.2431 24256/2b7d16796380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-21 00:43:15.2432 24256/2b7d16796380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-21 00:43:15.2475 24256/2b7d16796380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 24256
+[ 2016-06-21 00:43:15.2526 24270/2af724649380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-21 00:43:15.2529 24270/2af724649380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 24270
+
+
+[ 2016-06-21 00:46:03.0324 24256/2b7d208a1700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-21 00:46:03.0324 24270/2af724e6e700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-21 00:46:03.0324 24256/2b7d16796380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-21 00:46:03.0324 24270/2af724649380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-21 00:46:03.0327 24270/2af734200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-21 00:46:03.0327 24270/2af734200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-21 00:46:03.0328 24270/2af724e6e700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-21 00:46:03.0330 24256/2b7df0200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-21 00:46:03.0330 24256/2b7df0200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-21 00:46:03.0333 24270/2af724649380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-21 00:46:03.0359 24256/2b7d58200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0359 24256/2b7d58200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-21 00:46:03.0365 24256/2b7da4200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0365 24256/2b7d4c200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0365 24256/2b7da4200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-21 00:46:03.0365 24256/2b7d4c200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-21 00:46:03.0365 24256/2b7d68200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0365 24256/2b7d68200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-21 00:46:03.0367 24256/2b7dd8200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0368 24256/2b7dd8200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-21 00:46:03.0370 24256/2b7dcc200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0370 24256/2b7dcc200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-21 00:46:03.0374 24256/2b7dbc200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0374 24256/2b7dbc200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-21 00:46:03.0376 24256/2b7d74200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0376 24256/2b7d74200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-21 00:46:03.0376 24256/2b7d20b23700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0376 24256/2b7d20b23700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-21 00:46:03.0377 24256/2b7de4200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0377 24256/2b7de4200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-21 00:46:03.0377 24256/2b7d80200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0377 24256/2b7d80200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-21 00:46:03.0378 24256/2b7d40200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0378 24256/2b7d40200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-21 00:46:03.0378 24256/2b7d98200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0378 24256/2b7d98200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-21 00:46:03.0378 24256/2b7d208a1700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0378 24256/2b7d208a1700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-21 00:46:03.0378 24256/2b7d8c200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0378 24256/2b7d8c200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-21 00:46:03.0378 24256/2b7db0200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-21 00:46:03.0378 24256/2b7db0200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-21 00:46:03.0403 24256/2b7d16796380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-21 00:46:33.1808 32241/2accbd47b380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-21 00:46:33.1849 32244/2b7467135380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-21 00:46:33.1850 32244/2b7467135380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-21 00:46:33.1896 32244/2b7467135380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 32244
+[ 2016-06-21 00:46:33.1946 32251/2ae5c15bb380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-21 00:46:33.1949 32251/2ae5c15bb380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 32251
+App 544 stdout: 
+
+[ 2016-06-23 13:47:52.4873 32244/2b7478200700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+
+[ 2016-06-23 13:47:52.4873 32244/2b7467135380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-23 13:47:52.4873 32251/2ae5c1de0700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-23 13:47:52.4874 32244/2b7467135380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 544, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-23 13:47:52.4874 32251/2ae5c15bb380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-23 13:47:52.4874 32251/2ae5c1de0700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-23 13:47:52.4875 32251/2ae5d0200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-23 13:47:52.4875 32251/2ae5d0200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-23 13:47:52.4886 32244/2b7548200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-23 13:47:52.4886 32244/2b7548200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-23 13:47:52.4888 32251/2ae5c15bb380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-23 13:48:04.4216 22111/2b7aead29380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-23 13:48:04.4257 22114/2b2109dca380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-23 13:48:04.4257 22114/2b2109dca380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-23 13:48:04.4301 22114/2b2109dca380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 22114
+[ 2016-06-23 13:48:04.4354 22121/2b1b56fbe380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-23 13:48:04.4358 22121/2b1b56fbe380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 22121
+App 1440 stdout: 
+
+
+[ 2016-06-25 13:23:01.2566 22114/2b211c200700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 13:23:01.2566 22121/2b1b577e3700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 13:23:01.2567 22114/2b2109dca380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:23:01.2567 22114/2b2109dca380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 1440, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 13:23:01.2567 22121/2b1b56fbe380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:23:01.2568 22121/2b1b577e3700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-25 13:23:01.2568 22121/2b1b60200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:23:01.2569 22121/2b1b60200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-25 13:23:01.2573 22114/2b21e4200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:23:01.2573 22114/2b21e4200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-25 13:23:01.2577 22121/2b1b56fbe380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-25 13:23:50.2622 11837/2b8ccc1dc380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-25 13:23:50.2668 11840/2ad116b96380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-25 13:23:50.2669 11840/2ad116b96380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-25 13:23:50.2715 11840/2ad116b96380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 11840
+[ 2016-06-25 13:23:50.2765 11847/2ac592674380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-25 13:23:50.2768 11847/2ac592674380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 11847
+App 12544 stdout: 
+
+
+[ 2016-06-25 13:35:51.6104 11840/2ad128200700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 13:35:51.6105 11847/2ac592e99700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 13:35:51.6105 11840/2ad116b96380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:35:51.6105 11847/2ac592674380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:35:51.6105 11840/2ad116b96380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 12544, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 13:35:51.6106 11847/2ac592e99700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-25 13:35:51.6106 11847/2ac5a0200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:35:51.6106 11847/2ac5a0200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-25 13:35:51.6113 11840/2ad1e8200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:35:51.6113 11840/2ad1e8200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-25 13:35:51.6114 11847/2ac592674380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-25 13:35:51.6148 11840/2ad140200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6149 11840/2ad140200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-25 13:35:51.6152 11840/2ad134200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6153 11840/2ad134200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-25 13:35:51.6154 11840/2ad1ac200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6154 11840/2ad1ac200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-25 13:35:51.6154 11840/2ad128200700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6155 11840/2ad128200700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-25 13:35:51.6156 11840/2ad158200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6156 11840/2ad158200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-25 13:35:51.6157 11840/2ad164200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6157 11840/2ad164200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-25 13:35:51.6159 11840/2ad14c200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6159 11840/2ad1d8200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6159 11840/2ad1d8200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-25 13:35:51.6159 11840/2ad14c200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-25 13:35:51.6159 11840/2ad1c4200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6160 11840/2ad1c4200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-25 13:35:51.6159 11840/2ad1a0200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6160 11840/2ad1a0200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-25 13:35:51.6160 11840/2ad1b8200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6160 11840/2ad1b8200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-25 13:35:51.6161 11840/2ad170200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6161 11840/2ad170200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-25 13:35:51.6162 11840/2ad1d0200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6162 11840/2ad1d0200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-25 13:35:51.6162 11840/2ad194200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6162 11840/2ad194200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-25 13:35:51.6162 11840/2ad17c200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6162 11840/2ad188200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-25 13:35:51.6163 11840/2ad17c200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-25 13:35:51.6163 11840/2ad188200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-25 13:35:51.6166 11840/2ad116b96380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 12544, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 13:35:51.7243 11840/2ad116b96380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-25 13:40:32.1425 32709/2abefb3e7380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-25 13:40:32.1468 32713/2b04d46ed380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-25 13:40:32.1469 32713/2b04d46ed380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-25 13:40:32.1512 32713/2b04d46ed380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 32713
+[ 2016-06-25 13:40:32.1565 32720/2b0864610380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-25 13:40:32.1569 32720/2b0864610380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 32720
+App 418 stdout: 
+
+
+[ 2016-06-25 13:41:10.1976 32720/2b0864e35700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 13:41:10.1976 32713/2b04e08a1700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 13:41:10.1976 32720/2b0864610380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:41:10.1977 32720/2b0864e35700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-25 13:41:10.1977 32713/2b04d46ed380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:41:10.1977 32713/2b04d46ed380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 418, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 13:41:10.1977 32720/2b0870200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:41:10.1978 32720/2b0870200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-25 13:41:10.1984 32713/2b05b8200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:41:10.1984 32713/2b05b8200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-25 13:41:10.1988 32720/2b0864610380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-25 13:41:10.2019 32713/2b051c200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2019 32713/2b051c200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-25 13:41:10.2022 32713/2b04e08a1700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2022 32713/2b04e08a1700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-25 13:41:10.2023 32713/2b04f4200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2024 32713/2b04f4200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-25 13:41:10.2027 32713/2b052c200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2027 32713/2b052c200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-25 13:41:10.2029 32713/2b0548200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2029 32713/2b0548200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-25 13:41:10.2029 32713/2b0594200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2029 32713/2b0594200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-25 13:41:10.2029 32713/2b0554200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2030 32713/2b0554200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-25 13:41:10.2030 32713/2b0560200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2030 32713/2b0560200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-25 13:41:10.2031 32713/2b0578200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2031 32713/2b0578200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-25 13:41:10.2031 32713/2b0510200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2032 32713/2b0510200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-25 13:41:10.2033 32713/2b053c200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2033 32713/2b053c200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-25 13:41:10.2034 32713/2b05a0200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2034 32713/2b05a0200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-25 13:41:10.2034 32713/2b05ac200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2034 32713/2b056c200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2034 32713/2b05ac200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-25 13:41:10.2034 32713/2b056c200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-25 13:41:10.2034 32713/2b0504200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2034 32713/2b0584200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-25 13:41:10.2034 32713/2b0504200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-25 13:41:10.2034 32713/2b0584200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-25 13:41:10.2037 32713/2b04d46ed380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 418, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 13:41:10.3095 32713/2b04d46ed380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-25 13:45:26.2485 7379/2af63defc380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-25 13:45:26.2526 7382/2b0f79757380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-25 13:45:26.2527 7382/2b0f79757380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-25 13:45:26.2571 7382/2b0f79757380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 7382
+[ 2016-06-25 13:45:26.2622 7389/2b0ca114f380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-25 13:45:26.2625 7389/2b0ca114f380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 7389
+App 7975 stdout: 
+
+
+[ 2016-06-25 13:52:31.5192 7382/2b0f8c200700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 13:52:31.5192 7389/2b0ca1974700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 13:52:31.5193 7382/2b0f79757380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:52:31.5193 7382/2b0f79757380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 7975, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 13:52:31.5198 7389/2b0ca114f380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:52:31.5199 7389/2b0ca1974700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-25 13:52:31.5199 7389/2b0cb0200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:52:31.5199 7389/2b0cb0200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-25 13:52:31.5201 7382/2b104c200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:52:31.5202 7382/2b104c200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-25 13:52:31.5209 7389/2b0ca114f380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-25 13:52:31.5242 7382/2b0fe0482700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5242 7382/2b0fe0482700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-25 13:52:31.5243 7382/2b0fd4281700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5244 7382/2b0fd4281700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-25 13:52:31.5244 7382/2b0fbc200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5245 7382/2b0fbc200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-25 13:52:31.5246 7382/2b1010200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5246 7382/2b1010200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-25 13:52:31.5247 7382/2b0fa4200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5247 7382/2b0fbc482700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5248 7382/2b0fa4200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-25 13:52:31.5248 7382/2b0fbc482700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-25 13:52:31.5248 7382/2b0f98200700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5248 7382/2b0f98200700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-25 13:52:31.5249 7382/2b101c200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5249 7382/2b101c200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-25 13:52:31.5250 7382/2b0f8c200700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5250 7382/2b0f8c200700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-25 13:52:31.5251 7382/2b0fb0200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5251 7382/2b1040200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5251 7382/2b0ff8281700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5252 7382/2b0fb0200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-25 13:52:31.5252 7382/2b0fe0200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5252 7382/2b0ff8281700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-25 13:52:31.5252 7382/2b1040200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-25 13:52:31.5252 7382/2b0fe0200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-25 13:52:31.5252 7382/2b1034200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5252 7382/2b1034200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-25 13:52:31.5253 7382/2b1028200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5253 7382/2b1004200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-25 13:52:31.5253 7382/2b1028200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-25 13:52:31.5253 7382/2b1004200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-25 13:52:31.5256 7382/2b0f79757380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 7975, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 13:52:31.6323 7382/2b0f79757380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-25 13:56:01.0002 19628/2af19f78b380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-25 13:56:01.0047 19631/2b0d75378380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-25 13:56:01.0048 19631/2b0d75378380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-25 13:56:01.0092 19631/2b0d75378380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 19631
+[ 2016-06-25 13:56:01.0143 19643/2aae3e7e8380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-25 13:56:01.0147 19643/2aae3e7e8380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 19643
+App 20030 stdout: 
+
+[ 2016-06-25 13:56:52.5940 19643/2aae3f00d700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+
+[ 2016-06-25 13:56:52.5940 19643/2aae3e7e8380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:56:52.5940 19631/2b0d88200700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 13:56:52.5941 19643/2aae3f00d700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-25 13:56:52.5941 19643/2aae48200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:56:52.5941 19643/2aae48200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-25 13:56:52.5941 19631/2b0d75378380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:56:52.5941 19631/2b0d75378380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 20030, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 13:56:52.5945 19643/2aae3e7e8380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-25 13:56:52.5953 19631/2b0e4c200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:56:52.5953 19631/2b0e4c200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-25 13:56:52.5987 19631/2b0e40200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5987 19631/2b0e40200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-25 13:56:52.5988 19631/2b0dd4200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5988 19631/2b0dd4200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-25 13:56:52.5990 19631/2b0e18200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5990 19631/2b0dc4200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5991 19631/2b0e18200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-25 13:56:52.5991 19631/2b0dc4200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-25 13:56:52.5992 19631/2b0d88200700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5993 19631/2b0d88200700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-25 13:56:52.5993 19631/2b0e28200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5993 19631/2b0e28200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-25 13:56:52.5995 19631/2b0e04200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5995 19631/2b0e04200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-25 13:56:52.5996 19631/2b0df8200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5996 19631/2b0df8200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-25 13:56:52.5996 19631/2b0dec200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5996 19631/2b0dec200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-25 13:56:52.5997 19631/2b0db8200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5997 19631/2b0db8200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-25 13:56:52.5997 19631/2b0da0200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5997 19631/2b0da0200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-25 13:56:52.5997 19631/2b0e10200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5997 19631/2b0e10200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-25 13:56:52.5998 19631/2b0e34200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5998 19631/2b0e34200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-25 13:56:52.5998 19631/2b0d88482700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5999 19631/2b0dac200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5999 19631/2b0de0200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-25 13:56:52.5999 19631/2b0d88482700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-25 13:56:52.5999 19631/2b0dac200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-25 13:56:52.5999 19631/2b0de0200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-25 13:56:52.6001 19631/2b0d75378380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 20030, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 13:56:52.7059 19631/2b0d75378380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-25 13:58:43.5038 22709/2ace18d51380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-25 13:58:43.5084 22713/2b807fb14380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-25 13:58:43.5085 22713/2b807fb14380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-25 13:58:43.5133 22713/2b807fb14380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 22713
+[ 2016-06-25 13:58:43.5187 22720/2b9006b47380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-25 13:58:43.5191 22720/2b9006b47380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 22720
+App 23575 stdout: 
+
+
+[ 2016-06-25 13:59:26.5488 22713/2b8084401700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 13:59:26.5488 22720/2b900736c700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 13:59:26.5488 22713/2b807fb14380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:59:26.5488 22720/2b9006b47380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 13:59:26.5488 22713/2b807fb14380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 23575, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 13:59:26.5489 22720/2b900736c700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-25 13:59:26.5490 22720/2b9018200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:59:26.5490 22720/2b9018200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-25 13:59:26.5493 22713/2b8158200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-25 13:59:26.5494 22713/2b8158200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-25 13:59:26.5499 22720/2b9006b47380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-25 13:59:26.5526 22713/2b80d8200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5526 22713/2b80d8200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-25 13:59:26.5531 22713/2b80f0200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5532 22713/2b80f0200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-25 13:59:26.5534 22713/2b8100200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5534 22713/2b8100200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-25 13:59:26.5537 22713/2b8118200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5537 22713/2b8118200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-25 13:59:26.5537 22713/2b8124200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5537 22713/2b8094281700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5538 22713/2b8124200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-25 13:59:26.5538 22713/2b8134200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5538 22713/2b8094281700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-25 13:59:26.5538 22713/2b8134200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-25 13:59:26.5542 22713/2b80cc200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5542 22713/2b80cc200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-25 13:59:26.5544 22713/2b80a4200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5544 22713/2b80a4200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-25 13:59:26.5545 22713/2b80bc200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5546 22713/2b8084401700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5546 22713/2b80bc200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-25 13:59:26.5546 22713/2b80b0200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5546 22713/2b80b0200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-25 13:59:26.5546 22713/2b8084401700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-25 13:59:26.5546 22713/2b8140200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5546 22713/2b8140200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-25 13:59:26.5547 22713/2b80e4200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5547 22713/2b80e4200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-25 13:59:26.5547 22713/2b810c200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5547 22713/2b814c200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-25 13:59:26.5547 22713/2b810c200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-25 13:59:26.5547 22713/2b814c200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-25 13:59:26.5550 22713/2b807fb14380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 23575, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 13:59:26.6635 22713/2b807fb14380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-25 14:08:40.5103 2585/2b7fe6acc380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-25 14:08:40.5143 2588/2b0fd0448380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-25 14:08:40.5144 2588/2b0fd0448380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-25 14:08:40.5188 2588/2b0fd0448380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 2588
+[ 2016-06-25 14:08:40.5239 2595/2ab9c93a2380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-25 14:08:40.5242 2595/2ab9c93a2380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 2595
+App 3105 stdout: 
+App 3105 stdout: {'public/test/R.PNG': 30603.315675000002, 'public/test/Q.png': 32907.159574999998, 'public/test/3.png': 31339.248449999999, 'public/test/L.png': 34158.436699999998, 'public/test/N.png': 31818.871875000001, 
+App 3105 stdout: 'public/test/B.PNG': 30397.8652, 'public/test/8.png': 34225.966124999999, 'public/test/S.png': 31818.871875000001, 
+App 3105 stdout: 'public/test/
+App 3105 stdout: 7.png': 
+App 3105 stdout: 31532.844225000001, 'public/test/H.png
+App 3105 stdout: ': 36343.230900000002, 'public/test/K.png': 
+App 3105 stdout: 28194.446725000002, 'public/test/J.png'
+App 3105 stdout: : 34615.239724999999, 'public/test/
+App 3105 stdout: O.png': 33187.270825, 'public/t
+App 3105 stdout: est/9.png': 
+App 3105 stdout: 31607.148925000001, 'public/test/
+App 3105 stdout: Z.png': 32197.964749999999, '
+App 3105 stdout: public/test/U.PN
+App 3105 stdout: G': 28702.53385, 'publi
+App 3105 stdout: c/test/5.png': 
+App 3105 stdout: 31832.215850000001, 'public/tes
+App 3105 stdout: t/4.png': 33501.930849999997, 
+App 3105 stdout: 'public/test/W.pn
+App 3105 stdout: g': 29175.261900000001, 'publ
+App 3105 stdout: ic/test/6.png': 
+App 3105 stdout: 29763.161250000001, 'public/test/I.p
+App 3105 stdout: ng': 34229.851625000003, 'pu
+App 3105 stdout: blic/test/M.pn
+App 3105 stdout: g': 31818.871875000001, 'public/
+App 3105 stdout: test/C.png': 32841.956050000001
+App 3105 stdout: , 'public/test/E.
+App 3105 stdout: png': 31818.871875000001, 'public/te
+App 3105 stdout: st/D.png': 32197.964749999999
+App 3105 stdout: , 'public/test/
+App 3105 stdout: F.png': 30104.448424999999
+App 3105 stdout: , 'public/test/Y.p
+App 3105 stdout: ng': 36748.176175000001, 'public
+App 3105 stdout: /test/X.PNG': 
+App 3105 stdout: 31035.84705, 'public/te
+App 3105 stdout: st/1.png': 32197.964749999999, 'pub
+App 3105 stdout: lic/test/P.PNG': 
+App 3105 stdout: 33654.726575000001, 'public/te
+App 3105 stdout: st/2.png': 28194.446725000002, 'p
+App 3105 stdout: ublic/test/T.png
+App 3105 stdout: ': 31818.871875000001, 'publ
+App 3105 stdout: ic/test/V.png': 28194.446725000002
+App 3105 stdout: , 'public/test/G.p
+App 3105 stdout: ng': 36457.985975000003}
+
+[ 2016-06-25 14:09:47.4402 2595/2ab9c9bc7700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+
+[ 2016-06-25 14:09:47.4402 2595/2ab9c93a2380 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 14:09:47.4402 2588/2b0fd0cec700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-06-25 14:09:47.4403 2595/2ab9c9bc7700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-06-25 14:09:47.4403 2588/2b0fd0448380 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-06-25 14:09:47.4403 2588/2b0fd0448380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 3105, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 14:09:47.4403 2595/2ab9d4200700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-06-25 14:09:47.4404 2595/2ab9d4200700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-06-25 14:09:47.4410 2588/2b10a8200700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-06-25 14:09:47.4410 2588/2b10a8200700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-06-25 14:09:47.4411 2595/2ab9c93a2380 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-06-25 14:09:47.4448 2588/2b0fd0cec700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4449 2588/2b0fd0cec700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-06-25 14:09:47.4455 2588/2b102c200700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4456 2588/2b102c200700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2016-06-25 14:09:47.4456 2588/2b101c200700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4456 2588/2b101c200700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2016-06-25 14:09:47.4457 2588/2b1090200700 Ser/Server.h:817 ]: [ServerThr.15] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4457 2588/2b1090200700 Ser/Server.h:464 ]: [ServerThr.15] Shutdown finished
+[ 2016-06-25 14:09:47.4458 2588/2b1004200700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4458 2588/2b0fe8281700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4458 2588/2b1004200700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-06-25 14:09:47.4458 2588/2b0fe8281700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-06-25 14:09:47.4459 2588/2b1010200700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4459 2588/2b1010200700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2016-06-25 14:09:47.4459 2588/2b1050200700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4459 2588/2b1050200700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2016-06-25 14:09:47.4460 2588/2b0ff8200700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4460 2588/2b0ff8200700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-06-25 14:09:47.4460 2588/2b1044200700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4460 2588/2b1044200700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2016-06-25 14:09:47.4461 2588/2b1084200700 Ser/Server.h:817 ]: [ServerThr.14] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4461 2588/2b1084200700 Ser/Server.h:464 ]: [ServerThr.14] Shutdown finished
+[ 2016-06-25 14:09:47.4461 2588/2b1038200700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4461 2588/2b1038200700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2016-06-25 14:09:47.4461 2588/2b109c200700 Ser/Server.h:817 ]: [ServerThr.16] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4461 2588/2b109c200700 Ser/Server.h:464 ]: [ServerThr.16] Shutdown finished
+[ 2016-06-25 14:09:47.4462 2588/2b1074200700 Ser/Server.h:817 ]: [ServerThr.13] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4462 2588/2b105c200700 Ser/Server.h:817 ]: [ServerThr.11] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4462 2588/2b1074200700 Ser/Server.h:464 ]: [ServerThr.13] Shutdown finished
+[ 2016-06-25 14:09:47.4462 2588/2b105c200700 Ser/Server.h:464 ]: [ServerThr.11] Shutdown finished
+[ 2016-06-25 14:09:47.4462 2588/2b1068200700 Ser/Server.h:817 ]: [ServerThr.12] Freed 128 spare client objects
+[ 2016-06-25 14:09:47.4462 2588/2b1068200700 Ser/Server.h:464 ]: [ServerThr.12] Shutdown finished
+[ 2016-06-25 14:09:47.4465 2588/2b0fd0448380 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 3105, application /home/ensignadmin/ensign.hthswd.org/public/public (development)
+[ 2016-06-25 14:09:47.5541 2588/2b0fd0448380 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
+[ 2016-06-25 14:09:51.8728 3455/2aba2daf0380 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-06-25 14:09:51.8772 3459/2b20ae68b380 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-06-25 14:09:51.8773 3459/2b20ae68b380 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-06-25 14:09:51.8817 3459/2b20ae68b380 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 3459
+[ 2016-06-25 14:09:51.8863 3467/2b2349be0380 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-06-25 14:09:51.8866 3467/2b2349be0380 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 3467
+App 6633 stdout: 
+App 6633 stdout: {'public/test/R.PNG': 21998.965424999999, 'public/test/Q.png': 21709.484825, 'public/test/3.png': 20928.031950000001, 'public/test/L.png': 17137.020949999998, 'public/t
+App 6633 stdout: est/N.png': 19198.666874999999, 'public/test/B.PNG': 20811.203949999999, 'public/test/8.png': 22784.460374999999, '
+App 6633 stdout: public/test/S.png': 19198.666874999999, '
+App 6633 stdout: publi
+App 6633 stdout: c/tes
+App 6633 stdout: t/7.png'
+App 6633 stdout: : 20678.514224999999, '
+App 6633 stdout: public/test/H.png': 22353.930899999999, 'public/test/K.png': 21119.191224999999, 'publ
+App 6633 stdout: ic/test/J.png': 
+App 6633 stdout: 22138.612475000002, 'public/te
+App 6633 stdout: st/O.png': 
+App 6633 stdout: 13936.645075, 'publi
+App 6633 stdout: c/test/9.
+App 6633 stdout: png': 
+App 6633 stdout: 23505.480175000001, 'public/test/Z
+App 6633 stdout: .png': 
+App 6633 stdout: 20597.632249999999, 'publi
+App 6633 stdout: c/test/U.PNG': 
+App 6633 stdout: 19004.654350000001, 'publ
+App 6633 stdout: ic/test/5.png'
+App 6633 stdout: : 22494.052100000001, 'public
+App 6633 stdout: /test/4.png': 
+App 6633 stdout: 18794.053599999999, 'public/
+App 6633 stdout: test/W.png
+App 6633 stdout: ': 22566.579900000001, 
+App 6633 stdout: 'public/test
+App 6633 stdout: /6.png': 
+App 6633 stdout: 23305.2225, '
+App 6633 stdout: public/test/I
+App 6633 stdout: .png': 19072.128874999999, 'public/test/M.png': 
+App 6633 stdout: 19198.666874999999, 'public/
+App 6633 stdout: test/C.p
+App 6633 stdout: ng': 11884.436799999999, 'p
+App 6633 stdout: ublic/test/E.p
+App 6633 stdout: ng'
+App 6633 stdout: : 19198.666874999999, 'publ
+App 6633 stdout: ic/test/D.png'
+App 6633 stdout: : 20597.632249999999, 
+App 6633 stdout: 'public/test/F
+App 6633 stdout: .png': 
+App 6633 stdout: 17670.992675000001, 'publ
+App 6633 stdout: ic/test/Y.png'
+App 6633 stdout: : 24238.590175000001, 'p
+App 6633 stdout: ublic/tes
+App 6633 stdout: t/X.PNG': 
+App 6633 stdout: 12885.814050000001, 'pub
+App 6633 stdout: lic/test/1.
+App 6633 stdout: png': 
+App 6633 stdout: 20597.632249999999, 'public/tes
+App 6633 stdout: t/P.PNG': 
+App 6633 stdout: 19637.797325, 'publi
+App 6633 stdout: c/test/2.p
+App 6633 stdout: ng': 21119.191224999999
+App 6633 stdout: , 'public/t
+App 6633 stdout: est/T.png'
+App 6633 stdout: : 19198.666874999999, '
+App 6633 stdout: public/test/
+App 6633 stdout: V.png': 
+App 6633 stdout: 21119.191224999999, 'pub
+App 6633 stdout: lic/test/G.
+App 6633 stdout: png': 
+App 6633 stdout: 20578.676974999998}
+App 6633 stdout: {'public/test/R.PNG': 22252.939050000001, 'public/test/Q.png': 25035.392449999999, 'public/test/3.png': 22218.580575, 'public/test/L.png': 17531.639824999998, 'public/test/N.png': 21533.402249999999, 'public/test/B.PNG': 22183.480074999999, 'publ
+App 6633 stdout: ic/test/8.png': 23092.14975, 'public/test/S.png': 21533.402249999999, 'p
+App 6633 stdout: ublic/test/7.png': 
+App 6633 stdout: 21020.182349999999, 'public/t
+App 6633 stdout: est/H.png': 23305.928775, '
+App 6633 stdout: public/test/K.png': 
+App 6633 stdout: 21322.215850000001, 'public/test/J.
+App 6633 stdout: png': 22405.081099999999, 'public
+App 6633 stdout: /test/O.png': 
+App 6633 stdout: 17032.55545, 'public/tes
+App 6633 stdout: t/9.png': 23524.9048, 
+App 6633 stdout: 'public/test/Z.png
+App 6633 stdout: ': 21328.392124999998, 'public/test/
+App 6633 stdout: U.PNG': 19639.980475, 'public
+App 6633 stdout: /test/5.png': 
+App 6633 stdout: 22945.268225, 'public/test/4.png': 19191.043975000001, 'public/
+App 6633 stdout: test/W.png': 23202.288525, 
+App 6633 stdout: 'public/test/6.
+App 6633 stdout: png': 24045.213374999999, 'publi
+App 6633 stdout: c/test/I.png': 
+App 6633 stdout: 19840.781749999998, 'public/
+App 6633 stdout: test/M.pn
+App 6633 stdout: g': 
+App 6633 stdout: 21533.402249999999, 'public/test/C.png': 16556.680675, 'public/test/E.png'
+App 6633 stdout: : 21533.402249999999, '
+App 6633 stdout: public/test
+App 6633 stdout: /D.png': 
+App 6633 stdout: 21328.392124999998, 'publ
+App 6633 stdout: ic/test/F.pn
+App 6633 stdout: g': 18306.675800000001, 'pub
+App 6633 stdout: lic/test/Y.p
+App 6633 stdout: ng': 22987.528300000002, 
+App 6633 stdout: 'public/test
+App 6633 stdout: /X.PNG': 
+App 6633 stdout: 17351.099924999999, 'public
+App 6633 stdout: /test/1.png'
+App 6633 stdout: : 21328.392124999998, 'pu
+App 6633 stdout: blic/test/P.PNG
+App 6633 stdout: ': 23246.283200000002, 'public
+App 6633 stdout: /test/2.png'
+App 6633 stdout: : 21322.215850000001, 'p
+App 6633 stdout: ublic/test/T.
+App 6633 stdout: png': 21533.402249999999, 
+App 6633 stdout: 'public/tes
+App 6633 stdout: t/V.png': 
+App 6633 stdout: 21322.215850000001, 'publ
+App 6633 stdout: ic/test/G.png
+App 6633 stdout: ': 22463.962100000001}
+App 6633 stdout: 

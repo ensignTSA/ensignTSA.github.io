@@ -51,13 +51,19 @@ def compare(input_letter):
    lowest_percent_limit = min(MSE.values()) + (lowest_percent)
    match=False
    for file_name in MSE.keys():
+
         imageB = cv2.imread(file_name)
         imageB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
+        
         #if MSE value between test image and user image 
         #falls between lowest 20%
-        if min(MSE.values()) <= mse(user, imageB) <= lowest_percent_limit:
+        if file_name[12]==input_letter:
            #if that test image corresponds with desired letter
-           if file_name[5]==input_letter:
+           print min(MSE.values())
+           print mse(user,imageB)
+           print lowest_percent_limit
+           if min(MSE.values()) <= mse(user, imageB) <= lowest_percent_limit:
+           
                match=True
    return match
        #Rerun read and compare functions on same input letter
@@ -87,3 +93,4 @@ def learn(input_letter):
     while 1==1:
         read_letter(input_letter)
         compare(input_letter.upper())
+compare('C')

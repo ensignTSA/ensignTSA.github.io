@@ -55,11 +55,15 @@ def compare(input_letter):
         imageB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
         #if MSE value between test image and user image 
         #falls between lowest 20%
-        if min(MSE.values()) <= mse(user, imageB) <= lowest_percent_limit:
+        if file_name[5]==input_letter:
+        
            #if that test image corresponds with desired letter
-           if file_name[5]==input_letter:
+           print min(MSE.values())
+           print mse(user,imageB)
+           print lowest_percent_limit
+           if min(MSE.values()) <= mse(user, imageB) <= lowest_percent_limit:
                match=True
-   print MSE
+   #print MSE
    return match
        #Rerun read and compare functions on same input letter
        #until the user gets sign correct
