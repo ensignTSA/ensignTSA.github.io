@@ -31,7 +31,7 @@ def compare(input_letter):
    user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
    
    user = cv2.GaussianBlur(user,(35,35),0)
-   _, user = cv2.threshold(user,127,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
+   _, user = cv2.threshold(user,127,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
    rootdir = 'test'
    MSE={}
@@ -46,7 +46,7 @@ def compare(input_letter):
            MSE[file_name]=(mse(user, imageB))
    #Find range of MSE values and lowest 20% of MSE values
    MSE_range = max(MSE.values()) - min(MSE.values())
-   lowest_percent = MSE_range/5
+   lowest_percent = MSE_range/2
    #MSE value at 20th percentile
    lowest_percent_limit = min(MSE.values()) + (lowest_percent)
    match=False
