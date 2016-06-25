@@ -27,9 +27,13 @@ def compare(input_letter):
            
    #load saved uer image
    user = cv2.imread("public/temp.png",1)
+
    user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
+   
+   user = cv2.GaussianBlur(user,(35,35),0)
+   _, user = cv2.threshold(user,127,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
+
    rootdir = 'test'
-            
    MSE={}
    #For each test file, add to the MSE dictionary
    #Key: file name
@@ -40,13 +44,11 @@ def compare(input_letter):
            imageB = cv2.imread(file_name)
            imageB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
            MSE[file_name]=(mse(user, imageB))
-    
    #Find range of MSE values and lowest 20% of MSE values
    MSE_range = max(MSE.values()) - min(MSE.values())
-   lowest_percent = MSE_range/4
+   lowest_percent = MSE_range/5
    #MSE value at 20th percentile
    lowest_percent_limit = min(MSE.values()) + (lowest_percent)
-   
    match=False
    for file_name in MSE.keys():
         imageB = cv2.imread(file_name)
@@ -57,7 +59,6 @@ def compare(input_letter):
            #if that test image corresponds with desired letter
            if file_name[5]==input_letter:
                match=True
-   
    return match
        #Rerun read and compare functions on same input letter
        #until the user gets sign correct
