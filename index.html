@@ -79,8 +79,8 @@ function submitImage(letter)
 	console.log(video.width);
 	console.log(video.height);
 	canvas.style.display="none";
-	canvas.width=video.width;//determines canvas width
-	canvas.height=video.height;//determines canvas height
+	canvas.width=200;//determines canvas width
+	canvas.height=200;//determines canvas height
 
 	responseDiv.innerHTML = '1';
 	if(letter=="Practice")
@@ -105,12 +105,12 @@ function submitImage(letter)
 	
 	setTimeout(function(){
 	var context = canvas.getContext('2d');//gets context from canvas
-	context.clearRect(0, 0, canvas.width, canvas.height); //handles dimensions
+	context.clearRect(200, 200, canvas.width, canvas.height); //handles dimensions
 
 	context.fillStyle = "#FFFFFF";//default image is white square
- 	context.fillRect(0,0,canvas.width,canvas.height); //handles canvas dimensions
+ 	context.fillRect(200,200,canvas.width,canvas.height); //handles canvas dimensions
 
-	context.drawImage(video, 0, 0, canvas.width,canvas.height );//gets picture from canvas
+	context.drawImage(video, 200, 200, canvas.width,canvas.height );//gets picture from canvas
 
 	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
 	var ajax = new XMLHttpRequest();
@@ -272,7 +272,7 @@ function submitImage(letter)
 				
 				<div class="camera"><!--getUsermedia frame goes here-->
 				<div id = "response" style="z-index:2;position:relative;top:50px"></div>
-				<video id = "forVid"  autoplay="true" height="200px" width="200px" style = "z-index:1;"></video>
+				<video id = "forVid"  autoplay="true" height="600px" width="600px" style = "z-index:1;position:relative;top:-150px;right:100px"></video>
 				
 				</div>
 				
