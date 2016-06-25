@@ -251,7 +251,12 @@ function submitImage(letter)
             </div>
             <div class="col s6">
 				
-              
+              	<div class="chip pink accent-3 white-text" style = "position:relative;top:-40px;right:200px">get ready in</div>
+				<div class="chip" id="chip1" style = "z-index:2;position:relative;top:-40px;right:200px">one</div> <!-- chip 1 -->
+				<div class="chip" id="chip2" style = "z-index:2;position:relative;top:-40px;right:200px">two</div> <!-- chip 2 -->
+				<div class="chip" id="chip3" style = "z-index:2;position:relative;top:-40px;right:200px">three</div> <!-- chip 3 -->
+				<div class="chip" id="chip4" style = "z-index:2;position:relative;top:-40px;right:200px">four</div> <!-- chip 4 -->
+				<div class="chip" id="chip5" style = "z-index:2;position:relative;top:-40px;right:200px">five</div> <!-- chip 5 -->
                 <br><br><br><br> <!-- forcing middle vertical alignment manually -->
                  <!--<div>You will need a webcam feed in order for the computer to</div> 
                 <div>recognize your gestures so that you can begin learning ASL.</div>
@@ -269,10 +274,11 @@ function submitImage(letter)
                 <!--<button class="btn waves-effect waves-light indigo" type="submit" name="submit">Learn
                   <i class="material-icons right">send</i>
                 </button>-->
-				
+
 				<div class="camera"><!--getUsermedia frame goes here-->
-				<div id = "response" style="z-index:2;position:relative;top:50px"></div>
-				<video id = "forVid"  autoplay="true" height="600px" width="600px" style = "z-index:1;position:relative;top:-150px;right:100px"></video>
+				<div id = "response" style="z-index:3;position:relative;color:white;"></div>
+				<div style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:35px;right:-200px"></div>
+				<video id = "forVid"  autoplay="true" height="600px" width="600px" style = "z-index:1;position:relative;top:-370px;right:100px"></video>
 				
 				</div>
 				
