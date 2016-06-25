@@ -6,6 +6,7 @@ import os, sys
 import bottle
 import comparetest
 
+
 from PIL import Image
 cmd_folder = os.path.dirname(os.path.abspath(__file__))
 if cmd_folder not in sys.path:
