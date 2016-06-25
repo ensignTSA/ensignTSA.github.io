@@ -27,9 +27,12 @@ def compare(input_letter):
            
    #load saved uer image
    user = cv2.imread("temp.png",1)
+
    user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
+   
+   user = cv2.GaussianBlur(user,(35,35),0)
+   _, user = cv2.threshold(user,127,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
    rootdir = 'test'
-            
    MSE={}
    #For each test file, add to the MSE dictionary
    #Key: file name
@@ -61,7 +64,7 @@ def compare(input_letter):
    return match
        #Rerun read and compare functions on same input letter
        #until the user gets sign correct
-
+compare('B')
 
 
 #practice tab   
