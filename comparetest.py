@@ -43,20 +43,21 @@ def compare(input_letter):
            imageB = cv2.imread(file_name)
            imageB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
            MSE[file_name]=(mse(user, imageB))
-    
+   print MSE
    #Find range of MSE values and lowest 20% of MSE values
    MSE_range = max(MSE.values()) - min(MSE.values())
-   lowest_percent = MSE_range/4
+   lowest_percent = MSE_range/5*4
+
    #MSE value at 20th percentile
    lowest_percent_limit = min(MSE.values()) + (lowest_percent)
-   
+   print lowest_percent_limit
    match=False
    for file_name in MSE.keys():
         imageB = cv2.imread(file_name)
         imageB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
         #if MSE value between test image and user image 
         #falls between lowest 20%
-        if min(MSE.values()) <= mse(user, imageB) <= lowest_percent_limit:
+        if max(MSE.values()) >= mse(user, imageB) >= lowest_percent_limit:
            #if that test image corresponds with desired letter
            if file_name[5]==input_letter:
                match=True
@@ -64,7 +65,7 @@ def compare(input_letter):
    return match
        #Rerun read and compare functions on same input letter
        #until the user gets sign correct
-compare('B')
+
 
 
 #practice tab   
