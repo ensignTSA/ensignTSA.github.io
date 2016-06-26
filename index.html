@@ -17,15 +17,18 @@
 	var alphaNumericArray;
 	var IntervalID;
 	function startCount(){
-		alphaNumericArray = ["0","1","2","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']
+		alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']
 		submitImage('Practice');
 		IntervalID = setInterval(function(){
-		if(alphaNumericArray!=null && alphaNumericaArray.length>=1)
+		if(alphaNumericArray!=null && alphaNumericArray.length>=1)
 		{
+		console.log(alphaNumericArray)
 		submitImage('Practice')
 		}
 		else{
-		return}
+		console.log(alphaNumericArray)
+		stopCount();
+		}
 		},7000);
 	}
 	function stopCount(){
@@ -91,7 +94,9 @@ $('.chip4').removeClass('indigo white-text'); // reset appearance of chip 4
 $('.chip5').removeClass('indigo white-text'); // reset appearance of chip 5
 	
 	var rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
-	alphaNumericArray.splice(alphaNumericArray.indexOf(rand,1));
+
+	alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);
+	
 	function readBody(xhr) {
     var data;
     if (!xhr.responseType || xhr.responseType === "text") {
