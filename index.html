@@ -1,5 +1,7 @@
 <html>
+
 	<head>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><!-- resize content based on screen size -->
 		<link href="materialize/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /><!-- Materialize -->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /><!-- Materialize -->
@@ -10,17 +12,20 @@
 		<script src="materialize/js/materialize.min.js" type="text/javascript"></script> <!-- Materialize -->
 		<script src="main.js" type="text/javascript"></script> <!-- additional JS hard-coded by team -->
 		<title>ensign</title>
+
 	</head>
+
 	<body onload = "loading('#forVid');loading('#forVid2');">
-		<nav class="top-nav indigo">
-			<!-- header; appears on every page -->
+
+		<nav class="top-nav indigo"> <!-- header; appears on every page -->
 			<div class="nav-wrapper">
 				<a class="title center">ensign</a>
 			</div>
 		</nav>
+
 		<div class="row">
-			<div class="col s12 pink accent-3 navbar">
-				<!-- tabs; appear on every page -->
+
+			<div class="col s12 pink accent-3 navbar"> <!-- tabs; appear on every page -->
 				<ul class="tabs">
 					<li class="tab col s3"><a class="active" href="#home">HOME</a></li>
 					<li class="tab col s3"><a href="#learn">LEARN</a></li>
@@ -28,16 +33,13 @@
 					<li class="tab col s3"><a href="#translate">TRANSLATE</a></li>
 				</ul>
 			</div>
-			<div class="content">
-				<!-- content on page changes based on tab clicked -->
-				<div id="home" class="col s12">
-					<!-- 'Home' tab -->
+
+			<div class="content"> <!-- content on page changes based on tab clicked -->
+				<div id="home" class="col s12"> <!-- 'Home' tab -->
 					<br><br><br><br><br> <!-- top spacing -->
-					<div class="slider">
-						<!-- slider with four slides -->
+					<div class="slider"> <!-- slider with four slides -->
 						<ul class="slides">
-							<li>
-								<!-- first slide -->
+							<li> <!-- first slide -->
 								<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF"> <!-- background for slides -->
 								<div class="caption left-align">
 									<br><br><br>
@@ -45,8 +47,7 @@
 									<h5 class="light grey-text text-lighten-3">a new tool for american sign language</h5>
 								</div>
 							</li>
-							<li>
-								<!-- second slide -->
+							<li> <!-- second slide -->
 								<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
 								<div class="caption right-align">
 									<br><br><br>
@@ -54,8 +55,7 @@
 									<h5 class="light grey-text text-lighten-3">using open source computer vision technology</h5>
 								</div>
 							</li>
-							<li>
-								<!-- third slide -->
+							<li> <!-- third slide -->
 								<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
 								<div class="caption left-align">
 									<br><br><br>
@@ -63,8 +63,7 @@
 									<h5 class="light grey-text text-lighten-3">signing letters and numbers</h5>
 								</div>
 							</li>
-							<li>
-								<!-- fourth slide -->
+							<li> <!-- fourth slide -->
 								<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
 								<div class="caption right-align">
 									<br><br><br>
@@ -74,19 +73,16 @@
 							</li>
 						</ul>
 					</div>
-					<div class="row">
-						<!-- bottom spacing -->
+					<div class="row"> <!-- bottom spacing -->
 					</div>
-					<div class="row">
-						<!-- bottom spacing -->
+					<div class="row"> <!-- bottom spacing -->
 					</div>
 				</div>
-				<div id="learn" class="col s12">
-					<!-- 'Learn' tab -->
+
+				<div id="learn" class="col s12"> <!-- 'Learn' tab -->
 					<br><br> <!-- top spacing -->
 					<form method="POST" onsubmit = "submitImage();">
-						<div class="row">
-							<!-- first row of buttons -->
+						<div class="row"> <!-- first row of buttons -->
 							<div class="col s1" onclick="submitImage('A');disableAll();"><a id = "A" class = "waves-effect waves-light btn pink accent-3">A</a></div>
 							<div class="col s1" onclick="submitImage('B');disableAll();"><a id = "B" class = "waves-effect waves-light btn pink accent-3">B</a></div>
 							<div class="col s1" onclick="submitImage('C');disableAll();"><a id = "C" class = "waves-effect waves-light btn pink accent-3">C</a></div>
@@ -100,8 +96,7 @@
 							<div class="col s1" onclick="submitImage('K');disableAll();"><a id = "K" class = "waves-effect waves-light btn pink accent-3">K</a></div>
 							<div class="col s1" onclick="submitImage('L');disableAll();"><a id = "L" class = "waves-effect waves-light btn pink accent-3">L</a></div>
 						</div>
-						<div class="row">
-							<!-- second row of buttons -->
+						<div class="row"> <!-- second row of buttons -->
 							<div class="col s1" onclick="submitImage('M');disableAll();"><a id = "M" class = "waves-effect waves-light btn pink accent-3">M</a></div>
 							<div class="col s1" onclick="submitImage('N');disableAll();"><a id = "N" class = "waves-effect waves-light btn pink accent-3">N</a></div>
 							<div class="col s1" onclick="submitImage('O');disableAll();"><a id = "O" class = "waves-effect waves-light btn pink accent-3">O</a></div>
@@ -115,8 +110,7 @@
 							<div class="col s1" onclick="submitImage('W');disableAll();"><a id = "W" class = "waves-effect waves-light btn pink accent-3">W</a></div>
 							<div class="col s1" onclick="submitImage('X');disableAll();"><a id = "X" class = "waves-effect waves-light btn pink accent-3">X</a></div>
 						</div>
-						<div class="row">
-							<!-- third row of buttons -->
+						<div class="row"> <!-- third row of buttons -->
 							<div class="col s1" onclick="submitImage('Y');disableAll();"><a id = "Y" class = "waves-effect waves-light btn pink accent-3">Y</a></div>
 							<div class="col s1" onclick="submitImage('Z');disableAll();"><a id = "Z" class = "waves-effect waves-light btn pink accent-3">Z</a></div>
 							<div class="col s1" onclick="submitImage('0');disableAll();"><a id = "0" class = "waves-effect waves-light btn indigo">0</a></div>
@@ -132,68 +126,66 @@
 						</div>
 						<br><br> <!-- spacing between buttons and picture / camera box -->
 						<div class="row">
-							<div class="col s6" id="image">
-								<!-- displayed image that changes with button click -->
-								<img src="pngs edited/A.PNG" width="450px" style = "position:relative;top:-15px;" height="450px">
+							<div class="col s6" id="image"> <!-- displayed image that changes with button click -->
+								<img src="pngs edited/A.PNG" width="450px" height="450px">
 							</div>
 							<div class="col s6">
-								<div class="chip pink accent-3 white-text" style = "position:relative;top:-20px;right:200px">get ready in</div>
-								<div class="chip chip1" id="chip1" style = "z-index:2;position:relative;top:-20px;right:200px">one</div><!-- chip 1 -->
-								<div class="chip chip2" id="chip2" style = "z-index:2;position:relative;top:-20px;right:200px">two</div><!-- chip 2 -->
-								<div class="chip chip3" id="chip3" style = "z-index:2;position:relative;top:-20px;right:200px">three</div><!-- chip 3 -->
-								<div class="chip chip4" id="chip4" style = "z-index:2;position:relative;top:-20px;right:200px">four</div><!-- chip 4 -->
-								<div class="chip chip5" id="chip5" style = "z-index:2;position:relative;top:-20px;right:200px">five</div><!-- chip 5 -->
+								<!-- countdown mechanism -->
+								<div class="chip pink accent-3 white-text" style = "position:relative;top:-5px;right:85px">get ready in</div>
+								<div class="chip chip1" id="chip1" style = "z-index:2;position:relative;top:-5px;right:85px">one</div> <!-- chip 1 -->
+								<div class="chip chip2" id="chip2" style = "z-index:2;position:relative;top:-5px;right:85px">two</div> <!-- chip 2 -->
+								<div class="chip chip3" id="chip3" style = "z-index:2;position:relative;top:-5px;right:85px">three</div> <!-- chip 3 -->
+								<div class="chip chip4" id="chip4" style = "z-index:2;position:relative;top:-5px;right:85px">four</div> <!-- chip 4 -->
+								<div class="chip chip5" id="chip5" style = "z-index:2;position:relative;top:-5px;right:85px">five</div> <!-- chip 5 -->
 								<br><br><br><br> 
-								<div class="camera"><!--getUsermedia frame goes here-->
+								<div class="camera"> <!--getUsermedia frame goes here-->
 									<div id = "response" style="z-index:3;position:relative;color:white;right:100;height:0;top:-50"></div>
-									<div class = "mybox" id = "box" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:140px;left:38%;transform: translate(-50%, -50%);"></div>
-									<video id = "forVid"  autoplay="true" height="400px" width="600px" style = "z-index:1;position:relative;top:-270px;right:100px"></video>
+									<div class = "mybox" id = "box" style="width:200px;height:200px;border:3px solid #f50057;z-index:3;position:relative;top:155px;left:42%;transform: translate(-50%, -50%);"></div>
+									<video id = "forVid"  autoplay="true" height="400px" width="600px" style = "z-index:1;position:relative;top:-249px;right:75px"></video>
 								</div>
 								<canvas id="canvas"></canvas>
 							</div>
 						</div>
 					</form>
-					<div class="row">
-						<!-- bottom spacing -->
+					<div class="row"> <!-- bottom spacing -->
 					</div>
 				</div>
-				<div id="practice" class="col s12">
-					<!-- 'Practice' tab -->
-					<div class="chip pink accent-3 white-text" style = "z-index:2;position:relative;top:50">get ready in</div>
-					<div class="chip chip1" id="chip6" style = "z-index:2;position:relative;top:50">one</div><!-- chip 1 -->
-					<div class="chip chip2" id="chip7" style = "z-index:2;position:relative;top:50">two</div><!-- chip 2 -->
-					<div class="chip chip3" id="chip8" style = "z-index:2;position:relative;top:50">three</div><!-- chip 3 -->
-					<div class="chip chip4" id="chip9" style = "z-index:2;position:relative;top:50">four</div><!-- chip 4 -->
-					<div class="chip chip5" id="chip10" style = "z-index:2;position:relative;top:50">five</div><!-- chip 5 -->
-					<div class="row">
-						<!-- virtually the same the same as the box on the 'Learn' page -->
-						<!-- forcing middle vertical alignment manually -->
+
+				<div id="practice" class="col s12"> <!-- 'Practice' tab -->
+					<!-- countdown mechanism -->
+					<div class="chip pink accent-3 white-text" style = "z-index:2;position:relative;top:45">get ready in</div>
+					<div class="chip chip1" id="chip6" style = "z-index:2;position:relative;top:45">one</div><!-- chip 1 -->
+					<div class="chip chip2" id="chip7" style = "z-index:2;position:relative;top:45">two</div><!-- chip 2 -->
+					<div class="chip chip3" id="chip8" style = "z-index:2;position:relative;top:45">three</div><!-- chip 3 -->
+					<div class="chip chip4" id="chip9" style = "z-index:2;position:relative;top:45">four</div><!-- chip 4 -->
+					<div class="chip chip5" id="chip10" style = "z-index:2;position:relative;top:45">five</div><!-- chip 5 -->
+					<div class="row"> <!-- virtually the same as the box on the 'Learn' page -->
 						<div id = "letterdiv" style = "position:relative;z-index:2;top:90;color:white;height:0;"></div>
 						<div id = "response2" style = "position:relative;z-index:2;top:110;color:white;height:0;" ></div>
-						<div  class = "mybox" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:250px;left:50%;transform: translate(-50%, -50%);"></div>
-						<div class="camera">
-							<!--getUsermedia frame goes here-->
-							<video id = "forVid2"  autoplay="true" height="400px" width="600px" style = "position:relative;top:-140;"></video>
+						<div  class = "mybox" style="width:200px;height:200px;border:3px solid #f50057;z-index:3;position:relative;top:250px;left:50%;transform: translate(-50%, -50%);"></div>
+						<div class="camera"><!--getUsermedia frame goes here-->
+							<video id = "forVid2"  autoplay="true" height="400px" width="600px" style = "position:relative;top:-133;"></video>
 						</div>
 						<canvas id="canvas"></canvas>
 					</div>
 					<div class = "row">
 						<div class = "col s3 push-s4">
-							<button class="btn waves-effect waves-light indigo" id = "practicebtn" style = "position:relative;top:-300;width:109px" onclick="startCount();this.disabled = true">Start
-							</button><!--start button for practice program-->
+							<button class="btn waves-effect waves-light indigo" id = "practicebtn" style = "position:relative;top:-250;width:109px" onclick="startCount();this.disabled = true">Start
+							</button> <!--start button for practice program-->
 						</div>
 						<div class = "col s3 push-s2">
-							<button class="btn waves-effect waves-light pink accent-3" style = "position:relative;top:-300;width:109px" id = "endpracticebtn" onclick="stopCount();enablePractice();">End
-							</button><!--end button for practice program-->
+							<button class="btn waves-effect waves-light pink accent-3" style = "position:relative;top:-250;width:109px" id = "endpracticebtn" onclick="stopCount();enablePractice();">End
+							</button> <!--end button for practice program-->
 						</div>
 					</div>
-					<div class="row"><!-- bottom spacing -->
+					<div class="row"> <!-- bottom spacing -->
 					</div>
 				</div>
-				<div id="translate" class="col s12"><!-- 'Translate' tab -->
+
+				<div id="translate" class="col s12"> <!-- 'Translate' tab -->
 					<br><br> <!-- top spacing -->
 					<div class="row">
-						<form class="col s12"><!-- input box -->
+						<form class="col s12"> <!-- input box -->
 							<div class="row">
 								<div class="input-field col s6 push-s3">
 									<i class="material-icons prefix">mode_edit</i>
@@ -204,30 +196,29 @@
 						</form>
 					</div>
 					<div class="row">
-						<div class="col s3 push-s3">
-							<!-- 'Translate' button -->
+						<div class="col s3 push-s3"> <!-- 'Translate' button -->
 							<button class="btn waves-effect waves-light indigo" id="translate">Translate
 							<i class="material-icons right">send</i>
 							</button>
 						</div>
-						<div class="col s3 push-s3">
-							<!-- 'Clear Message' button -->
+						<div class="col s3 push-s3"> <!-- 'Clear Message' button -->
 							<a class="waves-effect waves-indigo btn-flat">Clear Message</a>
 						</div>
 					</div>
 					<br><br>
 					<div class="row">
-						<div id="translateimg">
-							<!-- where pictures appear following translation -->
+						<div id="translateimg"> <!-- where pictures appear following translation -->
 						</div>
 					</div>
-					<div class="row">
-						<!-- bottom spacing -->
+					<div class="row"> <!-- bottom spacing -->
 					</div>
 				</div>
+				
 			</div>
+
 		</div>
-		<footer class="page-footer pink lighten-3"><!-- footer; appears on every page -->
+
+		<footer class="page-footer pink lighten-3"> <!-- footer; appears on every page -->
 			<p>
 				made with <a class="grey-text text-lighten-4" href="http://materializecss.com/" target="_blank">
 				Materialize v0.97.2</a></li> and <a class="grey-text text-lighten-4" href="http://jquery.com/" target="_blank">
@@ -237,8 +228,10 @@
 				Raleway</a></li>
 			</p>
 			<div class="footer-copyright">
-				<div>S3044, S3054, S3059, S3075, S3082, S3085</div><!-- id numbers for nationals -->
+				<div>S3044, S3054, S3059, S3075, S3082, S3085</div> <!-- id numbers for nationals -->
 			</div>
 		</footer>
+
 	</body>
+
 </html>

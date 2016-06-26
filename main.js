@@ -13,7 +13,7 @@ $(document).ready(function() { // on page load
 
         if ($(event.target).attr('class') === "waves-effect waves-light btn pink accent-3" || $(event.target).attr('class') === "waves-effect waves-light btn indigo") { // if button is on 'Learn' page
 
-            image.innerHTML = "<img src='pngs edited/" + event.target.id + ".PNG' width='450px' height='450px'>"; // change displayed image based on button clicked
+            image.innerHTML = "<img src='pngs edited/" + event.target.id + ".png' width='450px' height='450px'>"; // change displayed image based on button clicked
 
         } else if ($(event.target).attr('class') === "waves-effect waves-indigo btn-flat") { // if button is 'Clear Message' on 'Translate' page
             $(translatebox).val(''); // clear input box
@@ -30,7 +30,7 @@ $(document).ready(function() { // on page load
             var chars = translatebox.value.toUpperCase().replace(/\s+/g, ''); // take input from input box, convert all letters to uppercase, remove all whitespace
             if (chars.match(/^[a-zA-Z0-9]+$/i)) { // if input string consists only of alphanumeric characters
                 for (var i = 0, len = chars.length; i < len; i++) { // loop through each character in the string
-                    translateimg.innerHTML += "<img src='pngs edited/" + chars.charAt(i) + ".PNG' width='300px' height='300px'>"; // display corresponding picture file
+                    translateimg.innerHTML += "<img src='pngs edited/" + chars.charAt(i) + ".png' width='300px' height='300px'>"; // display corresponding picture file
                 }
                 $(translatebox).val(''); // clear input box
             } else if (chars === "") { // if nothing was inputted, but 'Translate' button was still clicked
@@ -128,10 +128,10 @@ function loading(querySelector) //loads the webcam capture
         }
         responseDiv1 = document.getElementById('response'); //change responses to show informative messages
         responseDiv2 = document.getElementById('response2');
-        responseDiv1.innerHTML = 'You need a webcam to use this feature. Please plug a webcam into your computer and refresh the page.';
+        responseDiv1.innerHTML = '<br><br><br><br><br><div style="color:#f50057;font-weight:bold;">IMPORTANT!</div><br>You need a webcam to use this feature.<br><br>Please plug a webcam into your<br>computer and refresh the page.';
         responseDiv1.style.color = 'black';
-        responseDiv2.innerHTML = 'You need a webcam to use this feature. Please plug a webcam into your computer and refresh the page.';
-        responseDiv2.style.color = "black";
+        responseDiv2.innerHTML = '<div style="color:#f50057;font-weight:bold;">IMPORTANT!</div><br>You need a webcam to use this feature.<br><br>Please plug a webcam into your<br>computer and refresh the page.';
+        responseDiv2.style.color = 'black';
 
         //webcam not available
     });
