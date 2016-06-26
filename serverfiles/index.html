@@ -14,6 +14,51 @@
     <title>ensign</title>
 
 	<script>
+	responseDiv3 = document.getElementById("response2");
+	var alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z'];
+	var IntervalID;
+	var rand;
+	function startCount(){
+		
+		alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z'];
+		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
+		mybool = submitImage('Practice');
+		if(submitImage('Practice'))
+		{
+		console.log('hi')
+		alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);
+		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
+		}
+		IntervalID = setInterval(function(){
+		if((responseDiv3.innerHTML)=="Correct!")
+		{
+		alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);
+		console.log('choosing new rand');
+		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
+		}
+		if(alphaNumericArray!=null && alphaNumericArray.length>=1)
+		{
+		console.log(alphaNumericArray)
+		submitImage('Practice');
+		}
+		else{
+		stopCount();
+		}
+		},7000);
+	}
+	function stopCount(){
+		clearInterval(IntervalID);
+		//letterdiv = document.getElementById('letterdiv');
+		//letterdiv.innerHTML = '';
+		//response2 = document.getElementById('response2');
+		//response2.innerHTML = '';
+	}
+		
+  var timer1; // initializing global variable for timer for chip 1
+  var timer2; // initializing global variable for timer for chip 2
+  var timer3; // initializing global variable for timer for chip 3
+  var timer4; // initializing global variable for timer for chip 4
+  var timer5; // initializing global variable for timer for chip 5
 function loading(querySelector)
 {
  var video = document.querySelector(querySelector);
@@ -51,8 +96,21 @@ function forError(e)
 }
 function submitImage(letter)
 {
-	var alphaNumericArray = ["0","1","2","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']
-	var rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
+responseDiv3 = document.getElementById("response2");
+clearTimeout(timer1); // clear timer1
+clearTimeout(timer2); // clear timer2
+clearTimeout(timer3); // clear timer3
+clearTimeout(timer4); // clear timer4
+clearTimeout(timer5); // clear timer5
+$('.chip1').removeClass('indigo white-text'); // reset appearance of chip 1
+$('.chip2').removeClass('indigo white-text'); // reset appearance of chip 2
+$('.chip3').removeClass('indigo white-text'); // reset appearance of chip 3
+$('.chip4').removeClass('indigo white-text'); // reset appearance of chip 4
+$('.chip5').removeClass('indigo white-text'); // reset appearance of chip 5
+	
+	
+
+	
 	
 	function readBody(xhr) {
     var data;
@@ -79,26 +137,56 @@ function submitImage(letter)
 	console.log(video.width);
 	console.log(video.height);
 	canvas.style.display="none";
-	canvas.width=200;//determines canvas width
-	canvas.height=200;//determines canvas height
+	canvas.width=600;//determines canvas width
+	canvas.height=600;//determines canvas height
 	
 	if(letter=="Practice")
 	{
 		letterdiv.innerHTML=('Please make the character ' + rand);
+		timer1 = setTimeout(function () { // after 1 second change appearance of chip 1
+        $('#chip6').addClass('indigo white-text');
+      }, 1000);
+timer2 = setTimeout(function () { // after 2 seconds change appearance of chip 2
+        $('#chip7').addClass('indigo white-text');
+      }, 2000);
+timer3 = setTimeout(function () { // after 3 seconds change appearance of chip 3
+        $('#chip8').addClass('indigo white-text');
+      }, 3000);
+timer4 = setTimeout(function () { // after 4 seconds change appearance of chip 4
+        $('#chip9').addClass('indigo white-text');
+      }, 4000);
+timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
+        $('#chip10').addClass('indigo white-text');
+      }, 5000);
 	}
 	else
 	{
 	responseDiv.innerHTML=('Please make the character ' + letter);
+	timer1 = setTimeout(function () { // after 1 second change appearance of chip 1
+        $('#chip1').addClass('indigo white-text');
+      }, 1000);
+timer2 = setTimeout(function () { // after 2 seconds change appearance of chip 2
+        $('#chip2').addClass('indigo white-text');
+      }, 2000);
+timer3 = setTimeout(function () { // after 3 seconds change appearance of chip 3
+        $('#chip3').addClass('indigo white-text');
+      }, 3000);
+timer4 = setTimeout(function () { // after 4 seconds change appearance of chip 4
+        $('#chip4').addClass('indigo white-text');
+      }, 4000);
+timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
+        $('#chip5').addClass('indigo white-text');
+      }, 5000);
 	}
-	
+
 	setTimeout(function(){
 	var context = canvas.getContext('2d');//gets context from canvas
-	context.clearRect(200, 200, canvas.width, canvas.height); //handles dimensions
+	context.clearRect(200, 200, canvas.width-200, canvas.height-200); //handles dimensions
 
 	context.fillStyle = "#FFFFFF";//default image is white square
- 	context.fillRect(200,200,canvas.width,canvas.height); //handles canvas dimensions
+ 	context.fillRect(200,200,canvas.width-200,canvas.height-200); //handles canvas dimensions
 
-	context.drawImage(video, 200, 200, canvas.width,canvas.height );//gets picture from canvas
+	context.drawImage(video, 200, 200, canvas.width-200,canvas.height-200 );//gets picture from canvas
 
 	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
 	var ajax = new XMLHttpRequest();
@@ -115,6 +203,15 @@ function submitImage(letter)
 	}
    console.log(data.length);//logs length of data to console, used for debugging
    responseDiv.innerHTML=readBody(ajax);
+   if((responseDiv3.innerHTML)=="Correct!")
+   {
+   console.log("great");
+   return true;
+   }
+   else
+   {
+   return false;
+   }
    },6000);
    
 
@@ -240,11 +337,11 @@ function submitImage(letter)
             <div class="col s6">
 				
               	<div class="chip pink accent-3 white-text" style = "position:relative;top:-40px;right:200px">get ready in</div>
-				<div class="chip" id="chip1" style = "z-index:2;position:relative;top:-40px;right:200px">one</div> <!-- chip 1 -->
-				<div class="chip" id="chip2" style = "z-index:2;position:relative;top:-40px;right:200px">two</div> <!-- chip 2 -->
-				<div class="chip" id="chip3" style = "z-index:2;position:relative;top:-40px;right:200px">three</div> <!-- chip 3 -->
-				<div class="chip" id="chip4" style = "z-index:2;position:relative;top:-40px;right:200px">four</div> <!-- chip 4 -->
-				<div class="chip" id="chip5" style = "z-index:2;position:relative;top:-40px;right:200px">five</div> <!-- chip 5 -->
+				<div class="chip chip1" id="chip1" style = "z-index:2;position:relative;top:-40px;right:200px">one</div> <!-- chip 1 -->
+				<div class="chip chip2" id="chip2" style = "z-index:2;position:relative;top:-40px;right:200px">two</div> <!-- chip 2 -->
+				<div class="chip chip3" id="chip3" style = "z-index:2;position:relative;top:-40px;right:200px">three</div> <!-- chip 3 -->
+				<div class="chip chip4" id="chip4" style = "z-index:2;position:relative;top:-40px;right:200px">four</div> <!-- chip 4 -->
+				<div class="chip chip5" id="chip5" style = "z-index:2;position:relative;top:-40px;right:200px">five</div> <!-- chip 5 -->
                 <br><br><br><br> <!-- forcing middle vertical alignment manually -->
                  <!--<div>You will need a webcam feed in order for the computer to</div> 
                 <div>recognize your gestures so that you can begin learning ASL.</div>
@@ -264,8 +361,8 @@ function submitImage(letter)
                 </button>-->
 
 				<div class="camera"><!--getUsermedia frame goes here-->
-				<div id = "response" style="z-index:3;position:relative;color:white;right:100"></div>
-				<div style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:35px;right:-200px"></div>
+				<div id = "response" style="z-index:3;position:relative;color:white;right:100;height:0;top:-50"></div>
+				<div id = "box" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:140px;left:38%;transform: translate(-50%, -50%);"></div>
 				<video id = "forVid"  autoplay="true" height="600px" width="600px" style = "z-index:1;position:relative;top:-370px;right:100px"></video>
 				
 				</div>
@@ -282,41 +379,36 @@ function submitImage(letter)
 		
 
         <div id="practice" class="col s12"> <!-- 'Practice' tab -->
+		        <div class="chip pink accent-3 white-text" style = "position:relative;top:50">get ready in</div>
+				<div class="chip chip1" id="chip6" style = "z-index:2;position:relative;top:50">one</div> <!-- chip 1 -->
+				<div class="chip chip2" id="chip7" style = "z-index:2;position:relative;top:50">two</div> <!-- chip 2 -->
+				<div class="chip chip3" id="chip8" style = "z-index:2;position:relative;top:50">three</div> <!-- chip 3 -->
+				<div class="chip chip4" id="chip9" style = "z-index:2;position:relative;top:50">four</div> <!-- chip 4 -->
+				<div class="chip chip5" id="chip10" style = "z-index:2;position:relative;top:50">five</div> <!-- chip 5 -->
           <br><br> <!-- top spacing -->
           <div class="row">
              <!-- virtually the same the same as the box on the 'Learn' page -->
               <!-- forcing middle vertical alignment manually -->
-				<div id = "letterdiv"></div>
-				<div id = "response2"></div>
+				<div id = "letterdiv" style = "position:relative;z-index:2;top:50;color:white;height:0;"></div>
+				<div id = "response2" style = "position:relative;z-index:2;top:70;color:white;height:0;" ></div>
+				<div style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:250px;left:50%;transform: translate(-50%, -50%);"></div>
 			  	<div class="camera"><!--getUsermedia frame goes here-->
-				<video id = "forVid2"  autoplay="true" height="600px" width="600px"></video>
+				<video id = "forVid2"  autoplay="true" height="600px" width="600px" style = "position:relative;top:-240;"></video>
 				</div>
 				
 				<canvas id="canvas"></canvas>
 				
 				<br/>
 				
-              <button class="btn waves-effect waves-light indigo" onclick="startCount();">Practice
+              <button class="btn waves-effect waves-light indigo" id = "practice" style = "position:relative;top:-400;" onclick="startCount();">Practice
                 <i class="material-icons right">send</i>
               </button>
 			  <br/>
 			  <br/>
-			  <button class="btn waves-effect waves-light indigo" onclick="stopCount();">End Practice
+			  <button class="btn waves-effect waves-light indigo" style = "position:relative;top:-400;" id = "endpractice" onclick="stopCount();">End Practice
                 <i class="material-icons right">send</i>
               </button>
-			  <script>
-			  var IntervalID;
-			  function startCount(){
-			  submitImage('Practice');IntervalID = setInterval(submitImage,7000,'Practice');
-			  }
-			  function stopCount(){
-			  clearInterval(IntervalID);
-			  //letterdiv = document.getElementById('letterdiv');
-			  //letterdiv.innerHTML = '';
-			  //response2 = document.getElementById('response2');
-			  //response2.innerHTML = '';
-			  }
-			  </script>
+
             
           </div>
           <div class="row"> <!-- bottom spacing -->
