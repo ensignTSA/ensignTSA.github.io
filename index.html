@@ -14,6 +14,11 @@
     <title>ensign</title>
 
 	<script>
+  var timer1; // initializing global variable for timer for chip 1
+  var timer2; // initializing global variable for timer for chip 2
+  var timer3; // initializing global variable for timer for chip 3
+  var timer4; // initializing global variable for timer for chip 4
+  var timer5; // initializing global variable for timer for chip 5
 function loading(querySelector)
 {
  var video = document.querySelector(querySelector);
@@ -51,6 +56,17 @@ function forError(e)
 }
 function submitImage(letter)
 {
+
+clearTimeout(timer1); // clear timer1
+clearTimeout(timer2); // clear timer2
+clearTimeout(timer3); // clear timer3
+clearTimeout(timer4); // clear timer4
+clearTimeout(timer5); // clear timer5
+$('#chip1').removeClass('indigo white-text'); // reset appearance of chip 1
+$('#chip2').removeClass('indigo white-text'); // reset appearance of chip 2
+$('#chip3').removeClass('indigo white-text'); // reset appearance of chip 3
+$('#chip4').removeClass('indigo white-text'); // reset appearance of chip 4
+$('#chip5').removeClass('indigo white-text'); // reset appearance of chip 5
 	var alphaNumericArray = ["0","1","2","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']
 	var rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
 	
@@ -90,7 +106,21 @@ function submitImage(letter)
 	{
 	responseDiv.innerHTML=('Please make the character ' + letter);
 	}
-	
+timer1 = setTimeout(function () { // after 1 second change appearance of chip 1
+        $('#chip1').addClass('indigo white-text');
+      }, 1000);
+timer2 = setTimeout(function () { // after 2 seconds change appearance of chip 2
+        $('#chip2').addClass('indigo white-text');
+      }, 2000);
+timer3 = setTimeout(function () { // after 3 seconds change appearance of chip 3
+        $('#chip3').addClass('indigo white-text');
+      }, 3000);
+timer4 = setTimeout(function () { // after 4 seconds change appearance of chip 4
+        $('#chip4').addClass('indigo white-text');
+      }, 4000);
+timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
+        $('#chip5').addClass('indigo white-text');
+      }, 5000);
 	setTimeout(function(){
 	var context = canvas.getContext('2d');//gets context from canvas
 	context.clearRect(200, 200, canvas.width-200, canvas.height-200); //handles dimensions
