@@ -18,8 +18,23 @@
 	var alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z'];
 	var IntervalID;
 	var rand;
+	var startTime;
+	var disabled = false;
+	
+	function disableAll()
+	{
+		disabled = true;
+		setTimeout(function(){disabled = false},6000);
+	}
+	
+	function enablePractice()
+	{
+	
+	document.getElementById('practicebtn').disabled = false;
+	
+	}
 	function startCount(){
-		
+
 		alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z'];
 		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
 		mybool = submitImage('Practice');
@@ -95,6 +110,8 @@ function forError(e)
 
 }
 function submitImage(letter)
+{
+if(disabled==false)
 {
 responseDiv3 = document.getElementById("response2");
 clearTimeout(timer1); // clear timer1
@@ -214,7 +231,7 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
    }
    },6000);
    
-
+}
 }
 	</script>
   </head>
@@ -288,46 +305,46 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
           <br><br> <!-- top spacing -->
 		  <form method="POST" onsubmit = "submitImage();">
           <div class="row"> <!-- first row of buttons -->
-			<div class="col s1" onclick="submitImage('A');"><a id = "A" class = "waves-effect waves-light btn pink accent-3">A</a></div>
-            <div class="col s1" onclick="submitImage('B');"><a id = "B" class = "waves-effect waves-light btn pink accent-3">B</a></div>
-			<div class="col s1" onclick="submitImage('C');"><a id = "C" class = "waves-effect waves-light btn pink accent-3">C</a></div>
-			<div class="col s1" onclick="submitImage('D');"><a id = "D" class = "waves-effect waves-light btn pink accent-3">D</a></div>
-			<div class="col s1" onclick="submitImage('E');"><a id = "E" class = "waves-effect waves-light btn pink accent-3">E</a></div>
-			<div class="col s1" onclick="submitImage('F');"><a id = "F" class = "waves-effect waves-light btn pink accent-3">F</a></div>
-			<div class="col s1" onclick="submitImage('G');"><a id = "G" class = "waves-effect waves-light btn pink accent-3">G</a></div>
-			<div class="col s1" onclick="submitImage('H');"><a id = "H" class = "waves-effect waves-light btn pink accent-3">H</a></div>
-			<div class="col s1" onclick="submitImage('I');"><a id = "I" class = "waves-effect waves-light btn pink accent-3">I</a></div>
-			<div class="col s1" onclick="submitImage('J');"><a id = "J" class = "waves-effect waves-light btn pink accent-3">J</a></div>
-			<div class="col s1" onclick="submitImage('K');"><a id = "K" class = "waves-effect waves-light btn pink accent-3">K</a></div>
-			<div class="col s1" onclick="submitImage('L');"><a id = "L" class = "waves-effect waves-light btn pink accent-3">L</a></div>
+			<div class="col s1" onclick="submitImage('A');disableAll();"><a id = "A" class = "waves-effect waves-light btn pink accent-3">A</a></div>
+            <div class="col s1" onclick="submitImage('B');disableAll();"><a id = "B" class = "waves-effect waves-light btn pink accent-3">B</a></div>
+			<div class="col s1" onclick="submitImage('C');disableAll();"><a id = "C" class = "waves-effect waves-light btn pink accent-3">C</a></div>
+			<div class="col s1" onclick="submitImage('D');disableAll();"><a id = "D" class = "waves-effect waves-light btn pink accent-3">D</a></div>
+			<div class="col s1" onclick="submitImage('E');disableAll();"><a id = "E" class = "waves-effect waves-light btn pink accent-3">E</a></div>
+			<div class="col s1" onclick="submitImage('F');disableAll();"><a id = "F" class = "waves-effect waves-light btn pink accent-3">F</a></div>
+			<div class="col s1" onclick="submitImage('G');disableAll();"><a id = "G" class = "waves-effect waves-light btn pink accent-3">G</a></div>
+			<div class="col s1" onclick="submitImage('H');disableAll();"><a id = "H" class = "waves-effect waves-light btn pink accent-3">H</a></div>
+			<div class="col s1" onclick="submitImage('I');disableAll();"><a id = "I" class = "waves-effect waves-light btn pink accent-3">I</a></div>
+			<div class="col s1" onclick="submitImage('J');disableAll();"><a id = "J" class = "waves-effect waves-light btn pink accent-3">J</a></div>
+			<div class="col s1" onclick="submitImage('K');disableAll();"><a id = "K" class = "waves-effect waves-light btn pink accent-3">K</a></div>
+			<div class="col s1" onclick="submitImage('L');disableAll();"><a id = "L" class = "waves-effect waves-light btn pink accent-3">L</a></div>
           </div>
           <div class="row"> <!-- second row of buttons -->
-			<div class="col s1" onclick="submitImage('M');"><a id = "M" class = "waves-effect waves-light btn pink accent-3">M</a></div>
-			<div class="col s1" onclick="submitImage('N');"><a id = "N" class = "waves-effect waves-light btn pink accent-3">N</a></div>
-			<div class="col s1" onclick="submitImage('O');"><a id = "O" class = "waves-effect waves-light btn pink accent-3">O</a></div>
-			<div class="col s1" onclick="submitImage('P');"><a id = "P" class = "waves-effect waves-light btn pink accent-3">P</a></div>
-			<div class="col s1" onclick="submitImage('Q');"><a id = "Q" class = "waves-effect waves-light btn pink accent-3">Q</a></div>
-			<div class="col s1" onclick="submitImage('R');"><a id = "R" class = "waves-effect waves-light btn pink accent-3">R</a></div>
-			<div class="col s1" onclick="submitImage('S');"><a id = "S" class = "waves-effect waves-light btn pink accent-3">S</a></div>
-			<div class="col s1" onclick="submitImage('T');"><a id = "T" class = "waves-effect waves-light btn pink accent-3">T</a></div>
-			<div class="col s1" onclick="submitImage('U');"><a id = "U" class = "waves-effect waves-light btn pink accent-3">U</a></div>
-			<div class="col s1" onclick="submitImage('V');"><a id = "V" class = "waves-effect waves-light btn pink accent-3">V</a></div>
-			<div class="col s1" onclick="submitImage('W');"><a id = "W" class = "waves-effect waves-light btn pink accent-3">W</a></div>
-			<div class="col s1" onclick="submitImage('X');"><a id = "X" class = "waves-effect waves-light btn pink accent-3">X</a></div>
+			<div class="col s1" onclick="submitImage('M');disableAll();"><a id = "M" class = "waves-effect waves-light btn pink accent-3">M</a></div>
+			<div class="col s1" onclick="submitImage('N');disableAll();"><a id = "N" class = "waves-effect waves-light btn pink accent-3">N</a></div>
+			<div class="col s1" onclick="submitImage('O');disableAll();"><a id = "O" class = "waves-effect waves-light btn pink accent-3">O</a></div>
+			<div class="col s1" onclick="submitImage('P');disableAll();"><a id = "P" class = "waves-effect waves-light btn pink accent-3">P</a></div>
+			<div class="col s1" onclick="submitImage('Q');disableAll();"><a id = "Q" class = "waves-effect waves-light btn pink accent-3">Q</a></div>
+			<div class="col s1" onclick="submitImage('R');disableAll();"><a id = "R" class = "waves-effect waves-light btn pink accent-3">R</a></div>
+			<div class="col s1" onclick="submitImage('S');disableAll();"><a id = "S" class = "waves-effect waves-light btn pink accent-3">S</a></div>
+			<div class="col s1" onclick="submitImage('T');disableAll();"><a id = "T" class = "waves-effect waves-light btn pink accent-3">T</a></div>
+			<div class="col s1" onclick="submitImage('U');disableAll();"><a id = "U" class = "waves-effect waves-light btn pink accent-3">U</a></div>
+			<div class="col s1" onclick="submitImage('V');disableAll();"><a id = "V" class = "waves-effect waves-light btn pink accent-3">V</a></div>
+			<div class="col s1" onclick="submitImage('W');disableAll();"><a id = "W" class = "waves-effect waves-light btn pink accent-3">W</a></div>
+			<div class="col s1" onclick="submitImage('X');disableAll();"><a id = "X" class = "waves-effect waves-light btn pink accent-3">X</a></div>
           </div>
           <div class="row"> <!-- third row of buttons -->
-			<div class="col s1" onclick="submitImage('Y');"><a id = "Y" class = "waves-effect waves-light btn pink accent-3">Y</a></div>
-			<div class="col s1" onclick="submitImage('Z');"><a id = "Z" class = "waves-effect waves-light btn pink accent-3">Z</a></div>
-			<div class="col s1" onclick="submitImage('0');"><a id = "0" class = "waves-effect waves-light btn indigo">0</a></div>
-			<div class="col s1" onclick="submitImage('1');"><a id = "1" class = "waves-effect waves-light btn indigo">1</a></div>
-			<div class="col s1" onclick="submitImage('2');"><a id = "2" class = "waves-effect waves-light btn indigo">2</a></div>
-			<div class="col s1" onclick="submitImage('3');"><a id = "3" class = "waves-effect waves-light btn indigo">3</a></div>
-			<div class="col s1" onclick="submitImage('4');"><a id = "4" class = "waves-effect waves-light btn indigo">4</a></div>
-			<div class="col s1" onclick="submitImage('5');"><a id = "5" class = "waves-effect waves-light btn indigo">5</a></div>
-			<div class="col s1" onclick="submitImage('6');"><a id = "6" class = "waves-effect waves-light btn indigo">6</a></div>
-			<div class="col s1" onclick="submitImage('7');"><a id = "7" class = "waves-effect waves-light btn indigo">7</a></div>
-			<div class="col s1" onclick="submitImage('8');"><a id = "8" class = "waves-effect waves-light btn indigo">8</a></div>
-			<div class="col s1" onclick="submitImage('9');"><a id = "9" class = "waves-effect waves-light btn indigo">9</a></div>
+			<div class="col s1" onclick="submitImage('Y');disableAll();"><a id = "Y" class = "waves-effect waves-light btn pink accent-3">Y</a></div>
+			<div class="col s1" onclick="submitImage('Z');disableAll();"><a id = "Z" class = "waves-effect waves-light btn pink accent-3">Z</a></div>
+			<div class="col s1" onclick="submitImage('0');disableAll();"><a id = "0" class = "waves-effect waves-light btn indigo">0</a></div>
+			<div class="col s1" onclick="submitImage('1');disableAll();"><a id = "1" class = "waves-effect waves-light btn indigo">1</a></div>
+			<div class="col s1" onclick="submitImage('2');disableAll();"><a id = "2" class = "waves-effect waves-light btn indigo">2</a></div>
+			<div class="col s1" onclick="submitImage('3');disableAll();"><a id = "3" class = "waves-effect waves-light btn indigo">3</a></div>
+			<div class="col s1" onclick="submitImage('4');disableAll();"><a id = "4" class = "waves-effect waves-light btn indigo">4</a></div>
+			<div class="col s1" onclick="submitImage('5');disableAll();"><a id = "5" class = "waves-effect waves-light btn indigo">5</a></div>
+			<div class="col s1" onclick="submitImage('6');disableAll();"><a id = "6" class = "waves-effect waves-light btn indigo">6</a></div>
+			<div class="col s1" onclick="submitImage('7');disableAll();"><a id = "7" class = "waves-effect waves-light btn indigo">7</a></div>
+			<div class="col s1" onclick="submitImage('8');disableAll();"><a id = "8" class = "waves-effect waves-light btn indigo">8</a></div>
+			<div class="col s1" onclick="submitImage('9');disableAll();"><a id = "9" class = "waves-effect waves-light btn indigo">9</a></div>
           </div>
           <br><br> <!-- spacing between buttons and picture / camera box -->
           <div class="row">
@@ -400,12 +417,12 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
 				
 				<br/>
 				
-              <button class="btn waves-effect waves-light indigo" id = "practice" style = "position:relative;top:-400;" onclick="startCount();">Practice
+              <button class="btn waves-effect waves-light indigo" id = "practicebtn" style = "position:relative;top:-400;" onclick="startCount();this.disabled = true">Practice
                 <i class="material-icons right">send</i>
               </button>
 			  <br/>
 			  <br/>
-			  <button class="btn waves-effect waves-light indigo" style = "position:relative;top:-400;" id = "endpractice" onclick="stopCount();">End Practice
+			  <button class="btn waves-effect waves-light indigo" style = "position:relative;top:-400;" id = "endpracticebtn" onclick="stopCount();enablePractice();">End Practice
                 <i class="material-icons right">send</i>
               </button>
 
