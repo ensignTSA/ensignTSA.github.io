@@ -81,27 +81,15 @@ function submitImage(letter)
 	canvas.style.display="none";
 	canvas.width=200;//determines canvas width
 	canvas.height=200;//determines canvas height
-
-	responseDiv.innerHTML = '1';
+	
 	if(letter=="Practice")
 	{
 		letterdiv.innerHTML=('Please make the character ' + rand);
 	}
-	setTimeout(function(){
-	responseDiv.innerHTML = '2';
-	},1000);
-	
-	setTimeout(function(){
-	responseDiv.innerHTML = '3';
-	},2000);
-	
-	setTimeout(function(){
-	responseDiv.innerHTML = '4';
-	},3000);
-	
-	setTimeout(function(){
-	responseDiv.innerHTML = '5';
-	},4000);
+	else
+	{
+	responseDiv.innerHTML=('Please make the character ' + letter);
+	}
 	
 	setTimeout(function(){
 	var context = canvas.getContext('2d');//gets context from canvas
@@ -127,7 +115,7 @@ function submitImage(letter)
 	}
    console.log(data.length);//logs length of data to console, used for debugging
    responseDiv.innerHTML=readBody(ajax);
-   },5000);
+   },6000);
    
 
 }
