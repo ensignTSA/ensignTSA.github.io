@@ -50,8 +50,11 @@ $(document).ready(function(){ // on page load
 	
 	function disableAll() // disables all the buttons to prevent the user from clicking too many in quick succession
 	{
+		if(disabled==false)
+		{
 		disabled = true;
 		setTimeout(function(){disabled = false},6000);
+		}
 	}
 	
 	function enablePractice() //reenables the practice button
