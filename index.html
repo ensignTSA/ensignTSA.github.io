@@ -20,23 +20,22 @@
 	var rand; //a random character, used for the practice page
 	var disabled = false; //boolean used to prevent the user from accessing multiple learn characters simultaneously
 	
-	function disableAll()
+	function disableAll() // disables all the buttons to prevent the user from clicking too many in quick succession
 	{
 		disabled = true;
 		setTimeout(function(){disabled = false},6000);
 	}
 	
-	function enablePractice()
+	function enablePractice() //reenables the practice button
 	{
 	
 	document.getElementById('practicebtn').disabled = false;
 	
 	}
-	function startCount(){
+	function startCount(){//starts the practice mode
 
 		alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z'];
-		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
-		mybool = submitImage('Practice');
+		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)]; //generates random value
 		if(submitImage('Practice'))
 		{
 		console.log('hi')

@@ -14,12 +14,11 @@
     <title>ensign</title>
 
 	<script>
-	responseDiv3 = document.getElementById("response2");
-	var alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z'];
-	var IntervalID;
-	var rand;
-	var startTime;
-	var disabled = false;
+	responseDiv3 = document.getElementById("response2"); //used to easily reference the div that contains the response to the practice option
+	var alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']; //used for randomly generating characters
+	var IntervalID; //used for ending certain loops
+	var rand; //a random character, used for the practice page
+	var disabled = false; //boolean used to prevent the user from accessing multiple learn characters simultaneously
 	
 	function disableAll()
 	{
@@ -37,7 +36,6 @@
 
 		alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z'];
 		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
-		mybool = submitImage('Practice');
 		if(submitImage('Practice'))
 		{
 		console.log('hi')
@@ -83,10 +81,21 @@ navigator.getUserMedia({video: true}, function() {
 //webcam available 
 
 }, function() {
+chips = document.getElementsByClassName('chip')
+  for(var i =0, il = chips.length;i<il;i++){
+     chips[i].style.visibility = 'hidden';
+	 disabled = true;
+  }
+boxes = document.getElementsByClassName('mybox')
+	for(var i = 0, il = boxes.length; i < il; i++){
+		boxes[i].style.visibility = 'hidden';
+		}
 responseDiv1 = document.getElementById('response');
 responseDiv2 = document.getElementById('response2');
 responseDiv1.innerHTML = 'You need a webcam to use this feature. Please plug a webcam into your computer and refresh the page.';
+responseDiv1.style.color = 'black';
 responseDiv2.innerHTML = 'You need a webcam to use this feature. Please plug a webcam into your computer and refresh the page.';
+responseDiv2.style.color = "black";
 
 //webcam not available
 });
@@ -379,7 +388,7 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
 
 				<div class="camera"><!--getUsermedia frame goes here-->
 				<div id = "response" style="z-index:3;position:relative;color:white;right:100;height:0;top:-50"></div>
-				<div id = "box" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:140px;left:38%;transform: translate(-50%, -50%);"></div>
+				<div class = "mybox" id = "box" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:140px;left:38%;transform: translate(-50%, -50%);"></div>
 				<video id = "forVid"  autoplay="true" height="600px" width="600px" style = "z-index:1;position:relative;top:-370px;right:100px"></video>
 				
 				</div>
@@ -408,7 +417,7 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
               <!-- forcing middle vertical alignment manually -->
 				<div id = "letterdiv" style = "position:relative;z-index:2;top:50;color:white;height:0;"></div>
 				<div id = "response2" style = "position:relative;z-index:2;top:70;color:white;height:0;" ></div>
-				<div style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:250px;left:50%;transform: translate(-50%, -50%);"></div>
+				<div  class = "mybox" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:250px;left:50%;transform: translate(-50%, -50%);"></div>
 			  	<div class="camera"><!--getUsermedia frame goes here-->
 				<video id = "forVid2"  autoplay="true" height="600px" width="600px" style = "position:relative;top:-240;"></video>
 				</div>
