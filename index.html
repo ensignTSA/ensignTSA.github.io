@@ -34,16 +34,16 @@
 	}
 	function startCount(){//starts the practice mode
 
-		alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z'];
+		alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']; 
 		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)]; //generates random value
-		if(submitImage('Practice'))
+		if(submitImage('Practice')) //runs submit image and checks for return value
 		{
-		console.log('hi')
-		alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);
-		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
+		console.log('hi') 
+		alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);//if user made correct sign, remove rand from array
+		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];//generate new rand
 		}
-		IntervalID = setInterval(function(){
-		if((responseDiv3.innerHTML)=="Correct!")
+		IntervalID = setInterval(function(){ //every 8 seconds, repeat the script
+		if((responseDiv3.innerHTML)=="Correct!") //almost the same script as above
 		{
 		alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);
 		console.log('choosing new rand');
@@ -59,7 +59,7 @@
 		}
 		},8000);
 	}
-	function stopCount(){
+	function stopCount(){ //stops practice
 		clearInterval(IntervalID);
 		//letterdiv = document.getElementById('letterdiv');
 		//letterdiv.innerHTML = '';
@@ -72,25 +72,25 @@
   var timer3; // initializing global variable for timer for chip 3
   var timer4; // initializing global variable for timer for chip 4
   var timer5; // initializing global variable for timer for chip 5
-function loading(querySelector)
+function loading(querySelector) //loads the webcam capture
 {
- var video = document.querySelector(querySelector);
+ var video = document.querySelector(querySelector); //gets video element, saves as variable
  navigator.getUserMedia = navigator.getUserMedia ||navigator.webkitGetUserMedia || navigator.mozGetUserMedia ||navigator.msGetUserMedia || navigator.oGetUserMedia;//sets up getUserMedia
 
-navigator.getUserMedia({video: true}, function() {
+navigator.getUserMedia({video: true}, function() { //asks for permission
 //webcam available 
 
-}, function() {
-chips = document.getElementsByClassName('chip')
+}, function() { //if permission not given
+chips = document.getElementsByClassName('chip') //make chips disappear
   for(var i =0, il = chips.length;i<il;i++){
      chips[i].style.visibility = 'hidden';
 	 disabled = true;
   }
-boxes = document.getElementsByClassName('mybox')
+boxes = document.getElementsByClassName('mybox') //make boxes disappear
 	for(var i = 0, il = boxes.length; i < il; i++){
 		boxes[i].style.visibility = 'hidden';
 		}
-responseDiv1 = document.getElementById('response');
+responseDiv1 = document.getElementById('response'); //change responses to show informative messages
 responseDiv2 = document.getElementById('response2');
 responseDiv1.innerHTML = 'You need a webcam to use this feature. Please plug a webcam into your computer and refresh the page.';
 responseDiv1.style.color = 'black';
@@ -99,7 +99,7 @@ responseDiv2.style.color = "black";
 
 //webcam not available
 });
-   if (navigator.getUserMedia)
+   if (navigator.getUserMedia) //gets media from user
    {
      var thevid = {video: true, audio: false};
      navigator.getUserMedia(thevid, handleVideo, forError)//sets up video input
@@ -118,11 +118,11 @@ function forError(e)
     }
 
 }
-function submitImage(letter)
+function submitImage(letter) //submits sign to server for checking
 {
-if(disabled==false)
+if(disabled==false) //if disabled is true, the function does nothing
 {
-responseDiv3 = document.getElementById("response2");
+responseDiv3 = document.getElementById("response2"); //unnecessary line, can delete later
 clearTimeout(timer1); // clear timer1
 clearTimeout(timer2); // clear timer2
 clearTimeout(timer3); // clear timer3
@@ -134,12 +134,8 @@ $('.chip3').removeClass('indigo white-text'); // reset appearance of chip 3
 $('.chip4').removeClass('indigo white-text'); // reset appearance of chip 4
 $('.chip5').removeClass('indigo white-text'); // reset appearance of chip 5
 	
-	
-
-	
-	
-	function readBody(xhr) {
-    var data;
+	function readBody(xhr) { //function to read body of POST request
+    var data; 
     if (!xhr.responseType || xhr.responseType === "text") {
         data = xhr.responseText;
     } else if (xhr.responseType === "document") {
@@ -149,14 +145,14 @@ $('.chip5').removeClass('indigo white-text'); // reset appearance of chip 5
     }
     return data;
 	}
-	if(letter=="Practice")
+	if(letter=="Practice") //if the practice parameter is passed, replace it with a random latter and use practice page instead of learn page
 	{
 		responseDiv = document.getElementById('response2');
 		letterdiv=document.getElementById('letterdiv');
 	}
 	else
 	{
-		responseDiv = document.getElementById('response');
+		responseDiv = document.getElementById('response'); //otherwise, proceed normally and use learn page
 	}
 	canvas = document.getElementById('canvas');//gets canvas
 	video= document.getElementById('forVid');//gets video
@@ -231,14 +227,14 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
    responseDiv.innerHTML=readBody(ajax);
    if((responseDiv3.innerHTML)=="Correct!")
    {
-   console.log("great");
+   console.log("great"); //logs success
    return true;
    }
    else
    {
    return false;
    }
-   },6000);
+   },6000); //6 second delay to give user time to position hand
    
 }
 }
