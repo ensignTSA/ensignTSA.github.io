@@ -1,495 +1,244 @@
 <html>
-
-  <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> <!-- resize content based on screen size -->
-    <link href="materialize/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /> <!-- Materialize -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> <!-- Materialize -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" /> <!-- font -->
-    <link href="additional.css" rel="stylesheet" type="text/css" /> <!-- additional styling hard-coded by team -->
-    <link href="http://www.stonybrook.edu/commcms/llrc/images/languages_flags/connect-sign-language-hi.png" rel="icon" type="image/png" /> <!-- favicon -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script> <!-- jQuery -->
-    <script src="materialize/js/materialize.min.js" type="text/javascript"></script> <!-- Materialize -->
-    <script src="main.js" type="text/javascript"></script> <!-- additional JS hard-coded by team -->
-    <title>ensign</title>
-
-	<script>
-	responseDiv3 = document.getElementById("response2"); //used to easily reference the div that contains the response to the practice option
-	var alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']; //used for randomly generating characters
-	var IntervalID; //used for ending certain loops
-	var rand; //a random character, used for the practice page
-	var disabled = false; //boolean used to prevent the user from accessing multiple learn characters simultaneously
-	
-	function disableAll() // disables all the buttons to prevent the user from clicking too many in quick succession
-	{
-		disabled = true;
-		setTimeout(function(){disabled = false},6000);
-	}
-	
-	function enablePractice() //reenables the practice button
-	{
-	
-	document.getElementById('practicebtn').disabled = false;
-	
-	}
-	function startCount(){//starts the practice mode
-
-		alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']; 
-		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)]; //generates random value
-		if(submitImage('Practice')) //runs submit image and checks for return value
-		{
-		console.log('hi') 
-		alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);//if user made correct sign, remove rand from array
-		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];//generate new rand
-		}
-		IntervalID = setInterval(function(){ //every 8 seconds, repeat the script
-		if((responseDiv3.innerHTML)=="Correct!") //almost the same script as above
-		{
-		alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);
-		console.log('choosing new rand');
-		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
-		}
-		if(alphaNumericArray!=null && alphaNumericArray.length>=1)
-		{
-		console.log(alphaNumericArray)
-		submitImage('Practice');
-		}
-		else{
-		stopCount();
-		}
-		},8000);
-	}
-	function stopCount(){ //stops practice
-		clearInterval(IntervalID);
-		//letterdiv = document.getElementById('letterdiv');
-		//letterdiv.innerHTML = '';
-		//response2 = document.getElementById('response2');
-		//response2.innerHTML = '';
-	}
-		
-  var timer1; // initializing global variable for timer for chip 1
-  var timer2; // initializing global variable for timer for chip 2
-  var timer3; // initializing global variable for timer for chip 3
-  var timer4; // initializing global variable for timer for chip 4
-  var timer5; // initializing global variable for timer for chip 5
-function loading(querySelector) //loads the webcam capture
-{
- var video = document.querySelector(querySelector); //gets video element, saves as variable
- navigator.getUserMedia = navigator.getUserMedia ||navigator.webkitGetUserMedia || navigator.mozGetUserMedia ||navigator.msGetUserMedia || navigator.oGetUserMedia;//sets up getUserMedia
-
-navigator.getUserMedia({video: true}, function() { //asks for permission
-//webcam available 
-
-}, function() { //if permission not given
-chips = document.getElementsByClassName('chip') //make chips disappear
-  for(var i =0, il = chips.length;i<il;i++){
-     chips[i].style.visibility = 'hidden';
-	 disabled = true;
-  }
-boxes = document.getElementsByClassName('mybox') //make boxes disappear
-	for(var i = 0, il = boxes.length; i < il; i++){
-		boxes[i].style.visibility = 'hidden';
-		}
-responseDiv1 = document.getElementById('response'); //change responses to show informative messages
-responseDiv2 = document.getElementById('response2');
-responseDiv1.innerHTML = 'You need a webcam to use this feature. Please plug a webcam into your computer and refresh the page.';
-responseDiv1.style.color = 'black';
-responseDiv2.innerHTML = 'You need a webcam to use this feature. Please plug a webcam into your computer and refresh the page.';
-responseDiv2.style.color = "black";
-
-//webcam not available
-});
-   if (navigator.getUserMedia) //gets media from user
-   {
-     var thevid = {video: true, audio: false};
-     navigator.getUserMedia(thevid, handleVideo, forError)//sets up video input
-   }
-
-
-
-function handleVideo(localmediastream)
-   {
-     video.src = window.URL.createObjectURL(localmediastream);//gets video from webcam
-   }
-
-function forError(e)
-    {
-        // mandatory error handler
-    }
-
-}
-function submitImage(letter) //submits sign to server for checking
-{
-if(disabled==false) //if disabled is true, the function does nothing
-{
-responseDiv3 = document.getElementById("response2"); //unnecessary line, can delete later
-clearTimeout(timer1); // clear timer1
-clearTimeout(timer2); // clear timer2
-clearTimeout(timer3); // clear timer3
-clearTimeout(timer4); // clear timer4
-clearTimeout(timer5); // clear timer5
-$('.chip1').removeClass('indigo white-text'); // reset appearance of chip 1
-$('.chip2').removeClass('indigo white-text'); // reset appearance of chip 2
-$('.chip3').removeClass('indigo white-text'); // reset appearance of chip 3
-$('.chip4').removeClass('indigo white-text'); // reset appearance of chip 4
-$('.chip5').removeClass('indigo white-text'); // reset appearance of chip 5
-	
-	function readBody(xhr) { //function to read body of POST request
-    var data; 
-    if (!xhr.responseType || xhr.responseType === "text") {
-        data = xhr.responseText;
-    } else if (xhr.responseType === "document") {
-        data = xhr.responseXML;
-    } else {
-        data = xhr.response;
-    }
-    return data;
-	}
-	if(letter=="Practice") //if the practice parameter is passed, replace it with a random latter and use practice page instead of learn page
-	{
-		responseDiv = document.getElementById('response2');
-		letterdiv=document.getElementById('letterdiv');
-	}
-	else
-	{
-		responseDiv = document.getElementById('response'); //otherwise, proceed normally and use learn page
-	}
-	canvas = document.getElementById('canvas');//gets canvas
-	video= document.getElementById('forVid');//gets video
-	console.log(video.width);
-	console.log(video.height);
-	canvas.style.display="none";
-	canvas.width=600;//determines canvas width
-	canvas.height=600;//determines canvas height
-	
-	if(letter=="Practice")
-	{
-		letterdiv.innerHTML=('Please make the character ' + rand);
-		timer1 = setTimeout(function () { // after 1 second change appearance of chip 1
-        $('#chip6').addClass('indigo white-text');
-      }, 1000);
-timer2 = setTimeout(function () { // after 2 seconds change appearance of chip 2
-        $('#chip7').addClass('indigo white-text');
-      }, 2000);
-timer3 = setTimeout(function () { // after 3 seconds change appearance of chip 3
-        $('#chip8').addClass('indigo white-text');
-      }, 3000);
-timer4 = setTimeout(function () { // after 4 seconds change appearance of chip 4
-        $('#chip9').addClass('indigo white-text');
-      }, 4000);
-timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
-        $('#chip10').addClass('indigo white-text');
-      }, 5000);
-	}
-	else
-	{
-	responseDiv.innerHTML=('Please make the character ' + letter);
-	timer1 = setTimeout(function () { // after 1 second change appearance of chip 1
-        $('#chip1').addClass('indigo white-text');
-      }, 1000);
-timer2 = setTimeout(function () { // after 2 seconds change appearance of chip 2
-        $('#chip2').addClass('indigo white-text');
-      }, 2000);
-timer3 = setTimeout(function () { // after 3 seconds change appearance of chip 3
-        $('#chip3').addClass('indigo white-text');
-      }, 3000);
-timer4 = setTimeout(function () { // after 4 seconds change appearance of chip 4
-        $('#chip4').addClass('indigo white-text');
-      }, 4000);
-timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
-        $('#chip5').addClass('indigo white-text');
-      }, 5000);
-	}
-
-	setTimeout(function(){
-	var context = canvas.getContext('2d');//gets context from canvas
-	context.clearRect(200, 200, canvas.width-200, canvas.height-200); //handles dimensions
-
-	context.fillStyle = "#FFFFFF";//default image is white square
- 	context.fillRect(200,200,canvas.width-200,canvas.height-200); //handles canvas dimensions
-
-	context.drawImage(video, 200, 200, canvas.width-200,canvas.height-200 );//gets picture from canvas
-
-	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
-	var ajax = new XMLHttpRequest();
-	ajax.open("POST",'https://ensign.hthswd.org:8085/process_file',false);//opens POST request with server; false means it is SYNCHRONOUS!!!!!!!!
-	ajax.onreadystatechange = function() {
-        console.log(ajax.responseText);
-    }
-    ajax.setRequestHeader('Content-Type', 'application/upload');//sets up POST request
-	if(letter=="Practice"){
-	ajax.send(rand+"imgData="+data);
-	}
-	else{
-    ajax.send(letter+"imgData="+data);//sends data to server
-	}
-   console.log(data.length);//logs length of data to console, used for debugging
-   responseDiv.innerHTML=readBody(ajax);
-   if((responseDiv3.innerHTML)=="Correct!")
-   {
-   console.log("great"); //logs success
-   return true;
-   }
-   else
-   {
-   return false;
-   }
-   },6000); //6 second delay to give user time to position hand
-   
-}
-}
-	</script>
-  </head>
-  
-  <body onload = "loading('#forVid');loading('#forVid2');">
-
-    <nav class="top-nav indigo"> <!-- header; appears on every page -->
-      <div class="nav-wrapper">
-        <a class="title center">ensign</a>
-      </div>
-    </nav>
-
-    <div class="row">
-
-      <div class="col s12 pink accent-3 navbar"> <!-- tabs; appear on every page -->
-        <ul class="tabs">
-          <li class="tab col s3"><a class="active" href="#home">HOME</a></li>
-          <li class="tab col s3"><a href="#learn">LEARN</a></li>
-          <li class="tab col s3"><a href="#practice">PRACTICE</a></li>
-          <li class="tab col s3"><a href="#translate">TRANSLATE</a></li>
-        </ul>
-      </div>
-
-      <div class="content"> <!-- content on page changes based on tab clicked -->
-
-        <div id="home" class="col s12"> <!-- 'Home' tab -->
-          <br><br><br><br><br> <!-- top spacing -->
-          <div class="slider"> <!-- slider with four slides -->
-            <ul class="slides">
-              <li> <!-- first slide -->
-                <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF"> <!-- background for slides -->
-                <div class="caption left-align">
-                  <br><br><br>
-                  <h3>ensign</h3>
-                  <h5 class="light grey-text text-lighten-3">a new tool for american sign language</h5>
-                </div>
-              </li>
-              <li> <!-- second slide -->
-                <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
-                <div class="caption right-align">
-                  <br><br><br>
-                  <h3>learn</h3>
-                  <h5 class="light grey-text text-lighten-3">using open source computer vision technology</h5>
-                </div>
-              </li>
-              <li> <!-- third slide -->
-                <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
-                <div class="caption left-align">
-                  <br><br><br>
-                  <h3>practice</h3>
-                  <h5 class="light grey-text text-lighten-3">signing letters and numbers</h5>
-                </div>
-              </li>
-              <li> <!-- fourth slide -->
-                <img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
-                <div class="caption right-align">
-                  <br><br><br>
-                  <h3>translate</h3>
-                  <h5 class="light grey-text text-lighten-3">english to asl</h5>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="row"> <!-- bottom spacing -->
-          </div>
-          <div class="row"> <!-- bottom spacing -->
-          </div>
-        </div>
-		
-        <div id="learn" class="col s12"> <!-- 'Learn' tab -->
-          <br><br> <!-- top spacing -->
-		  <form method="POST" onsubmit = "submitImage();">
-          <div class="row"> <!-- first row of buttons -->
-			<div class="col s1" onclick="submitImage('A');disableAll();"><a id = "A" class = "waves-effect waves-light btn pink accent-3">A</a></div>
-            <div class="col s1" onclick="submitImage('B');disableAll();"><a id = "B" class = "waves-effect waves-light btn pink accent-3">B</a></div>
-			<div class="col s1" onclick="submitImage('C');disableAll();"><a id = "C" class = "waves-effect waves-light btn pink accent-3">C</a></div>
-			<div class="col s1" onclick="submitImage('D');disableAll();"><a id = "D" class = "waves-effect waves-light btn pink accent-3">D</a></div>
-			<div class="col s1" onclick="submitImage('E');disableAll();"><a id = "E" class = "waves-effect waves-light btn pink accent-3">E</a></div>
-			<div class="col s1" onclick="submitImage('F');disableAll();"><a id = "F" class = "waves-effect waves-light btn pink accent-3">F</a></div>
-			<div class="col s1" onclick="submitImage('G');disableAll();"><a id = "G" class = "waves-effect waves-light btn pink accent-3">G</a></div>
-			<div class="col s1" onclick="submitImage('H');disableAll();"><a id = "H" class = "waves-effect waves-light btn pink accent-3">H</a></div>
-			<div class="col s1" onclick="submitImage('I');disableAll();"><a id = "I" class = "waves-effect waves-light btn pink accent-3">I</a></div>
-			<div class="col s1" onclick="submitImage('J');disableAll();"><a id = "J" class = "waves-effect waves-light btn pink accent-3">J</a></div>
-			<div class="col s1" onclick="submitImage('K');disableAll();"><a id = "K" class = "waves-effect waves-light btn pink accent-3">K</a></div>
-			<div class="col s1" onclick="submitImage('L');disableAll();"><a id = "L" class = "waves-effect waves-light btn pink accent-3">L</a></div>
-          </div>
-          <div class="row"> <!-- second row of buttons -->
-			<div class="col s1" onclick="submitImage('M');disableAll();"><a id = "M" class = "waves-effect waves-light btn pink accent-3">M</a></div>
-			<div class="col s1" onclick="submitImage('N');disableAll();"><a id = "N" class = "waves-effect waves-light btn pink accent-3">N</a></div>
-			<div class="col s1" onclick="submitImage('O');disableAll();"><a id = "O" class = "waves-effect waves-light btn pink accent-3">O</a></div>
-			<div class="col s1" onclick="submitImage('P');disableAll();"><a id = "P" class = "waves-effect waves-light btn pink accent-3">P</a></div>
-			<div class="col s1" onclick="submitImage('Q');disableAll();"><a id = "Q" class = "waves-effect waves-light btn pink accent-3">Q</a></div>
-			<div class="col s1" onclick="submitImage('R');disableAll();"><a id = "R" class = "waves-effect waves-light btn pink accent-3">R</a></div>
-			<div class="col s1" onclick="submitImage('S');disableAll();"><a id = "S" class = "waves-effect waves-light btn pink accent-3">S</a></div>
-			<div class="col s1" onclick="submitImage('T');disableAll();"><a id = "T" class = "waves-effect waves-light btn pink accent-3">T</a></div>
-			<div class="col s1" onclick="submitImage('U');disableAll();"><a id = "U" class = "waves-effect waves-light btn pink accent-3">U</a></div>
-			<div class="col s1" onclick="submitImage('V');disableAll();"><a id = "V" class = "waves-effect waves-light btn pink accent-3">V</a></div>
-			<div class="col s1" onclick="submitImage('W');disableAll();"><a id = "W" class = "waves-effect waves-light btn pink accent-3">W</a></div>
-			<div class="col s1" onclick="submitImage('X');disableAll();"><a id = "X" class = "waves-effect waves-light btn pink accent-3">X</a></div>
-          </div>
-          <div class="row"> <!-- third row of buttons -->
-			<div class="col s1" onclick="submitImage('Y');disableAll();"><a id = "Y" class = "waves-effect waves-light btn pink accent-3">Y</a></div>
-			<div class="col s1" onclick="submitImage('Z');disableAll();"><a id = "Z" class = "waves-effect waves-light btn pink accent-3">Z</a></div>
-			<div class="col s1" onclick="submitImage('0');disableAll();"><a id = "0" class = "waves-effect waves-light btn indigo">0</a></div>
-			<div class="col s1" onclick="submitImage('1');disableAll();"><a id = "1" class = "waves-effect waves-light btn indigo">1</a></div>
-			<div class="col s1" onclick="submitImage('2');disableAll();"><a id = "2" class = "waves-effect waves-light btn indigo">2</a></div>
-			<div class="col s1" onclick="submitImage('3');disableAll();"><a id = "3" class = "waves-effect waves-light btn indigo">3</a></div>
-			<div class="col s1" onclick="submitImage('4');disableAll();"><a id = "4" class = "waves-effect waves-light btn indigo">4</a></div>
-			<div class="col s1" onclick="submitImage('5');disableAll();"><a id = "5" class = "waves-effect waves-light btn indigo">5</a></div>
-			<div class="col s1" onclick="submitImage('6');disableAll();"><a id = "6" class = "waves-effect waves-light btn indigo">6</a></div>
-			<div class="col s1" onclick="submitImage('7');disableAll();"><a id = "7" class = "waves-effect waves-light btn indigo">7</a></div>
-			<div class="col s1" onclick="submitImage('8');disableAll();"><a id = "8" class = "waves-effect waves-light btn indigo">8</a></div>
-			<div class="col s1" onclick="submitImage('9');disableAll();"><a id = "9" class = "waves-effect waves-light btn indigo">9</a></div>
-          </div>
-          <br><br> <!-- spacing between buttons and picture / camera box -->
-          <div class="row">
-            <div class="col s6" id="image"> <!-- displayed image that changes with button click -->
-              <img src="pngs edited/A.png" width="450px" height="450px">
-            </div>
-            <div class="col s6">
-				
-              	<div class="chip pink accent-3 white-text" style = "position:relative;top:-40px;right:200px">get ready in</div>
-				<div class="chip chip1" id="chip1" style = "z-index:2;position:relative;top:-40px;right:200px">one</div> <!-- chip 1 -->
-				<div class="chip chip2" id="chip2" style = "z-index:2;position:relative;top:-40px;right:200px">two</div> <!-- chip 2 -->
-				<div class="chip chip3" id="chip3" style = "z-index:2;position:relative;top:-40px;right:200px">three</div> <!-- chip 3 -->
-				<div class="chip chip4" id="chip4" style = "z-index:2;position:relative;top:-40px;right:200px">four</div> <!-- chip 4 -->
-				<div class="chip chip5" id="chip5" style = "z-index:2;position:relative;top:-40px;right:200px">five</div> <!-- chip 5 -->
-                <br><br><br><br> <!-- forcing middle vertical alignment manually -->
-                 <!--<div>You will need a webcam feed in order for the computer to</div> 
-                <div>recognize your gestures so that you can begin learning ASL.</div>
-                <br>
-                <div>Please click the button below to open the webcam feed.</div>
-                <br>
-                <div>It is recommended that you resize the feed</div>
-                <div>window to fit within the contours of this box.</div>
-                <br>
-                <div>It is also recommended that your hand take up as much</div>
-                <div>of the white outlined box in the webcam feed as possible.</div>
-                <div></div>
-                <br><br>
-                <!-- 'Learn' button triggers the Python program that lets the user learn the various signs -->
-                <!--<button class="btn waves-effect waves-light indigo" type="submit" name="submit">Learn
-                  <i class="material-icons right">send</i>
-                </button>-->
-
-				<div class="camera"><!--getUsermedia frame goes here-->
-				<div id = "response" style="z-index:3;position:relative;color:white;right:100;height:0;top:-50"></div>
-				<div class = "mybox" id = "box" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:140px;left:38%;transform: translate(-50%, -50%);"></div>
-				<video id = "forVid"  autoplay="true" height="600px" width="600px" style = "z-index:1;position:relative;top:-370px;right:100px"></video>
-				
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><!-- resize content based on screen size -->
+		<link href="materialize/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" /><!-- Materialize -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /><!-- Materialize -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" /><!-- font -->
+		<link href="additional.css" rel="stylesheet" type="text/css" /><!-- additional styling hard-coded by team -->
+		<link href="http://www.stonybrook.edu/commcms/llrc/images/languages_flags/connect-sign-language-hi.png" rel="icon" type="image/png" /><!-- favicon -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script> <!-- jQuery -->
+		<script src="materialize/js/materialize.min.js" type="text/javascript"></script> <!-- Materialize -->
+		<script src="main.js" type="text/javascript"></script> <!-- additional JS hard-coded by team -->
+		<title>ensign</title>
+	</head>
+	<body onload = "loading('#forVid');loading('#forVid2');">
+		<nav class="top-nav indigo">
+			<!-- header; appears on every page -->
+			<div class="nav-wrapper">
+				<a class="title center">ensign</a>
+			</div>
+		</nav>
+		<div class="row">
+			<div class="col s12 pink accent-3 navbar">
+				<!-- tabs; appear on every page -->
+				<ul class="tabs">
+					<li class="tab col s3"><a class="active" href="#home">HOME</a></li>
+					<li class="tab col s3"><a href="#learn">LEARN</a></li>
+					<li class="tab col s3"><a href="#practice">PRACTICE</a></li>
+					<li class="tab col s3"><a href="#translate">TRANSLATE</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<!-- content on page changes based on tab clicked -->
+				<div id="home" class="col s12">
+					<!-- 'Home' tab -->
+					<br><br><br><br><br> <!-- top spacing -->
+					<div class="slider">
+						<!-- slider with four slides -->
+						<ul class="slides">
+							<li>
+								<!-- first slide -->
+								<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF"> <!-- background for slides -->
+								<div class="caption left-align">
+									<br><br><br>
+									<h3>ensign</h3>
+									<h5 class="light grey-text text-lighten-3">a new tool for american sign language</h5>
+								</div>
+							</li>
+							<li>
+								<!-- second slide -->
+								<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
+								<div class="caption right-align">
+									<br><br><br>
+									<h3>learn</h3>
+									<h5 class="light grey-text text-lighten-3">using open source computer vision technology</h5>
+								</div>
+							</li>
+							<li>
+								<!-- third slide -->
+								<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
+								<div class="caption left-align">
+									<br><br><br>
+									<h3>practice</h3>
+									<h5 class="light grey-text text-lighten-3">signing letters and numbers</h5>
+								</div>
+							</li>
+							<li>
+								<!-- fourth slide -->
+								<img src="http://cfile6.uf.tistory.com/image/2317924251A4B8BA31E3AF">
+								<div class="caption right-align">
+									<br><br><br>
+									<h3>translate</h3>
+									<h5 class="light grey-text text-lighten-3">english to asl</h5>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="row">
+						<!-- bottom spacing -->
+					</div>
+					<div class="row">
+						<!-- bottom spacing -->
+					</div>
 				</div>
-				
-				<canvas id="canvas"></canvas>
-              
-            </div>
-          </div>
-		  </form>
-          <div class="row"> <!-- bottom spacing -->
-          </div>
-		  
-        </div>
-		
-
-        <div id="practice" class="col s12"> <!-- 'Practice' tab -->
-		        <div class="chip pink accent-3 white-text" style = "position:relative;top:50">get ready in</div>
-				<div class="chip chip1" id="chip6" style = "z-index:2;position:relative;top:50">one</div> <!-- chip 1 -->
-				<div class="chip chip2" id="chip7" style = "z-index:2;position:relative;top:50">two</div> <!-- chip 2 -->
-				<div class="chip chip3" id="chip8" style = "z-index:2;position:relative;top:50">three</div> <!-- chip 3 -->
-				<div class="chip chip4" id="chip9" style = "z-index:2;position:relative;top:50">four</div> <!-- chip 4 -->
-				<div class="chip chip5" id="chip10" style = "z-index:2;position:relative;top:50">five</div> <!-- chip 5 -->
-          <br><br> <!-- top spacing -->
-          <div class="row">
-             <!-- virtually the same the same as the box on the 'Learn' page -->
-              <!-- forcing middle vertical alignment manually -->
-				<div id = "letterdiv" style = "position:relative;z-index:2;top:50;color:white;height:0;"></div>
-				<div id = "response2" style = "position:relative;z-index:2;top:70;color:white;height:0;" ></div>
-				<div  class = "mybox" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:250px;left:50%;transform: translate(-50%, -50%);"></div>
-			  	<div class="camera"><!--getUsermedia frame goes here-->
-				<video id = "forVid2"  autoplay="true" height="600px" width="600px" style = "position:relative;top:-240;"></video>
+				<div id="learn" class="col s12">
+					<!-- 'Learn' tab -->
+					<br><br> <!-- top spacing -->
+					<form method="POST" onsubmit = "submitImage();">
+						<div class="row">
+							<!-- first row of buttons -->
+							<div class="col s1" onclick="submitImage('A');disableAll();"><a id = "A" class = "waves-effect waves-light btn pink accent-3">A</a></div>
+							<div class="col s1" onclick="submitImage('B');disableAll();"><a id = "B" class = "waves-effect waves-light btn pink accent-3">B</a></div>
+							<div class="col s1" onclick="submitImage('C');disableAll();"><a id = "C" class = "waves-effect waves-light btn pink accent-3">C</a></div>
+							<div class="col s1" onclick="submitImage('D');disableAll();"><a id = "D" class = "waves-effect waves-light btn pink accent-3">D</a></div>
+							<div class="col s1" onclick="submitImage('E');disableAll();"><a id = "E" class = "waves-effect waves-light btn pink accent-3">E</a></div>
+							<div class="col s1" onclick="submitImage('F');disableAll();"><a id = "F" class = "waves-effect waves-light btn pink accent-3">F</a></div>
+							<div class="col s1" onclick="submitImage('G');disableAll();"><a id = "G" class = "waves-effect waves-light btn pink accent-3">G</a></div>
+							<div class="col s1" onclick="submitImage('H');disableAll();"><a id = "H" class = "waves-effect waves-light btn pink accent-3">H</a></div>
+							<div class="col s1" onclick="submitImage('I');disableAll();"><a id = "I" class = "waves-effect waves-light btn pink accent-3">I</a></div>
+							<div class="col s1" onclick="submitImage('J');disableAll();"><a id = "J" class = "waves-effect waves-light btn pink accent-3">J</a></div>
+							<div class="col s1" onclick="submitImage('K');disableAll();"><a id = "K" class = "waves-effect waves-light btn pink accent-3">K</a></div>
+							<div class="col s1" onclick="submitImage('L');disableAll();"><a id = "L" class = "waves-effect waves-light btn pink accent-3">L</a></div>
+						</div>
+						<div class="row">
+							<!-- second row of buttons -->
+							<div class="col s1" onclick="submitImage('M');disableAll();"><a id = "M" class = "waves-effect waves-light btn pink accent-3">M</a></div>
+							<div class="col s1" onclick="submitImage('N');disableAll();"><a id = "N" class = "waves-effect waves-light btn pink accent-3">N</a></div>
+							<div class="col s1" onclick="submitImage('O');disableAll();"><a id = "O" class = "waves-effect waves-light btn pink accent-3">O</a></div>
+							<div class="col s1" onclick="submitImage('P');disableAll();"><a id = "P" class = "waves-effect waves-light btn pink accent-3">P</a></div>
+							<div class="col s1" onclick="submitImage('Q');disableAll();"><a id = "Q" class = "waves-effect waves-light btn pink accent-3">Q</a></div>
+							<div class="col s1" onclick="submitImage('R');disableAll();"><a id = "R" class = "waves-effect waves-light btn pink accent-3">R</a></div>
+							<div class="col s1" onclick="submitImage('S');disableAll();"><a id = "S" class = "waves-effect waves-light btn pink accent-3">S</a></div>
+							<div class="col s1" onclick="submitImage('T');disableAll();"><a id = "T" class = "waves-effect waves-light btn pink accent-3">T</a></div>
+							<div class="col s1" onclick="submitImage('U');disableAll();"><a id = "U" class = "waves-effect waves-light btn pink accent-3">U</a></div>
+							<div class="col s1" onclick="submitImage('V');disableAll();"><a id = "V" class = "waves-effect waves-light btn pink accent-3">V</a></div>
+							<div class="col s1" onclick="submitImage('W');disableAll();"><a id = "W" class = "waves-effect waves-light btn pink accent-3">W</a></div>
+							<div class="col s1" onclick="submitImage('X');disableAll();"><a id = "X" class = "waves-effect waves-light btn pink accent-3">X</a></div>
+						</div>
+						<div class="row">
+							<!-- third row of buttons -->
+							<div class="col s1" onclick="submitImage('Y');disableAll();"><a id = "Y" class = "waves-effect waves-light btn pink accent-3">Y</a></div>
+							<div class="col s1" onclick="submitImage('Z');disableAll();"><a id = "Z" class = "waves-effect waves-light btn pink accent-3">Z</a></div>
+							<div class="col s1" onclick="submitImage('0');disableAll();"><a id = "0" class = "waves-effect waves-light btn indigo">0</a></div>
+							<div class="col s1" onclick="submitImage('1');disableAll();"><a id = "1" class = "waves-effect waves-light btn indigo">1</a></div>
+							<div class="col s1" onclick="submitImage('2');disableAll();"><a id = "2" class = "waves-effect waves-light btn indigo">2</a></div>
+							<div class="col s1" onclick="submitImage('3');disableAll();"><a id = "3" class = "waves-effect waves-light btn indigo">3</a></div>
+							<div class="col s1" onclick="submitImage('4');disableAll();"><a id = "4" class = "waves-effect waves-light btn indigo">4</a></div>
+							<div class="col s1" onclick="submitImage('5');disableAll();"><a id = "5" class = "waves-effect waves-light btn indigo">5</a></div>
+							<div class="col s1" onclick="submitImage('6');disableAll();"><a id = "6" class = "waves-effect waves-light btn indigo">6</a></div>
+							<div class="col s1" onclick="submitImage('7');disableAll();"><a id = "7" class = "waves-effect waves-light btn indigo">7</a></div>
+							<div class="col s1" onclick="submitImage('8');disableAll();"><a id = "8" class = "waves-effect waves-light btn indigo">8</a></div>
+							<div class="col s1" onclick="submitImage('9');disableAll();"><a id = "9" class = "waves-effect waves-light btn indigo">9</a></div>
+						</div>
+						<br><br> <!-- spacing between buttons and picture / camera box -->
+						<div class="row">
+							<div class="col s6" id="image">
+								<!-- displayed image that changes with button click -->
+								<img src="pngs edited/A.PNG" width="450px" style = "position:relative;top:-15px;" height="450px">
+							</div>
+							<div class="col s6">
+								<div class="chip pink accent-3 white-text" style = "position:relative;top:-20px;right:200px">get ready in</div>
+								<div class="chip chip1" id="chip1" style = "z-index:2;position:relative;top:-20px;right:200px">one</div><!-- chip 1 -->
+								<div class="chip chip2" id="chip2" style = "z-index:2;position:relative;top:-20px;right:200px">two</div><!-- chip 2 -->
+								<div class="chip chip3" id="chip3" style = "z-index:2;position:relative;top:-20px;right:200px">three</div><!-- chip 3 -->
+								<div class="chip chip4" id="chip4" style = "z-index:2;position:relative;top:-20px;right:200px">four</div><!-- chip 4 -->
+								<div class="chip chip5" id="chip5" style = "z-index:2;position:relative;top:-20px;right:200px">five</div><!-- chip 5 -->
+								<br><br><br><br> 
+								<div class="camera"><!--getUsermedia frame goes here-->
+									<div id = "response" style="z-index:3;position:relative;color:white;right:100;height:0;top:-50"></div>
+									<div class = "mybox" id = "box" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:140px;left:38%;transform: translate(-50%, -50%);"></div>
+									<video id = "forVid"  autoplay="true" height="400px" width="600px" style = "z-index:1;position:relative;top:-270px;right:100px"></video>
+								</div>
+								<canvas id="canvas"></canvas>
+							</div>
+						</div>
+					</form>
+					<div class="row">
+						<!-- bottom spacing -->
+					</div>
 				</div>
-				
-				<canvas id="canvas"></canvas>
-				
-				<br/>
-				
-              <button class="btn waves-effect waves-light indigo" id = "practicebtn" style = "position:relative;top:-400;" onclick="startCount();this.disabled = true">Practice
-                <i class="material-icons right">send</i>
-              </button>
-			  <br/>
-			  <br/>
-			  <button class="btn waves-effect waves-light indigo" style = "position:relative;top:-400;" id = "endpracticebtn" onclick="stopCount();enablePractice();">End Practice
-                <i class="material-icons right">send</i>
-              </button>
-
-            
-          </div>
-          <div class="row"> <!-- bottom spacing -->
-          </div>
-        </div>
-
-        <div id="translate" class="col s12"> <!-- 'Translate' tab -->
-          <br><br> <!-- top spacing -->
-          <div class="row">
-            <form class="col s12"> <!-- input box -->
-              <div class="row">
-                <div class="input-field col s6 push-s3">
-                  <i class="material-icons prefix">mode_edit</i>
-                  <textarea id="translatebox" class="materialize-textarea"></textarea>
-                  <label for="translatebox">Message</label>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="row">
-            <div class="col s3 push-s3"> <!-- 'Translate' button -->
-              <button class="btn waves-effect waves-light indigo" id="translate">Translate
-                <i class="material-icons right">send</i>
-              </button>
-            </div>
-            <div class="col s3 push-s3"> <!-- 'Clear Message' button -->
-              <a class="waves-effect waves-indigo btn-flat">Clear Message</a>
-            </div>
-          </div>
-          <br><br>
-          <div class="row">
-            <div id="translateimg"> <!-- where pictures appear following translation -->
-            </div>
-          </div>
-          <div class="row"> <!-- bottom spacing -->
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <footer class="page-footer pink lighten-3"> <!-- footer; appears on every page -->
-
-      <p>
-        made with <a class="grey-text text-lighten-4" href="http://materializecss.com/" target="_blank">
-        Materialize v0.97.2</a></li> and <a class="grey-text text-lighten-4" href="http://jquery.com/" target="_blank">
-        jQuery</a></li>
-        <br>
-        body font: <a class="grey-text text-lighten-4" href="https://www.google.com/fonts/specimen/Raleway" target="_blank">
-        Raleway</a></li>
-      </p>
-
-      <div class="footer-copyright">
-        <div>2084096, 2084097, 2084098, 2084099, 2084100, 2084101</div>
-      </div>
-
-    </footer>
-
-  </body>
-
+				<div id="practice" class="col s12">
+					<!-- 'Practice' tab -->
+					<div class="chip pink accent-3 white-text" style = "z-index:2;position:relative;top:50">get ready in</div>
+					<div class="chip chip1" id="chip6" style = "z-index:2;position:relative;top:50">one</div><!-- chip 1 -->
+					<div class="chip chip2" id="chip7" style = "z-index:2;position:relative;top:50">two</div><!-- chip 2 -->
+					<div class="chip chip3" id="chip8" style = "z-index:2;position:relative;top:50">three</div><!-- chip 3 -->
+					<div class="chip chip4" id="chip9" style = "z-index:2;position:relative;top:50">four</div><!-- chip 4 -->
+					<div class="chip chip5" id="chip10" style = "z-index:2;position:relative;top:50">five</div><!-- chip 5 -->
+					<div class="row">
+						<!-- virtually the same the same as the box on the 'Learn' page -->
+						<!-- forcing middle vertical alignment manually -->
+						<div id = "letterdiv" style = "position:relative;z-index:2;top:90;color:white;height:0;"></div>
+						<div id = "response2" style = "position:relative;z-index:2;top:110;color:white;height:0;" ></div>
+						<div  class = "mybox" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:250px;left:50%;transform: translate(-50%, -50%);"></div>
+						<div class="camera">
+							<!--getUsermedia frame goes here-->
+							<video id = "forVid2"  autoplay="true" height="400px" width="600px" style = "position:relative;top:-140;"></video>
+						</div>
+						<canvas id="canvas"></canvas>
+					</div>
+					<div class = "row">
+						<div class = "col s3 push-s4">
+							<button class="btn waves-effect waves-light indigo" id = "practicebtn" style = "position:relative;top:-300;width:109px" onclick="startCount();this.disabled = true">Start
+							</button><!--start button for practice program-->
+						</div>
+						<div class = "col s3 push-s2">
+							<button class="btn waves-effect waves-light pink accent-3" style = "position:relative;top:-300;width:109px" id = "endpracticebtn" onclick="stopCount();enablePractice();">End
+							</button><!--end button for practice program-->
+						</div>
+					</div>
+					<div class="row"><!-- bottom spacing -->
+					</div>
+				</div>
+				<div id="translate" class="col s12"><!-- 'Translate' tab -->
+					<br><br> <!-- top spacing -->
+					<div class="row">
+						<form class="col s12"><!-- input box -->
+							<div class="row">
+								<div class="input-field col s6 push-s3">
+									<i class="material-icons prefix">mode_edit</i>
+									<textarea id="translatebox" class="materialize-textarea"></textarea>
+									<label for="translatebox">Message</label>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="row">
+						<div class="col s3 push-s3">
+							<!-- 'Translate' button -->
+							<button class="btn waves-effect waves-light indigo" id="translate">Translate
+							<i class="material-icons right">send</i>
+							</button>
+						</div>
+						<div class="col s3 push-s3">
+							<!-- 'Clear Message' button -->
+							<a class="waves-effect waves-indigo btn-flat">Clear Message</a>
+						</div>
+					</div>
+					<br><br>
+					<div class="row">
+						<div id="translateimg">
+							<!-- where pictures appear following translation -->
+						</div>
+					</div>
+					<div class="row">
+						<!-- bottom spacing -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="page-footer pink lighten-3"><!-- footer; appears on every page -->
+			<p>
+				made with <a class="grey-text text-lighten-4" href="http://materializecss.com/" target="_blank">
+				Materialize v0.97.2</a></li> and <a class="grey-text text-lighten-4" href="http://jquery.com/" target="_blank">
+				jQuery</a></li>
+				<br>
+				body font: <a class="grey-text text-lighten-4" href="https://www.google.com/fonts/specimen/Raleway" target="_blank">
+				Raleway</a></li>
+			</p>
+			<div class="footer-copyright">
+				<div>S3044, S3054, S3059, S3075, S3082, S3085</div><!-- id numbers for nationals -->
+			</div>
+		</footer>
+	</body>
 </html>
