@@ -79,8 +79,8 @@ function submitImage(letter)
 	console.log(video.width);
 	console.log(video.height);
 	canvas.style.display="none";
-	canvas.width=200;//determines canvas width
-	canvas.height=200;//determines canvas height
+	canvas.width=600;//determines canvas width
+	canvas.height=600;//determines canvas height
 	
 	if(letter=="Practice")
 	{
@@ -93,12 +93,12 @@ function submitImage(letter)
 	
 	setTimeout(function(){
 	var context = canvas.getContext('2d');//gets context from canvas
-	context.clearRect(200, 200, canvas.width, canvas.height); //handles dimensions
+	context.clearRect(200, 200, canvas.width-200, canvas.height-200); //handles dimensions
 
 	context.fillStyle = "#FFFFFF";//default image is white square
- 	context.fillRect(200,200,canvas.width,canvas.height); //handles canvas dimensions
+ 	context.fillRect(200,200,canvas.width-200,canvas.height-200); //handles canvas dimensions
 
-	context.drawImage(video, 200, 200, canvas.width,canvas.height );//gets picture from canvas
+	context.drawImage(video, 200, 200, canvas.width-200,canvas.height-200 );//gets picture from canvas
 
 	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
 	var ajax = new XMLHttpRequest();

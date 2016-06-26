@@ -27,7 +27,8 @@ def compare(input_letter):
            
    #load saved uer image
    user = cv2.imread("temp.png",1)
-
+   user = user[200:400,200:400]
+   cv2.imshow('d',user)
    user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
    
    user = cv2.GaussianBlur(user,(35,35),0)
@@ -46,7 +47,7 @@ def compare(input_letter):
            MSE[file_name]=(mse(user, imageB))
    #Find range of MSE values and lowest 20% of MSE values
    MSE_range = max(MSE.values()) - min(MSE.values())
-   lowest_percent = MSE_range/2
+   lowest_percent = 2*MSE_range/5
    #MSE value at 20th percentile
    lowest_percent_limit = min(MSE.values()) + (lowest_percent)
    match=False
