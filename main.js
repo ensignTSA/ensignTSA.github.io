@@ -117,8 +117,8 @@ function loading(querySelector) //loads the webcam capture
     }, function() { //asks for permission
         //webcam available 
     }, function() { //if permission not given
-		document.getElementById('practicebtn').style.visibility = 'none';
-		document.getElementById('endpracticebtn').style.visibility = 'none';
+		document.getElementById('practicebtn').style.visibility = 'hidden';
+		document.getElementById('endpracticebtn').style.visibility = 'hidden';
         chips = document.getElementsByClassName('chip') //make chips disappear
         for (var i = 0, il = chips.length; i < il; i++) {
             chips[i].style.visibility = 'hidden';
