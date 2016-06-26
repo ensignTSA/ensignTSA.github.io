@@ -101,26 +101,42 @@ $('.chip5').removeClass('indigo white-text'); // reset appearance of chip 5
 	if(letter=="Practice")
 	{
 		letterdiv.innerHTML=('Please make the character ' + rand);
+		timer1 = setTimeout(function () { // after 1 second change appearance of chip 1
+        $('#chip6').addClass('indigo white-text');
+      }, 1000);
+timer2 = setTimeout(function () { // after 2 seconds change appearance of chip 2
+        $('#chip7').addClass('indigo white-text');
+      }, 2000);
+timer3 = setTimeout(function () { // after 3 seconds change appearance of chip 3
+        $('#chip8').addClass('indigo white-text');
+      }, 3000);
+timer4 = setTimeout(function () { // after 4 seconds change appearance of chip 4
+        $('#chip9').addClass('indigo white-text');
+      }, 4000);
+timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
+        $('#chip10').addClass('indigo white-text');
+      }, 5000);
 	}
 	else
 	{
 	responseDiv.innerHTML=('Please make the character ' + letter);
-	}
-timer1 = setTimeout(function () { // after 1 second change appearance of chip 1
-        $('.chip1').addClass('indigo white-text');
+	timer1 = setTimeout(function () { // after 1 second change appearance of chip 1
+        $('#chip1').addClass('indigo white-text');
       }, 1000);
 timer2 = setTimeout(function () { // after 2 seconds change appearance of chip 2
-        $('.chip2').addClass('indigo white-text');
+        $('#chip2').addClass('indigo white-text');
       }, 2000);
 timer3 = setTimeout(function () { // after 3 seconds change appearance of chip 3
-        $('.chip3').addClass('indigo white-text');
+        $('#chip3').addClass('indigo white-text');
       }, 3000);
 timer4 = setTimeout(function () { // after 4 seconds change appearance of chip 4
-        $('.chip4').addClass('indigo white-text');
+        $('#chip4').addClass('indigo white-text');
       }, 4000);
 timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
-        $('.chip5').addClass('indigo white-text');
+        $('#chip5').addClass('indigo white-text');
       }, 5000);
+	}
+
 	setTimeout(function(){
 	var context = canvas.getContext('2d');//gets context from canvas
 	context.clearRect(200, 200, canvas.width-200, canvas.height-200); //handles dimensions
@@ -294,7 +310,7 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
                 </button>-->
 
 				<div class="camera"><!--getUsermedia frame goes here-->
-				<div id = "response" style="z-index:3;position:relative;color:white;right:100"></div>
+				<div id = "response" style="z-index:3;position:relative;color:white;right:100;height:0;top:-50"></div>
 				<div id = "box" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:140px;left:38%;transform: translate(-50%, -50%);"></div>
 				<video id = "forVid"  autoplay="true" height="600px" width="600px" style = "z-index:1;position:relative;top:-370px;right:100px"></video>
 				
@@ -322,22 +338,23 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
           <div class="row">
              <!-- virtually the same the same as the box on the 'Learn' page -->
               <!-- forcing middle vertical alignment manually -->
-				<div id = "letterdiv" style = "position:relative;z-index:2;top:100;color:white"></div>
-				<div id = "response2" style = "position:relative;z-index:2;top:100;color:white" ></div>
+				<div id = "letterdiv" style = "position:relative;z-index:2;top:50;color:white;height:0;"></div>
+				<div id = "response2" style = "position:relative;z-index:2;top:70;color:white;height:0;" ></div>
+				<div style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:250px;left:50%;transform: translate(-50%, -50%);"></div>
 			  	<div class="camera"><!--getUsermedia frame goes here-->
-				<video id = "forVid2"  autoplay="true" height="600px" width="600px" style = "position:relative;top:-40;"></video>
+				<video id = "forVid2"  autoplay="true" height="600px" width="600px" style = "position:relative;top:-240;"></video>
 				</div>
 				
 				<canvas id="canvas"></canvas>
 				
 				<br/>
 				
-              <button class="btn waves-effect waves-light indigo" id = "practice" onclick="startCount();">Practice
+              <button class="btn waves-effect waves-light indigo" id = "practice" style = "position:relative;top:-400;" onclick="startCount();">Practice
                 <i class="material-icons right">send</i>
               </button>
 			  <br/>
 			  <br/>
-			  <button class="btn waves-effect waves-light indigo" id = "endpractice" onclick="stopCount();">End Practice
+			  <button class="btn waves-effect waves-light indigo" style = "position:relative;top:-400;" id = "endpractice" onclick="stopCount();">End Practice
                 <i class="material-icons right">send</i>
               </button>
 			  <script>
