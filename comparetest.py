@@ -27,7 +27,7 @@ def compare(input_letter):
            
    #load saved uer image
    user = cv2.imread("temp.png",1)
-   user = user[300:500,300:500,0:3]
+   user = user[200:400,200:400,0:3]
    print user.shape
    cv2.imwrite('temp2.png',user)
    user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
