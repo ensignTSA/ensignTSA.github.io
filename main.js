@@ -62,21 +62,22 @@ function disableAll() // disables all the buttons to prevent the user from click
 
 function enablePractice() //reenables the practice button
 {
-
     document.getElementById('practicebtn').disabled = false;
-
 }
 
 function startCount() { //starts the practice mode
 
     alphaNumericArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", 'A', 'B', 'C', 'D', 'E', 'F', 'G', "H", 'I', "J", 'K', "L", "M", "N", "O", 'P', "Q", 'R', 'S', 'T', 'U', 'V', 'W', "X", 'Y', 'Z'];
+	
     rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)]; //generates random value
+	
     if (submitImage('Practice')) //runs submit image and checks for return value
     {
         console.log('hi')
         alphaNumericArray.splice(alphaNumericArray.indexOf(rand), 1); //if user made correct sign, remove rand from array
         rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)]; //generate new rand
     }
+	
     IntervalID = setInterval(function() { //every 8 seconds, repeat the script
         if ((responseDiv3.innerHTML) == "Correct.") //almost the same script as above
         {
@@ -84,6 +85,7 @@ function startCount() { //starts the practice mode
             console.log('choosing new rand');
             rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
         }
+		
         if (alphaNumericArray != null && alphaNumericArray.length >= 1) {
             console.log(alphaNumericArray)
             submitImage('Practice');
@@ -110,12 +112,10 @@ function loading(querySelector) //loads the webcam capture
 {
     var video = document.querySelector(querySelector); //gets video element, saves as variable
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia; //sets up getUserMedia
-
     navigator.getUserMedia({
         video: true
     }, function() { //asks for permission
         //webcam available 
-
     }, function() { //if permission not given
         chips = document.getElementsByClassName('chip') //make chips disappear
         for (var i = 0, il = chips.length; i < il; i++) {

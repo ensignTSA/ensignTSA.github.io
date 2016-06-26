@@ -36,7 +36,7 @@
       function startCount() { //starts the practice mode
 
     		alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']; 
-    		
+   
         rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)]; //generates random value
     		
         if(submitImage('Practice')) { //runs submit image and checks for return value
@@ -67,13 +67,12 @@
     		//response2 = document.getElementById('response2');
     		//response2.innerHTML = '';
     	}
-    		
+		
       var timer1; // initializing global variable for timer for chip 1
       var timer2; // initializing global variable for timer for chip 2
       var timer3; // initializing global variable for timer for chip 3
       var timer4; // initializing global variable for timer for chip 4
       var timer5; // initializing global variable for timer for chip 5
-      
       function loading(querySelector) { //loads the webcam capture
         var video = document.querySelector(querySelector); //gets video element, saves as variable
         navigator.getUserMedia = navigator.getUserMedia ||navigator.webkitGetUserMedia || navigator.mozGetUserMedia ||navigator.msGetUserMedia || navigator.oGetUserMedia;//sets up getUserMedia
