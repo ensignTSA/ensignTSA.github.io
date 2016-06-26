@@ -33,6 +33,7 @@ def compare(input_letter):
    user = cv2.GaussianBlur(user,(35,35),0)
    _, user = cv2.threshold(user,127,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
+   
    rootdir = 'test'
    MSE={}
    #For each test file, add to the MSE dictionary
