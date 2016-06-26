@@ -14,19 +14,26 @@
     <title>ensign</title>
 
 	<script>
-	var alphaNumericArray;
+	var alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z'];
 	var IntervalID;
+	var rand;
 	function startCount(){
-		alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']
-		submitImage('Practice');
+		
+		alphaNumericArray = ["0","1","2","3","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z'];
+		if(submitImage('Practice'))
+		{
+		alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);
+		}
 		IntervalID = setInterval(function(){
 		if(alphaNumericArray!=null && alphaNumericArray.length>=1)
 		{
 		console.log(alphaNumericArray)
-		submitImage('Practice')
+		if(submitImage('Practice'))
+		{
+		alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);
+		}
 		}
 		else{
-		console.log(alphaNumericArray)
 		stopCount();
 		}
 		},7000);
@@ -81,7 +88,7 @@ function forError(e)
 }
 function submitImage(letter)
 {
-
+responseDiv3 = document.getElementById("response2");
 clearTimeout(timer1); // clear timer1
 clearTimeout(timer2); // clear timer2
 clearTimeout(timer3); // clear timer3
@@ -93,9 +100,9 @@ $('.chip3').removeClass('indigo white-text'); // reset appearance of chip 3
 $('.chip4').removeClass('indigo white-text'); // reset appearance of chip 4
 $('.chip5').removeClass('indigo white-text'); // reset appearance of chip 5
 	
-	var rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
+	rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
 
-	alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);
+	
 	
 	function readBody(xhr) {
     var data;
@@ -188,6 +195,14 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
 	}
    console.log(data.length);//logs length of data to console, used for debugging
    responseDiv.innerHTML=readBody(ajax);
+   if((responseDiv3.innerHTML)=="Correct!")
+   {
+   return true;
+   }
+   else
+   {
+   return false;
+   }
    },6000);
    
 
