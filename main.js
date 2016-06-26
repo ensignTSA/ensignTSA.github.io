@@ -71,7 +71,7 @@ $(document).ready(function(){ // on page load
 		rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];//generate new rand
 		}
 		IntervalID = setInterval(function(){ //every 8 seconds, repeat the script
-		if((responseDiv3.innerHTML)=="Correct!") //almost the same script as above
+		if((responseDiv3.innerHTML)=="Correct.") //almost the same script as above
 		{
 		alphaNumericArray.splice(alphaNumericArray.indexOf(rand),1);
 		console.log('choosing new rand');
@@ -253,7 +253,7 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
 	}
    console.log(data.length);//logs length of data to console, used for debugging
    responseDiv.innerHTML=readBody(ajax);
-   if((responseDiv3.innerHTML)=="Correct!")
+   if((responseDiv3.innerHTML)=="Correct.")
    {
    console.log("great"); //logs success
    return true;
