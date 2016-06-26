@@ -265,7 +265,7 @@ function submitImage(letter)
 
 				<div class="camera"><!--getUsermedia frame goes here-->
 				<div id = "response" style="z-index:3;position:relative;color:white;right:100"></div>
-				<div style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:35px;right:-200px"></div>
+				<div id = "box" style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:140px;left:38%;transform: translate(-50%, -50%);"></div>
 				<video id = "forVid"  autoplay="true" height="600px" width="600px" style = "z-index:1;position:relative;top:-370px;right:100px"></video>
 				
 				</div>
@@ -296,12 +296,12 @@ function submitImage(letter)
 				
 				<br/>
 				
-              <button class="btn waves-effect waves-light indigo" onclick="startCount();">Practice
+              <button class="btn waves-effect waves-light indigo" id = "practice" onclick="startCount();">Practice
                 <i class="material-icons right">send</i>
               </button>
 			  <br/>
 			  <br/>
-			  <button class="btn waves-effect waves-light indigo" onclick="stopCount();">End Practice
+			  <button class="btn waves-effect waves-light indigo" id = "endpractice" onclick="stopCount();">End Practice
                 <i class="material-icons right">send</i>
               </button>
 			  <script>
