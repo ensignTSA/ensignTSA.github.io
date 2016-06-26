@@ -27,7 +27,7 @@ def compare(input_letter):
            
    #load saved uer image
    user = cv2.imread("public/temp.png",1)
-   user = user[300:500,300:500,0:3]
+   user = user[100:300,200:400,0:3]
    cv2.imwrite('public/temp2.png',user)
    user = cv2.cvtColor(user, cv2.COLOR_BGR2GRAY)
    
@@ -70,28 +70,3 @@ def compare(input_letter):
    return match
        #Rerun read and compare functions on same input letter
        #until the user gets sign correct
-
-
-
-#practice tab   
-def practice():
-    #All possible signs for user to make
-    alphanumerical=["0","1","2","4","5","6","7","8","9",'A',
-    'B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S',
-    'T','U','V','W',"X",'Y','Z']
-    #call necessary functions 36 times
-    for i in range(36):
-       if not alphanumerical:
-           break
-       else:
-           input_letter = random.choice(alphanumerical)
-           #remove sign from choices once done
-           alphanumerical.remove(input_letter)
-           read_letter(input_letter)
-           compare(input_letter.upper())
-       
-#run functions with input letter from learn tab
-def learn(input_letter):
-    while 1==1:
-        read_letter(input_letter)
-        compare(input_letter.upper())

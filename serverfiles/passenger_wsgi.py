@@ -31,32 +31,14 @@ def process_file():
     f.write(body);
     f.close();#saves temp
     if(comparetest.compare(letter)):
-        return "Correct!" #sets up web page
+        return "Correct." #sets up web page
     else:
-        return "Incorrect!"
+        return "Wrong, try again."
     
 @route('/<filename:re:.*\..*>')#matches files
 def sendWebFile(filename):
     return static_file(filename, root='./')
-    
-@route('/runScript',method = "POST")
-def script():
-    try:
-        import comparetest
-        comparetest.practice()
-    except:
-        print "hi"
-        redirect('http://localhost:8080/#practice')
 
-
-@route('/learnScript/<letter>')
-def scropt(letter):
-    try:
-        import comparetest
-        comparetest.learn(letter)
-    except:
-        
-        redirect('http://localhost:8080/#learn')
 
 @route('/<fn:path>')
 def index(fn='index.html'):

@@ -22,25 +22,6 @@ def loadIndex():
 @route('/<filename:re:.*\..*>')#matches files
 def sendWebFile(filename):
     return static_file(filename, root='./')
-    
-@route('/runScript',method = "POST")
-def script():
-    try:
-        import comparetest
-        comparetest.practice()
-    except:
-        print "hi"
-        redirect('http://localhost:8080/#practice')
-
-
-@route('/learnScript/<letter>')
-def scropt(letter):
-    try:
-        import comparetest
-        comparetest.learn(letter)
-    except:
-        
-        redirect('http://localhost:8080/#learn')
 
 @route('/<fn:path>')
 def index(fn='index.html'):

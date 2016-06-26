@@ -245,6 +245,7 @@ function submitImage(letter) //submits sign to server for checking
 
             var data = canvas.toDataURL('image/jpeg', 1); //converts image to URL data
             var ajax = new XMLHttpRequest();
+            ajax.open("POST", 'https://ensign.hthswd.org:8085/process_file', false); //opens POST request with server; false means it is SYNCHRONOUS!!!!!!!!
             ajax.onreadystatechange = function() {
                 console.log(ajax.responseText);
             }
