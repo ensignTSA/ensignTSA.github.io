@@ -19,7 +19,7 @@ function loading(querySelector)
  var video = document.querySelector(querySelector);
  navigator.getUserMedia = navigator.getUserMedia ||navigator.webkitGetUserMedia || navigator.mozGetUserMedia ||navigator.msGetUserMedia || navigator.oGetUserMedia;//sets up getUserMedia
 
- navigator.getUserMedia({video: true}, function() {
+navigator.getUserMedia({video: true}, function() {
 //webcam available 
 
 }, function() {
@@ -30,14 +30,13 @@ responseDiv2.innerHTML = 'You need a webcam to use this feature. Please plug a w
 
 //webcam not available
 });
-
    if (navigator.getUserMedia)
    {
      var thevid = {video: true, audio: false};
      navigator.getUserMedia(thevid, handleVideo, forError)//sets up video input
    }
 
-   
+
 
 function handleVideo(localmediastream)
    {
@@ -80,38 +79,26 @@ function submitImage(letter)
 	console.log(video.width);
 	console.log(video.height);
 	canvas.style.display="none";
-	canvas.width=video.width;//determines canvas width
-	canvas.height=video.height;//determines canvas height
-
-	responseDiv.innerHTML = '1';
+	canvas.width=200;//determines canvas width
+	canvas.height=200;//determines canvas height
+	
 	if(letter=="Practice")
 	{
 		letterdiv.innerHTML=('Please make the character ' + rand);
 	}
-	setTimeout(function(){
-	responseDiv.innerHTML = '2';
-	},1000);
-	
-	setTimeout(function(){
-	responseDiv.innerHTML = '3';
-	},2000);
-	
-	setTimeout(function(){
-	responseDiv.innerHTML = '4';
-	},3000);
-	
-	setTimeout(function(){
-	responseDiv.innerHTML = '5';
-	},4000);
+	else
+	{
+	responseDiv.innerHTML=('Please make the character ' + letter);
+	}
 	
 	setTimeout(function(){
 	var context = canvas.getContext('2d');//gets context from canvas
-	context.clearRect(0, 0, canvas.width, canvas.height); //handles dimensions
+	context.clearRect(200, 200, canvas.width, canvas.height); //handles dimensions
 
 	context.fillStyle = "#FFFFFF";//default image is white square
- 	context.fillRect(0,0,canvas.width,canvas.height); //handles canvas dimensions
+ 	context.fillRect(200,200,canvas.width,canvas.height); //handles canvas dimensions
 
-	context.drawImage(video, 0, 0, canvas.width,canvas.height );//gets picture from canvas
+	context.drawImage(video, 200, 200, canvas.width,canvas.height );//gets picture from canvas
 
 	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
 	var ajax = new XMLHttpRequest();
@@ -128,7 +115,7 @@ function submitImage(letter)
 	}
    console.log(data.length);//logs length of data to console, used for debugging
    responseDiv.innerHTML=readBody(ajax);
-   },5000);
+   },6000);
    
 
 }
@@ -252,7 +239,12 @@ function submitImage(letter)
             </div>
             <div class="col s6">
 				
-              <div id = "response"></div>
+              	<div class="chip pink accent-3 white-text" style = "position:relative;top:-40px;right:200px">get ready in</div>
+				<div class="chip" id="chip1" style = "z-index:2;position:relative;top:-40px;right:200px">one</div> <!-- chip 1 -->
+				<div class="chip" id="chip2" style = "z-index:2;position:relative;top:-40px;right:200px">two</div> <!-- chip 2 -->
+				<div class="chip" id="chip3" style = "z-index:2;position:relative;top:-40px;right:200px">three</div> <!-- chip 3 -->
+				<div class="chip" id="chip4" style = "z-index:2;position:relative;top:-40px;right:200px">four</div> <!-- chip 4 -->
+				<div class="chip" id="chip5" style = "z-index:2;position:relative;top:-40px;right:200px">five</div> <!-- chip 5 -->
                 <br><br><br><br> <!-- forcing middle vertical alignment manually -->
                  <!--<div>You will need a webcam feed in order for the computer to</div> 
                 <div>recognize your gestures so that you can begin learning ASL.</div>
@@ -270,9 +262,12 @@ function submitImage(letter)
                 <!--<button class="btn waves-effect waves-light indigo" type="submit" name="submit">Learn
                   <i class="material-icons right">send</i>
                 </button>-->
-				
+
 				<div class="camera"><!--getUsermedia frame goes here-->
-				<video id = "forVid"  autoplay="true" height="200px" width="200px"></video>
+				<div id = "response" style="z-index:3;position:relative;color:white;right:100"></div>
+				<div style="width:200px;height:200px;border:3px solid #000;z-index:3;position:relative;top:35px;right:-200px"></div>
+				<video id = "forVid"  autoplay="true" height="600px" width="600px" style = "z-index:1;position:relative;top:-370px;right:100px"></video>
+				
 				</div>
 				
 				<canvas id="canvas"></canvas>
@@ -294,7 +289,7 @@ function submitImage(letter)
 				<div id = "letterdiv"></div>
 				<div id = "response2"></div>
 			  	<div class="camera"><!--getUsermedia frame goes here-->
-				<video id = "forVid2"  autoplay="true" height="200px" width="200px"></video>
+				<video id = "forVid2"  autoplay="true" height="600px" width="600px"></video>
 				</div>
 				
 				<canvas id="canvas"></canvas>

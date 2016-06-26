@@ -59,9 +59,6 @@ def compare(input_letter):
         #falls between lowest 20%
         if file_name[12]==input_letter:
            #if that test image corresponds with desired letter
-           print min(MSE.values())
-           print mse(user,imageB)
-           print lowest_percent_limit
            if min(MSE.values()) <= mse(user, imageB) <= lowest_percent_limit:
            
                match=True
