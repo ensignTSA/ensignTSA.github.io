@@ -14,6 +14,28 @@
     <title>ensign</title>
 
 	<script>
+	var alphaNumericArray;
+	var IntervalID;
+	function startCount(){
+		alphaNumericArray = ["0","1","2","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']
+		submitImage('Practice');
+		IntervalID = setInterval(function(){
+		if(alphaNumericArray!=null && alphaNumericaArray.length>=1)
+		{
+		submitImage('Practice')
+		}
+		else{
+		return}
+		},7000);
+	}
+	function stopCount(){
+		clearInterval(IntervalID);
+		//letterdiv = document.getElementById('letterdiv');
+		//letterdiv.innerHTML = '';
+		//response2 = document.getElementById('response2');
+		//response2.innerHTML = '';
+	}
+		
   var timer1; // initializing global variable for timer for chip 1
   var timer2; // initializing global variable for timer for chip 2
   var timer3; // initializing global variable for timer for chip 3
@@ -67,9 +89,9 @@ $('.chip2').removeClass('indigo white-text'); // reset appearance of chip 2
 $('.chip3').removeClass('indigo white-text'); // reset appearance of chip 3
 $('.chip4').removeClass('indigo white-text'); // reset appearance of chip 4
 $('.chip5').removeClass('indigo white-text'); // reset appearance of chip 5
-	var alphaNumericArray = ["0","1","2","4","5","6","7","8","9",'A','B','C','D','E','F','G',"H",'I',"J",'K',"L","M","N","O",'P',"Q",'R','S','T','U','V','W',"X",'Y','Z']
-	var rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
 	
+	var rand = alphaNumericArray[Math.floor(Math.random() * alphaNumericArray.length)];
+	alphaNumericArray.splice(alphaNumericArray.indexOf(rand,1));
 	function readBody(xhr) {
     var data;
     if (!xhr.responseType || xhr.responseType === "text") {
@@ -357,19 +379,7 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
 			  <button class="btn waves-effect waves-light indigo" style = "position:relative;top:-400;" id = "endpractice" onclick="stopCount();">End Practice
                 <i class="material-icons right">send</i>
               </button>
-			  <script>
-			  var IntervalID;
-			  function startCount(){
-			  submitImage('Practice');IntervalID = setInterval(submitImage,7000,'Practice');
-			  }
-			  function stopCount(){
-			  clearInterval(IntervalID);
-			  //letterdiv = document.getElementById('letterdiv');
-			  //letterdiv.innerHTML = '';
-			  //response2 = document.getElementById('response2');
-			  //response2.innerHTML = '';
-			  }
-			  </script>
+
             
           </div>
           <div class="row"> <!-- bottom spacing -->
