@@ -212,7 +212,7 @@ timer5 = setTimeout(function () { // after 5 seconds change appearance of chip 5
 
 	var data = canvas.toDataURL('image/jpeg',1);//converts image to URL data
 	var ajax = new XMLHttpRequest();
-	ajax.open("POST",'https://ensign.hthswd.org/process_file',false);//opens POST request with server; false means it is SYNCHRONOUS!!!!!!!!
+	ajax.open("POST",'https://ensign.hthswd.org:8085/process_file',false);//opens POST request with server; false means it is SYNCHRONOUS!!!!!!!!
 	ajax.onreadystatechange = function() {
         console.log(ajax.responseText);
     }
